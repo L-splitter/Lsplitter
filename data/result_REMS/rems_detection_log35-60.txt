@@ -1,0 +1,1872 @@
+-----------------------------------------------------------------------------------------------
+Testing data : 35
+Testing time : 2023-12-07 20:07:02
+gecs recommendation result of method testSmear [2, 108]: 
+Recommending extracting code lines: 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 43, 44, 45, 46, 47, 48, 49, 50, 52, 53, 54, 55, 56, 57, 58, 60, 61, 63, 64, 65, 67, 68, 69, 70, 71, 72, 73, 74, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 97, 99, 100, 101, 103, 105, 106, 107
+3:-   assertEquals(1459320713, smear(754102528));
+4:-   assertEquals(-160560296, smear(1234567890));
+5:-   assertEquals(-1017931171, smear(1));
+6:-   assertEquals(-1350072884, smear(-2000000000));
+7:-   assertEquals(-809843551, smear(2000000000));
+8:-   assertEquals(-309370926, smear(-1155484576));
+9:-   assertEquals(-1645495900, smear(-723955400));
+11:-   assertEquals(-757003149, smear(-1690734402));
+12:-   assertEquals(-245078984, smear(-1557280266));
+13:-   assertEquals(-1401957971, smear(1327362106));
+14:-   assertEquals(1398564061, smear(-1930858313));
+15:-   assertEquals(799903031, smear(502539523));
+16:-   assertEquals(587718043, smear(-1728529858));
+17:-   assertEquals(1757836855, smear(-938301587));
+18:-   assertEquals(1002498708, smear(1431162155));
+19:-   assertEquals(52905316, smear(1085665355));
+20:-   assertEquals(-1590037357, smear(1654374947));
+21:-   assertEquals(-100883544, smear(-1661998771));
+22:-   assertEquals(1312247346, smear(-65105105));
+23:-   assertEquals(-79641824, smear(-73789608));
+24:-   assertEquals(1739416943, smear(-518907128));
+25:-   assertEquals(483849880, smear(99135751));
+26:-   assertEquals(1797032732, smear(-252332814));
+27:-   assertEquals(329701497, smear(755814641));
+28:-   assertEquals(-1411506712, smear(1180918287));
+29:-   assertEquals(-132448996, smear(1344049776));
+30:-   assertEquals(51088191, smear(553609048));
+31:-   assertEquals(-322136643, smear(1580443894));
+32:-   assertEquals(1443704906, smear(629649304));
+33:-   assertEquals(-553641505, smear(-1266264776));
+34:-   assertEquals(996203724, smear(99807007));
+35:-   assertEquals(-1135153980, smear(5955764));
+36:-   assertEquals(-202220609, smear(-1946737912));
+37:-   assertEquals(1170627357, smear(39620447));
+38:-   assertEquals(666671983, smear(-152527805));
+39:-   assertEquals(830549906, smear(-1877116806));
+40:-   assertEquals(818272619, smear(448784075));
+41:-   assertEquals(743117554, smear(1086124775));
+43:-   assertEquals(-1030514623, smear(1227951724));
+44:-   assertEquals(1982371623, smear(1764356251));
+45:-   assertEquals(940948840, smear(64111306));
+46:-   assertEquals(1789753804, smear(-960731419));
+47:-   assertEquals(875698259, smear(-100082026));
+48:-   assertEquals(-1958263900, smear(-39845375));
+49:-   assertEquals(-1953676635, smear(-1339022546));
+50:-   assertEquals(1916180219, smear(2092649110));
+52:-   assertEquals(1918915654, smear(-1089884900));
+53:-   assertEquals(938102267, smear(-81839914));
+54:-   assertEquals(645819996, smear(-1146103148));
+55:-   assertEquals(-1072963524, smear(-1846688624));
+56:-   assertEquals(1704102819, smear(-784703072));
+57:-   assertEquals(-1183783966, smear(55004124));
+58:-   assertEquals(2097842757, smear(-691960657));
+60:-   assertEquals(1305227358, smear(-2032810463));
+61:-   assertEquals(-863362476, smear(-1177788003));
+63:-   assertEquals(1172853257, smear(-65824064));
+64:-   assertEquals(1811397990, smear(575267217));
+65:-   assertEquals(-91361736, smear(-1949367821));
+67:-   assertEquals(522521211, smear(798819494));
+68:-   assertEquals(-37176651, smear(-92022521));
+69:-   assertEquals(-645245125, smear(1318001577));
+70:-   assertEquals(1460094042, smear(-1192467086));
+71:-   assertEquals(-1713924794, smear(-1412716779));
+72:-   assertEquals(-587126285, smear(-1223932479));
+73:-   assertEquals(2124902646, smear(276053035));
+74:-   assertEquals(1660727203, smear(615126903));
+78:-   assertEquals(173314316, smear(19265476));
+79:-   assertEquals(910078796, smear(-1430871151));
+80:-   assertEquals(-1788757022, smear(307082914));
+81:-   assertEquals(-37217695, smear(-1333570194));
+82:-   assertEquals(-1750409108, smear(1496453452));
+83:-   assertEquals(-1184297296, smear(-790542135));
+84:-   assertEquals(1909334635, smear(1455004595));
+85:-   assertEquals(-626278147, smear(-1690249972));
+86:-   assertEquals(-1343393583, smear(-604059026));
+87:-   assertEquals(-72620618, smear(-290476856));
+88:-   assertEquals(-1721662527, smear(-122204761));
+89:-   assertEquals(20732956, smear(-1097539750));
+90:-   assertEquals(1689535747, smear(-576617062));
+91:-   assertEquals(-910174660, smear(-2002123957));
+92:-   assertEquals(-451949594, smear(-1663951485));
+93:-   assertEquals(-1040666441, smear(193034304));
+94:-   assertEquals(-568575382, smear(768747578));
+97:-   assertEquals(560788004, smear(873612482));
+99:-   assertEquals(1401682479, smear(355564760));
+100:-   assertEquals(537840760, smear(41547336));
+101:-   assertEquals(822662855, smear(1781447028));
+103:-   assertEquals(1651021961, smear(1081281446));
+105:-   assertEquals(302543644, smear(-222544851));
+106:-   assertEquals(-467777650, smear(-1233998085));
+107:-   assertEquals(391483003, smear(-1331702554));
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 36
+Testing time : 2023-12-07 20:07:25
+gecs recommendation result of method validateNetwork [2, 172]: 
+Recommending extracting code lines: 6, 7, 8, 9, 11, 12, 13, 14, 16, 17, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171
+6:-   String networkString = network.toString();
+7:-   assertThat(networkString).contains("isDirected: " + network.isDirected());
+8:-   assertThat(networkString).contains("allowsParallelEdges: " + network.allowsParallelEdges());
+9:-   assertThat(networkString).contains("allowsSelfLoops: " + network.allowsSelfLoops());
+11:-   int nodeStart = networkString.indexOf("nodes:");
+12:-   int edgeStart = networkString.indexOf("edges:");
+13:-   String nodeString = networkString.substring(nodeStart, edgeStart);
+14:-   String edgeString = networkString.substring(edgeStart);
+16:-   Graph<N> asGraph = network.asGraph();
+17:-   AbstractGraphTest.validateGraph(asGraph);
+18:-   assertThat(network.nodes()).isEqualTo(asGraph.nodes());
+19:-   assertThat(network.edges().size()).isAtLeast(asGraph.edges().size());
+20:-   assertThat(network.nodeOrder()).isEqualTo(asGraph.nodeOrder());
+21:-   assertThat(network.isDirected()).isEqualTo(asGraph.isDirected());
+22:-   assertThat(network.allowsSelfLoops()).isEqualTo(asGraph.allowsSelfLoops());
+24:-   for (E edge : sanityCheckSet(network.edges())) {
+25:-     // TODO(b/27817069): Consider verifying the edge's incident nodes in the string.
+26:-     assertThat(edgeString).contains(edge.toString());
+27:- 
+28:-     EndpointPair<N> endpointPair = network.incidentNodes(edge);
+29:-     N nodeU = endpointPair.nodeU();
+30:-     N nodeV = endpointPair.nodeV();
+31:-     assertThat(asGraph.edges()).contains(EndpointPair.of(network, nodeU, nodeV));
+32:-     assertThat(network.edgesConnecting(nodeU, nodeV)).contains(edge);
+33:-     assertThat(network.successors(nodeU)).contains(nodeV);
+34:-     assertThat(network.adjacentNodes(nodeU)).contains(nodeV);
+35:-     assertThat(network.outEdges(nodeU)).contains(edge);
+36:-     assertThat(network.incidentEdges(nodeU)).contains(edge);
+37:-     assertThat(network.predecessors(nodeV)).contains(nodeU);
+38:-     assertThat(network.adjacentNodes(nodeV)).contains(nodeU);
+39:-     assertThat(network.inEdges(nodeV)).contains(edge);
+40:-     assertThat(network.incidentEdges(nodeV)).contains(edge);
+41:- 
+42:-     for (N incidentNode : network.incidentNodes(edge)) {
+43:-       assertThat(network.nodes()).contains(incidentNode);
+44:-       for (E adjacentEdge : network.incidentEdges(incidentNode)) {
+45:-         assertTrue(
+46:-             edge.equals(adjacentEdge) || network.adjacentEdges(edge).contains(adjacentEdge));
+47:-       }
+48:-     }
+49:-   }
+51:-   for (N node : sanityCheckSet(network.nodes())) {
+52:-     assertThat(nodeString).contains(node.toString());
+53:- 
+54:-     assertThat(network.adjacentNodes(node)).isEqualTo(asGraph.adjacentNodes(node));
+55:-     assertThat(network.predecessors(node)).isEqualTo(asGraph.predecessors(node));
+56:-     assertThat(network.successors(node)).isEqualTo(asGraph.successors(node));
+57:- 
+58:-     int selfLoopCount = network.edgesConnecting(node, node).size();
+59:-     assertThat(network.incidentEdges(node).size() + selfLoopCount)
+60:-         .isEqualTo(network.degree(node));
+61:- 
+62:-     if (network.isDirected()) {
+63:-       assertThat(network.incidentEdges(node).size() + selfLoopCount)
+64:-           .isEqualTo(network.inDegree(node) + network.outDegree(node));
+65:-       assertThat(network.inEdges(node)).hasSize(network.inDegree(node));
+66:-       assertThat(network.outEdges(node)).hasSize(network.outDegree(node));
+67:-     } else {
+68:-       assertThat(network.predecessors(node)).isEqualTo(network.adjacentNodes(node));
+69:-       assertThat(network.successors(node)).isEqualTo(network.adjacentNodes(node));
+70:-       assertThat(network.inEdges(node)).isEqualTo(network.incidentEdges(node));
+71:-       assertThat(network.outEdges(node)).isEqualTo(network.incidentEdges(node));
+72:-       assertThat(network.inDegree(node)).isEqualTo(network.degree(node));
+73:-       assertThat(network.outDegree(node)).isEqualTo(network.degree(node));
+74:-     }
+75:- 
+76:-     for (N otherNode : network.nodes()) {
+77:-       Set<E> edgesConnecting = sanityCheckSet(network.edgesConnecting(node, otherNode));
+78:-       switch (edgesConnecting.size()) {
+79:-         case 0:
+80:-           assertThat(network.edgeConnectingOrNull(node, otherNode)).isNull();
+81:-           assertThat(network.edgeConnecting(node, otherNode).isPresent()).isFalse();
+82:-           assertThat(network.hasEdgeConnecting(node, otherNode)).isFalse();
+83:-           break;
+84:-         case 1:
+85:-           E edge = edgesConnecting.iterator().next();
+86:-           assertThat(network.edgeConnectingOrNull(node, otherNode)).isEqualTo(edge);
+87:-           assertThat(network.edgeConnecting(node, otherNode).get()).isEqualTo(edge);
+88:-           assertThat(network.hasEdgeConnecting(node, otherNode)).isTrue();
+89:-           break;
+90:-         default:
+91:-           assertThat(network.hasEdgeConnecting(node, otherNode)).isTrue();
+92:-           try {
+93:-             network.edgeConnectingOrNull(node, otherNode);
+94:-             fail();
+95:-           } catch (IllegalArgumentException expected) {
+96:-           }
+97:-           try {
+98:-             network.edgeConnecting(node, otherNode);
+99:-             fail();
+100:-           } catch (IllegalArgumentException expected) {
+101:-           }
+102:-       }
+103:- 
+104:-       boolean isSelfLoop = node.equals(otherNode);
+105:-       boolean connected = !edgesConnecting.isEmpty();
+106:-       if (network.isDirected() || !isSelfLoop) {
+107:-         assertThat(edgesConnecting)
+108:-             .isEqualTo(Sets.intersection(network.outEdges(node), network.inEdges(otherNode)));
+109:-       }
+110:-       if (!network.allowsParallelEdges()) {
+111:-         assertThat(edgesConnecting.size()).isAtMost(1);
+112:-       }
+113:-       if (!network.allowsSelfLoops() && isSelfLoop) {
+114:-         assertThat(connected).isFalse();
+115:-       }
+116:- 
+117:-       assertThat(network.successors(node).contains(otherNode)).isEqualTo(connected);
+118:-       assertThat(network.predecessors(otherNode).contains(node)).isEqualTo(connected);
+119:-       for (E edge : edgesConnecting) {
+120:-         assertThat(network.incidentNodes(edge))
+121:-             .isEqualTo(EndpointPair.of(network, node, otherNode));
+122:-         assertThat(network.outEdges(node)).contains(edge);
+123:-         assertThat(network.inEdges(otherNode)).contains(edge);
+124:-       }
+125:-     }
+126:- 
+127:-     for (N adjacentNode : sanityCheckSet(network.adjacentNodes(node))) {
+128:-       assertTrue(
+129:-           network.predecessors(node).contains(adjacentNode)
+130:-               || network.successors(node).contains(adjacentNode));
+131:-       assertTrue(
+132:-           !network.edgesConnecting(node, adjacentNode).isEmpty()
+133:-               || !network.edgesConnecting(adjacentNode, node).isEmpty());
+134:-     }
+135:- 
+136:-     for (N predecessor : sanityCheckSet(network.predecessors(node))) {
+137:-       assertThat(network.successors(predecessor)).contains(node);
+138:-       assertThat(network.edgesConnecting(predecessor, node)).isNotEmpty();
+139:-     }
+140:- 
+141:-     for (N successor : sanityCheckSet(network.successors(node))) {
+142:-       assertThat(network.predecessors(successor)).contains(node);
+143:-       assertThat(network.edgesConnecting(node, successor)).isNotEmpty();
+144:-     }
+145:- 
+146:-     for (E incidentEdge : sanityCheckSet(network.incidentEdges(node))) {
+147:-       assertTrue(
+148:-           network.inEdges(node).contains(incidentEdge)
+149:-               || network.outEdges(node).contains(incidentEdge));
+150:-       assertThat(network.edges()).contains(incidentEdge);
+151:-       assertThat(network.incidentNodes(incidentEdge)).contains(node);
+152:-     }
+153:- 
+154:-     for (E inEdge : sanityCheckSet(network.inEdges(node))) {
+155:-       assertThat(network.incidentEdges(node)).contains(inEdge);
+156:-       assertThat(network.outEdges(network.incidentNodes(inEdge).adjacentNode(node)))
+157:-           .contains(inEdge);
+158:-       if (network.isDirected()) {
+159:-         assertThat(network.incidentNodes(inEdge).target()).isEqualTo(node);
+160:-       }
+161:-     }
+162:- 
+163:-     for (E outEdge : sanityCheckSet(network.outEdges(node))) {
+164:-       assertThat(network.incidentEdges(node)).contains(outEdge);
+165:-       assertThat(network.inEdges(network.incidentNodes(outEdge).adjacentNode(node)))
+166:-           .contains(outEdge);
+167:-       if (network.isDirected()) {
+168:-         assertThat(network.incidentNodes(outEdge).source()).isEqualTo(node);
+169:-       }
+170:-     }
+171:-   }
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 37
+Testing time : 2023-12-07 20:07:41
+gecs recommendation result of method drain [2, 93]: 
+Recommending extracting code lines: 9, 20, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 43, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 68, 69, 70, 71, 72, 73, 74, 78, 81, 82, 83, 84, 90
+9:-     AtomicReference<T> latest = this.latest;
+20:-             boolean d = done;
+23:-             if (d && error != null) {
+24:-                 if (onDropped != null) {
+25:-                     T v = latest.getAndSet(null);
+26:-                     if (v != null) {
+27:-                         try {
+28:-                             onDropped.accept(v);
+29:-                         } catch (Throwable ex) {
+30:-                             Exceptions.throwIfFatal(ex);
+31:-                             error = new CompositeException(error, ex);
+32:-                         }
+33:-                     }
+34:-                 } else {
+35:-                     latest.lazySet(null);
+36:-                 }
+37:-                 downstream.onError(error);
+38:-                 worker.dispose();
+39:-                 return;
+40:-             }
+43:-             boolean empty = v == null;
+45:-             if (d) {
+46:-                 if (!empty) {
+47:-                     v = latest.getAndSet(null);
+48:-                     if (emitLast) {
+49:-                         downstream.onNext(v);
+50:-                     } else {
+51:-                         if (onDropped != null) {
+52:-                             try {
+53:-                                 onDropped.accept(v);
+54:-                             } catch (Throwable ex) {
+55:-                                 Exceptions.throwIfFatal(ex);
+56:-                                 downstream.onError(ex);
+57:-                                 worker.dispose();
+58:-                                 return;
+59:-                             }
+60:-                         }
+61:-                     }
+62:-                 }
+63:-                 downstream.onComplete();
+64:-                 worker.dispose();
+65:-                 return;
+66:-             }
+68:-             if (empty) {
+69:-                 if (timerFired) {
+70:-                     timerRunning = false;
+71:-                     timerFired = false;
+72:-                 }
+73:-                 break;
+74:-             }
+78:-                 downstream.onNext(v);
+81:-                 timerRunning = true;
+82:-                 worker.schedule(this, timeout, unit);
+83:-             } else {
+84:-                 break;
+90:-             break;
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 38
+Testing time : 2023-12-07 20:07:53
+gecs recommendation result of method drain [2, 87]: 
+Recommending extracting code lines: 7, 8, 9, 15, 16, 17, 18, 19, 21, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 84
+7:-     final SimplePlainQueue<Object> queue = this.queue;
+8:-     final Subscriber<? super Flowable<T>> downstream = this.downstream;
+9:-     UnicastProcessor<T> window = this.window;
+15:-             queue.clear();
+16:-             window = null;
+17:-             this.window = null;
+18:-         } else {
+19:-             boolean isDone = done;
+21:-             boolean isEmpty = o == null;
+24:-                 Throwable ex = error;
+25:-                 if (ex != null) {
+26:-                     if (window != null) {
+27:-                         window.onError(ex);
+28:-                     }
+29:-                     downstream.onError(ex);
+30:-                 } else {
+31:-                     if (window != null) {
+32:-                         window.onComplete();
+33:-                     }
+34:-                     downstream.onComplete();
+35:-                 }
+36:-                 cleanupResources();
+37:-                 upstreamCancelled = true;
+42:-                 if (o == NEXT_WINDOW) {
+43:-                     if (window != null) {
+44:-                         window.onComplete();
+45:-                         window = null;
+46:-                         this.window = null;
+47:-                     }
+48:-                     if (downstreamCancelled.get()) {
+49:-                         timer.dispose();
+50:-                     } else {
+51:-                         if (requested.get() == emitted) {
+52:-                             upstream.cancel();
+53:-                             cleanupResources();
+54:-                             upstreamCancelled = true;
+55:- 
+56:-                             downstream.onError(missingBackpressureMessage(emitted));
+57:-                         } else {
+58:-                             emitted++;
+59:- 
+60:-                             windowCount.getAndIncrement();
+61:-                             window = UnicastProcessor.create(bufferSize, windowRunnable);
+62:-                             this.window = window;
+63:- 
+64:-                             FlowableWindowSubscribeIntercept<T> intercept = new FlowableWindowSubscribeIntercept<>(window);
+65:-                             downstream.onNext(intercept);
+66:- 
+67:-                             if (intercept.tryAbandon()) {
+68:-                                 window.onComplete();
+69:-                             }
+70:-                         }
+71:-                     }
+72:-                 } else if (window != null) {
+73:-                     @SuppressWarnings("unchecked")
+74:-                     T item = (T)o;
+75:-                     window.onNext(item);
+76:-                 }
+84:-             break;
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 39
+Testing time : 2023-12-07 20:08:06
+gecs recommendation result of method drainLoop [2, 101]: 
+Recommending extracting code lines: 5, 7, 11, 14, 15, 16, 17, 21, 22, 23, 24, 25, 26, 28, 30, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 54, 55, 56, 65, 66, 67, 68, 69, 70, 72, 74, 77, 79, 80, 81, 82, 83, 93, 98
+5:-     JoinInnerSubscriber<T>[] s = this.subscribers;
+7:-     Subscriber<? super T> a = this.downstream;
+11:-         long r = requested.get();
+14:-         middle:
+15:-         while (e != r) {
+16:-             if (cancelled) {
+17:-                 cleanup();
+21:-             Throwable ex = errors.get();
+22:-             if (ex != null) {
+23:-                 cleanup();
+24:-                 a.onError(ex);
+25:-                 return;
+26:-             }
+28:-             boolean d = done.get() == 0;
+30:-             boolean empty = true;
+33:-                 JoinInnerSubscriber<T> inner = s[i];
+34:-                 SimplePlainQueue<T> q = inner.queue;
+35:-                 if (q != null) {
+36:-                     T v = q.poll();
+37:- 
+38:-                     if (v != null) {
+39:-                         empty = false;
+40:-                         a.onNext(v);
+41:-                         inner.requestOne();
+42:-                         if (++e == r) {
+43:-                             break middle;
+44:-                         }
+45:-                     }
+46:-                 }
+54:-             if (empty) {
+55:-                 break;
+56:-             }
+65:-             Throwable ex = errors.get();
+66:-             if (ex != null) {
+67:-                 cleanup();
+68:-                 a.onError(ex);
+69:-                 return;
+70:-             }
+72:-             boolean d = done.get() == 0;
+74:-             boolean empty = true;
+77:-                 JoinInnerSubscriber<T> inner = s[i];
+79:-                 SimpleQueue<T> q = inner.queue;
+80:-                 if (q != null && !q.isEmpty()) {
+81:-                     empty = false;
+82:-                     break;
+83:-                 }
+93:-             BackpressureHelper.produced(requested, e);
+98:-             break;
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 40
+Testing time : 2023-12-07 20:08:19
+gecs recommendation result of method drain [2, 106]: 
+Recommending extracting code lines: 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 102
+10:-             if (!active) {
+11:- 
+12:-                 boolean d = done;
+13:- 
+14:-                 if (d && !veryEnd) {
+15:-                     Throwable ex = errors.get();
+16:-                     if (ex != null) {
+17:-                         errors.tryTerminateConsumer(downstream);
+18:-                         return;
+19:-                     }
+20:-                 }
+21:- 
+22:-                 T v;
+23:- 
+24:-                 try {
+25:-                     v = queue.poll();
+26:-                 } catch (Throwable e) {
+27:-                     Exceptions.throwIfFatal(e);
+28:-                     upstream.cancel();
+29:-                     errors.tryAddThrowableOrReport(e);
+30:-                     errors.tryTerminateConsumer(downstream);
+31:-                     return;
+32:-                 }
+33:- 
+34:-                 boolean empty = v == null;
+35:- 
+36:-                 if (d && empty) {
+37:-                     errors.tryTerminateConsumer(downstream);
+38:-                     return;
+39:-                 }
+40:- 
+41:-                 if (!empty) {
+42:-                     Publisher<? extends R> p;
+43:- 
+44:-                     try {
+45:-                         p = Objects.requireNonNull(mapper.apply(v), "The mapper returned a null Publisher");
+46:-                     } catch (Throwable e) {
+47:-                         Exceptions.throwIfFatal(e);
+48:- 
+49:-                         upstream.cancel();
+50:-                         errors.tryAddThrowableOrReport(e);
+51:-                         errors.tryTerminateConsumer(downstream);
+52:-                         return;
+53:-                     }
+54:- 
+55:-                     if (sourceMode != QueueSubscription.SYNC) {
+56:-                         int c = consumed + 1;
+57:-                         if (c == limit) {
+58:-                             consumed = 0;
+59:-                             upstream.request(c);
+60:-                         } else {
+61:-                             consumed = c;
+62:-                         }
+63:-                     }
+64:- 
+65:-                     if (p instanceof Supplier) {
+66:-                         @SuppressWarnings("unchecked")
+67:-                         Supplier<R> supplier = (Supplier<R>) p;
+68:- 
+69:-                         R vr;
+70:- 
+71:-                         try {
+72:-                             vr = supplier.get();
+73:-                         } catch (Throwable e) {
+74:-                             Exceptions.throwIfFatal(e);
+75:-                             errors.tryAddThrowableOrReport(e);
+76:-                             if (!veryEnd) {
+77:-                                 upstream.cancel();
+78:-                                 errors.tryTerminateConsumer(downstream);
+79:-                                 return;
+80:-                             }
+81:-                             vr = null;
+82:-                         }
+83:- 
+84:-                         if (vr == null) {
+85:-                             continue;
+86:-                         }
+87:- 
+88:-                         if (inner.isUnbounded()) {
+89:-                             downstream.onNext(vr);
+90:-                             continue;
+91:-                         } else {
+92:-                             active = true;
+93:-                             inner.setSubscription(new SimpleScalarSubscription<>(vr, inner));
+94:-                         }
+95:-                     } else {
+96:-                         active = true;
+97:-                         p.subscribe(inner);
+98:-                     }
+99:-                 }
+100:-             }
+102:-                 break;
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 41
+Testing time : 2023-12-07 20:08:31
+gecs recommendation result of method run [2, 109]: 
+Recommending extracting code lines: 11, 14, 15, 16, 17, 18, 19, 22, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 35, 39, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 106
+11:-             boolean d = done;
+14:-                 Throwable ex = errors.get();
+15:-                 if (ex != null) {
+16:-                     errors.tryTerminateConsumer(downstream);
+17:-                     worker.dispose();
+18:-                     return;
+19:-                 }
+22:-             T v;
+24:-             try {
+25:-                 v = queue.poll();
+26:-             } catch (Throwable e) {
+27:-                 Exceptions.throwIfFatal(e);
+28:-                 upstream.cancel();
+29:-                 errors.tryAddThrowableOrReport(e);
+30:-                 errors.tryTerminateConsumer(downstream);
+31:-                 worker.dispose();
+32:-                 return;
+33:-             }
+35:-             boolean empty = v == null;
+39:-                 worker.dispose();
+43:-             if (!empty) {
+44:-                 Publisher<? extends R> p;
+45:- 
+46:-                 try {
+47:-                     p = Objects.requireNonNull(mapper.apply(v), "The mapper returned a null Publisher");
+48:-                 } catch (Throwable e) {
+49:-                     Exceptions.throwIfFatal(e);
+50:- 
+51:-                     upstream.cancel();
+52:-                     errors.tryAddThrowableOrReport(e);
+53:-                     errors.tryTerminateConsumer(downstream);
+54:-                     worker.dispose();
+55:-                     return;
+56:-                 }
+57:- 
+58:-                 if (sourceMode != QueueSubscription.SYNC) {
+59:-                     int c = consumed + 1;
+60:-                     if (c == limit) {
+61:-                         consumed = 0;
+62:-                         upstream.request(c);
+63:-                     } else {
+64:-                         consumed = c;
+65:-                     }
+66:-                 }
+67:- 
+68:-                 if (p instanceof Supplier) {
+69:-                     @SuppressWarnings("unchecked")
+70:-                     Supplier<R> supplier = (Supplier<R>) p;
+71:- 
+72:-                     R vr;
+73:- 
+74:-                     try {
+75:-                         vr = supplier.get();
+76:-                     } catch (Throwable e) {
+77:-                         Exceptions.throwIfFatal(e);
+78:-                         errors.tryAddThrowableOrReport(e);
+79:-                         if (!veryEnd) {
+80:-                             upstream.cancel();
+81:-                             errors.tryTerminateConsumer(downstream);
+82:-                             worker.dispose();
+83:-                             return;
+84:-                         }
+85:-                         vr = null;
+86:-                     }
+87:- 
+88:-                     if (vr == null || cancelled) {
+89:-                         continue;
+90:-                     }
+91:- 
+92:-                     if (inner.isUnbounded()) {
+93:-                         downstream.onNext(vr);
+94:-                         continue;
+95:-                     } else {
+96:-                         active = true;
+97:-                         inner.setSubscription(new SimpleScalarSubscription<>(vr, inner));
+98:-                     }
+99:-                 } else {
+100:-                     active = true;
+101:-                     p.subscribe(inner);
+102:-                 }
+103:-             }
+106:-             break;
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 42
+Testing time : 2023-12-07 20:08:44
+gecs recommendation result of method drain [2, 118]: 
+Recommending extracting code lines: 8, 9, 10, 11, 15, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 82, 88, 89, 99, 104, 110, 115
+8:-     Subscriber<? super T> a = downstream;
+9:-     List<T>[] lists = this.lists;
+10:-     int[] indexes = this.indexes;
+11:-     int n = indexes.length;
+15:-         long r = requested.get();
+18:-         while (e != r) {
+19:-             if (cancelled) {
+20:-                 Arrays.fill(lists, null);
+21:-                 return;
+22:-             }
+23:- 
+24:-             Throwable ex = error.get();
+25:-             if (ex != null) {
+26:-                 cancelAll();
+27:-                 Arrays.fill(lists, null);
+28:-                 a.onError(ex);
+29:-                 return;
+30:-             }
+31:- 
+32:-             T min = null;
+33:-             int minIndex = -1;
+34:- 
+35:-             for (int i = 0; i < n; i++) {
+36:-                 List<T> list = lists[i];
+37:-                 int index = indexes[i];
+38:- 
+39:-                 if (list.size() != index) {
+40:-                     if (min == null) {
+41:-                         min = list.get(index);
+42:-                         minIndex = i;
+43:-                     } else {
+44:-                         T b = list.get(index);
+45:- 
+46:-                         boolean smaller;
+47:- 
+48:-                         try {
+49:-                             smaller = comparator.compare(min, b) > 0;
+50:-                         } catch (Throwable exc) {
+51:-                             Exceptions.throwIfFatal(exc);
+52:-                             cancelAll();
+53:-                             Arrays.fill(lists, null);
+54:-                             if (!error.compareAndSet(null, exc)) {
+55:-                                 RxJavaPlugins.onError(exc);
+56:-                             }
+57:-                             a.onError(error.get());
+58:-                             return;
+59:-                         }
+60:-                         if (smaller) {
+61:-                             min = b;
+62:-                             minIndex = i;
+63:-                         }
+64:-                     }
+65:-                 }
+66:-             }
+67:- 
+68:-             if (min == null) {
+69:-                 Arrays.fill(lists, null);
+70:-                 a.onComplete();
+71:-                 return;
+72:-             }
+73:- 
+74:-             a.onNext(min);
+75:- 
+76:-             indexes[minIndex]++;
+77:- 
+78:-             e++;
+79:-         }
+82:-             Arrays.fill(lists, null);
+88:-             cancelAll();
+89:-             Arrays.fill(lists, null);
+99:-                 break;
+104:-             Arrays.fill(lists, null);
+110:-             BackpressureHelper.produced(requested, e);
+115:-             break;
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 43
+Testing time : 2023-12-07 20:09:02
+gecs recommendation result of method onErrorWithSuper [2, 137]: 
+Recommending extracting code lines: 4, 5, 6, 7, 8, 9, 10, 12, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 34, 35, 36, 38, 39, 40, 41, 42, 43, 44, 46, 47, 48, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 64, 65, 66, 68, 70, 71, 72, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 112, 113, 114, 115, 116, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 130, 131, 132, 133, 135
+4:-         Consumer<? super Throwable> errorHandler = new Consumer<Throwable>() {
+5:-             @Override
+6:-             public void accept(Throwable t) {
+7:-                 throw new TestException("Forced failure 2");
+8:-             }
+9:-         };
+10:-         RxJavaPlugins.setErrorHandler(errorHandler);
+12:-         Consumer<? super Throwable> errorHandler1 = RxJavaPlugins.getErrorHandler();
+15:-         Function<? super Scheduler, ? extends Scheduler> scheduler2scheduler = new Function<Scheduler, Scheduler>() {
+16:-             @Override
+17:-             public Scheduler apply(Scheduler scheduler) throws Exception {
+18:-                 return scheduler;
+19:-             }
+20:-         };
+21:-         Function<? super Supplier<Scheduler>, ? extends Scheduler> callable2scheduler = new Function<Supplier<Scheduler>, Scheduler>() {
+22:-             @Override
+23:-             public Scheduler apply(Supplier<Scheduler> schedulerSupplier) throws Throwable {
+24:-                 return schedulerSupplier.get();
+25:-             }
+26:-         };
+27:-         Function<? super ConnectableFlowable, ? extends ConnectableFlowable> connectableFlowable2ConnectableFlowable = new Function<ConnectableFlowable, ConnectableFlowable>() {
+28:-             @Override
+29:-             public ConnectableFlowable apply(ConnectableFlowable connectableFlowable) throws Exception {
+30:-                 return connectableFlowable;
+31:-             }
+32:-         };
+34:-             @Override
+35:-             public ConnectableObservable apply(ConnectableObservable connectableObservable) throws Exception {
+36:-                 return connectableObservable;
+38:-         };
+39:-         Function<? super Flowable, ? extends Flowable> flowable2Flowable = new Function<Flowable, Flowable>() {
+40:-             @Override
+41:-             public Flowable apply(Flowable flowable) throws Exception {
+42:-                 return flowable;
+43:-             }
+44:-         };
+46:-             @Override
+47:-             public Subscriber apply(Flowable flowable, Subscriber subscriber) throws Exception {
+48:-                 return subscriber;
+50:-         };
+51:-         Function<Maybe, Maybe> maybe2maybe = new Function<Maybe, Maybe>() {
+52:-             @Override
+53:-             public Maybe apply(Maybe maybe) throws Exception {
+54:-                 return maybe;
+55:-             }
+56:-         };
+57:-         BiFunction<Maybe, MaybeObserver, MaybeObserver> maybe2observer = new BiFunction<Maybe, MaybeObserver, MaybeObserver>() {
+58:-             @Override
+59:-             public MaybeObserver apply(Maybe maybe, MaybeObserver maybeObserver) throws Exception {
+60:-                 return maybeObserver;
+61:-             }
+62:-         };
+64:-             @Override
+65:-             public Observable apply(Observable observable) throws Exception {
+66:-                 return observable;
+68:-         };
+70:-             @Override
+71:-             public Observer apply(Observable observable, Observer observer) throws Exception {
+72:-                 return observer;
+74:-         };
+75:-         Function<? super ParallelFlowable, ? extends ParallelFlowable> parallelFlowable2parallelFlowable = new Function<ParallelFlowable, ParallelFlowable>() {
+76:-             @Override
+77:-             public ParallelFlowable apply(ParallelFlowable parallelFlowable) throws Exception {
+78:-                 return parallelFlowable;
+79:-             }
+80:-         };
+81:-         Function<Single, Single> single2single = new Function<Single, Single>() {
+82:-             @Override
+83:-             public Single apply(Single single) throws Exception {
+84:-                 return single;
+85:-             }
+86:-         };
+87:-         BiFunction<? super Single, ? super SingleObserver, ? extends SingleObserver> single2observer = new BiFunction<Single, SingleObserver, SingleObserver>() {
+88:-             @Override
+89:-             public SingleObserver apply(Single single, SingleObserver singleObserver) throws Exception {
+90:-                 return singleObserver;
+91:-             }
+92:-         };
+93:-         Function<? super Runnable, ? extends Runnable> runnable2runnable = new Function<Runnable, Runnable>() {
+94:-             @Override
+95:-             public Runnable apply(Runnable runnable) throws Exception {
+96:-                 return runnable;
+97:-             }
+98:-         };
+99:-         BiFunction<? super Completable, ? super CompletableObserver, ? extends CompletableObserver> completableObserver2completableObserver = new BiFunction<Completable, CompletableObserver, CompletableObserver>() {
+100:-             @Override
+101:-             public CompletableObserver apply(Completable completable, CompletableObserver completableObserver) throws Exception {
+102:-                 return completableObserver;
+103:-             }
+104:-         };
+105:-         Function<? super Completable, ? extends Completable> completable2completable = new Function<Completable, Completable>() {
+106:-             @Override
+107:-             public Completable apply(Completable completable) throws Exception {
+108:-                 return completable;
+109:-             }
+110:-         };
+112:-         RxJavaPlugins.setInitComputationSchedulerHandler(callable2scheduler);
+113:-         RxJavaPlugins.setComputationSchedulerHandler(scheduler2scheduler);
+114:-         RxJavaPlugins.setIoSchedulerHandler(scheduler2scheduler);
+115:-         RxJavaPlugins.setNewThreadSchedulerHandler(scheduler2scheduler);
+116:-         RxJavaPlugins.setOnConnectableFlowableAssembly(connectableFlowable2ConnectableFlowable);
+118:-         RxJavaPlugins.setOnFlowableAssembly(flowable2Flowable);
+119:-         RxJavaPlugins.setOnFlowableSubscribe(flowable2subscriber);
+120:-         RxJavaPlugins.setOnMaybeAssembly(maybe2maybe);
+121:-         RxJavaPlugins.setOnMaybeSubscribe(maybe2observer);
+122:-         RxJavaPlugins.setOnObservableAssembly(observable2observable);
+123:-         RxJavaPlugins.setOnObservableSubscribe(observable2observer);
+124:-         RxJavaPlugins.setOnParallelAssembly(parallelFlowable2parallelFlowable);
+125:-         RxJavaPlugins.setOnSingleAssembly(single2single);
+126:-         RxJavaPlugins.setOnSingleSubscribe(single2observer);
+127:-         RxJavaPlugins.setScheduleHandler(runnable2runnable);
+128:-         RxJavaPlugins.setSingleSchedulerHandler(scheduler2scheduler);
+130:-         RxJavaPlugins.setOnCompletableAssembly(completable2completable);
+131:-         RxJavaPlugins.setInitSingleSchedulerHandler(callable2scheduler);
+132:-         RxJavaPlugins.setInitNewThreadSchedulerHandler(callable2scheduler);
+133:-         RxJavaPlugins.setInitIoSchedulerHandler(callable2scheduler);
+135:-         RxJavaPlugins.reset();
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 44
+Testing time : 2023-12-07 20:09:17
+gecs recommendation result of method checkBadSourceFlowable [2, 149]: 
+Recommending extracting code lines: 
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 45
+Testing time : 2023-12-07 20:09:41
+gecs recommendation result of method drain [2, 153]: 
+Recommending extracting code lines: 8, 9, 18, 19, 20, 21, 22, 23, 24, 26, 30, 34, 35, 36, 42, 43, 44, 52, 55, 59, 60, 64, 65, 67, 69, 70, 71, 72, 73, 74, 75, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 93, 95, 99, 103, 104, 108, 109, 111, 113, 114, 115, 116, 117, 118, 119, 127, 128, 136, 139, 140, 141, 143, 144, 150
+8:-     SpscLinkedArrayQueue<Object> q = queue;
+9:-     Observer<? super R> a = downstream;
+18:-             Throwable ex = error.get();
+19:-             if (ex != null) {
+20:-                 q.clear();
+21:-                 cancelAll();
+22:-                 errorAll(a);
+23:-                 return;
+24:-             }
+26:-             boolean d = active.get() == 0;
+30:-             boolean empty = mode == null;
+34:-                 lefts.clear();
+35:-                 rights.clear();
+36:-                 disposables.dispose();
+42:-             if (empty) {
+43:-                 break;
+44:-             }
+52:-                 int idx = leftIndex++;
+55:-                 ObservableSource<TLeftEnd> p;
+59:-                 } catch (Throwable exc) {
+60:-                     fail(exc, a, q);
+64:-                 LeftRightEndObserver end = new LeftRightEndObserver(this, true, idx);
+65:-                 disposables.add(end);
+67:-                 p.subscribe(end);
+69:-                 ex = error.get();
+70:-                 if (ex != null) {
+71:-                     q.clear();
+72:-                     cancelAll();
+73:-                     errorAll(a);
+74:-                     return;
+75:-                 }
+77:-                 for (TRight right : rights.values()) {
+78:- 
+79:-                     R w;
+80:- 
+81:-                     try {
+82:-                         w = Objects.requireNonNull(resultSelector.apply(left, right), "The resultSelector returned a null value");
+83:-                     } catch (Throwable exc) {
+84:-                         fail(exc, a, q);
+85:-                         return;
+86:-                     }
+87:- 
+88:-                     a.onNext(w);
+89:-                 }
+93:-                 TRight right = (TRight)val;
+95:-                 int idx = rightIndex++;
+99:-                 ObservableSource<TRightEnd> p;
+103:-                 } catch (Throwable exc) {
+104:-                     fail(exc, a, q);
+108:-                 LeftRightEndObserver end = new LeftRightEndObserver(this, false, idx);
+109:-                 disposables.add(end);
+111:-                 p.subscribe(end);
+113:-                 ex = error.get();
+114:-                 if (ex != null) {
+115:-                     q.clear();
+116:-                     cancelAll();
+117:-                     errorAll(a);
+118:-                     return;
+119:-                 }
+127:-                     } catch (Throwable exc) {
+128:-                         fail(exc, a, q);
+136:-                 LeftRightEndObserver end = (LeftRightEndObserver)val;
+139:-                 disposables.remove(end);
+140:-             } else {
+141:-                 LeftRightEndObserver end = (LeftRightEndObserver)val;
+143:-                 rights.remove(end.index);
+144:-                 disposables.remove(end);
+150:-             break;
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 46
+Testing time : 2023-12-07 20:09:57
+gecs recommendation result of method drain [2, 159]: 
+Recommending extracting code lines: 8, 9, 18, 19, 20, 21, 22, 23, 24, 26, 30, 33, 34, 35, 37, 38, 39, 45, 46, 47, 55, 56, 63, 64, 68, 69, 71, 73, 74, 75, 76, 77, 78, 79, 85, 86, 91, 92, 93, 94, 95, 96, 97, 99, 100, 101, 105, 107, 111, 115, 116, 120, 121, 123, 125, 126, 127, 128, 129, 130, 131, 133, 134, 135, 138, 140, 141, 142, 143, 144, 146, 147, 148, 149, 150, 151, 156
+8:-     SpscLinkedArrayQueue<Object> q = queue;
+9:-     Subscriber<? super R> a = downstream;
+18:-             Throwable ex = error.get();
+19:-             if (ex != null) {
+20:-                 q.clear();
+21:-                 cancelAll();
+22:-                 errorAll(a);
+23:-                 return;
+24:-             }
+26:-             boolean d = active.get() == 0;
+30:-             boolean empty = mode == null;
+33:-                 for (UnicastProcessor<?> up : lefts.values()) {
+34:-                     up.onComplete();
+35:-                 }
+37:-                 lefts.clear();
+38:-                 rights.clear();
+39:-                 disposables.dispose();
+45:-             if (empty) {
+46:-                 break;
+47:-             }
+55:-                 UnicastProcessor<TRight> up = UnicastProcessor.create();
+56:-                 int idx = leftIndex++;
+63:-                 } catch (Throwable exc) {
+64:-                     fail(exc, a, q);
+68:-                 LeftRightEndSubscriber end = new LeftRightEndSubscriber(this, true, idx);
+69:-                 disposables.add(end);
+71:-                 p.subscribe(end);
+73:-                 ex = error.get();
+74:-                 if (ex != null) {
+75:-                     q.clear();
+76:-                     cancelAll();
+77:-                     errorAll(a);
+78:-                     return;
+79:-                 }
+85:-                 } catch (Throwable exc) {
+86:-                     fail(exc, a, q);
+91:-                 if (requested.get() != 0L) {
+92:-                     a.onNext(w);
+93:-                     BackpressureHelper.produced(requested, 1);
+94:-                 } else {
+95:-                     fail(MissingBackpressureException.createDefault(), a, q);
+96:-                     return;
+97:-                 }
+99:-                 for (TRight right : rights.values()) {
+100:-                     up.onNext(right);
+101:-                 }
+105:-                 TRight right = (TRight)val;
+107:-                 int idx = rightIndex++;
+111:-                 Publisher<TRightEnd> p;
+115:-                 } catch (Throwable exc) {
+116:-                     fail(exc, a, q);
+120:-                 LeftRightEndSubscriber end = new LeftRightEndSubscriber(this, false, idx);
+121:-                 disposables.add(end);
+123:-                 p.subscribe(end);
+125:-                 ex = error.get();
+126:-                 if (ex != null) {
+127:-                     q.clear();
+128:-                     cancelAll();
+129:-                     errorAll(a);
+130:-                     return;
+131:-                 }
+133:-                 for (UnicastProcessor<TRight> up : lefts.values()) {
+134:-                     up.onNext(right);
+135:-                 }
+138:-                 LeftRightEndSubscriber end = (LeftRightEndSubscriber)val;
+140:-                 UnicastProcessor<TRight> up = lefts.remove(end.index);
+141:-                 disposables.remove(end);
+142:-                 if (up != null) {
+143:-                     up.onComplete();
+144:-                 }
+146:-             else {
+147:-                 LeftRightEndSubscriber end = (LeftRightEndSubscriber)val;
+148:- 
+149:-                 rights.remove(end.index);
+150:-                 disposables.remove(end);
+151:-             }
+156:-             break;
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 47
+Testing time : 2023-12-07 20:10:19
+gecs recommendation result of method checkClass [2, 172]: 
+Recommending extracting code lines: 3, 5, 6, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 167, 170
+3:-     List<Throwable> errors = TestHelper.trackPluginErrors();
+5:-         StringBuilder b = new StringBuilder();
+6:-         int fail = 0;
+9:-         for (Method m : clazz.getMethods()) {
+10:-             if (m.getDeclaringClass() != clazz) {
+11:-                 continue;
+12:-             }
+13:- 
+14:-             String key = clazz.getName() + " " + m.getName();
+15:- 
+16:-             List<ParamIgnore> ignoreList = ignores.get(key);
+17:-             if (ignoreList != null) {
+18:-                 for (ParamIgnore e : ignoreList) {
+19:-                     if (Arrays.equals(e.arguments, m.getParameterTypes())) {
+20:-                         System.out.println("CheckClass - ignore: " + m);
+21:-                         continue outer;
+22:-                     }
+23:-                 }
+24:-             }
+25:- 
+26:-             List<ParamOverride> overrideList = overrides.get(key);
+27:- 
+28:-             List<Object> baseObjects = new ArrayList<>();
+29:- 
+30:-             if ((m.getModifiers() & Modifier.STATIC) != 0) {
+31:-                 baseObjects.add(null);
+32:-                 baseObjects.add("NULL");
+33:-             } else {
+34:-                 List<Object> defaultInstancesList = defaultInstances.get(clazz);
+35:-                 if (defaultInstancesList == null) {
+36:-                     b.append("\r\nNo default instances for " + clazz);
+37:-                     fail++;
+38:-                     continue outer;
+39:-                 }
+40:-                 baseObjects.addAll(defaultInstancesList);
+41:-             }
+42:- 
+43:-             for (int ii = 0; ii < baseObjects.size(); ii += 2) {
+44:-                 Object baseObject = baseObjects.get(ii);
+45:-                 Object tag = baseObjects.get(ii + 1);
+46:-                 Class<?>[] params = m.getParameterTypes();
+47:-                 int n = params.length;
+48:- 
+49:-                 for (int i = 0; i < n; i++) {
+50:-                     ParamOverride overrideEntry = null;
+51:-                     if (overrideList != null) {
+52:-                         for (ParamOverride e : overrideList) {
+53:-                             if (e.index == i && Arrays.equals(e.arguments, params)) {
+54:-                                 overrideEntry = e;
+55:-                                 break;
+56:-                             }
+57:-                         }
+58:-                     }
+59:- 
+60:-                     Class<?> entryClass = params[i];
+61:- 
+62:-                     Object[] callParams = new Object[n];
+63:- 
+64:-                     for (int j = 0; j < n; j++) {
+65:-                         if (j != i) {
+66:-                             if (params[j].isPrimitive()) {
+67:-                                 ParamOverride overrideParam = null;
+68:-                                 if (overrideList != null) {
+69:-                                     for (ParamOverride e : overrideList) {
+70:-                                         if (e.index == j && Arrays.equals(e.arguments, params)) {
+71:-                                             overrideParam = e;
+72:-                                             break;
+73:-                                         }
+74:-                                     }
+75:-                                 }
+76:-                                 Object def = defaultPrimitive(params[j], overrideParam);
+77:-                                 if (def == null) {
+78:-                                     b.append("\r\nMissing default non-null value for " + m + " # " + j + " (" + params[j] + ")");
+79:-                                     fail++;
+80:-                                     continue outer;
+81:-                                 }
+82:-                                 callParams[j] = def;
+83:-                             } else {
+84:-                                 Object def = defaultValues.get(params[j]);
+85:-                                 if (def == null) {
+86:-                                     b.append("\r\nMissing default non-null value for " + m + " # " + j + " (" + params[j] + ")");
+87:-                                     fail++;
+88:-                                     continue outer;
+89:-                                 }
+90:-                                 callParams[j] = def;
+91:-                             }
+92:-                         }
+93:-                     }
+94:- 
+95:-                     List<Object> entryValues = new ArrayList<>();
+96:- 
+97:-                     if (entryClass.isPrimitive()) {
+98:-                         addCheckPrimitive(params[i], overrideEntry, entryValues);
+99:-                     } else {
+100:-                         entryValues.add(null);
+101:-                         entryValues.add(overrideEntry != null && overrideEntry.mode == ParamMode.ANY);
+102:- 
+103:-                         Object def = defaultValues.get(params[i]);
+104:-                         if (def == null) {
+105:-                             b.append("\r\nMissing default non-null value for " + m + " # " + i + " (" + params[i] + ")");
+106:-                             fail++;
+107:-                             continue outer;
+108:-                         }
+109:-                         entryValues.add(def);
+110:-                         entryValues.add(true);
+111:-                     }
+112:- 
+113:-                     for (int k = 0; k < entryValues.size(); k += 2) {
+114:-                         Object[] callParams2 = callParams.clone();
+115:- 
+116:-                         Object p = entryValues.get(k);
+117:-                         callParams2[i] = p;
+118:-                         boolean shouldSucceed = (Boolean)entryValues.get(k + 1);
+119:- 
+120:-                         boolean success = false;
+121:-                         Throwable error = null;
+122:-                         errors.clear();
+123:-                         try {
+124:-                             m.invoke(baseObject, callParams2);
+125:-                             success = true;
+126:-                         } catch (Throwable ex) {
+127:-                             // let it fail
+128:-                             error = ex;
+129:-                         }
+130:- 
+131:-                         if (!success && error.getCause() instanceof NullPointerException) {
+132:-                             if (!error.getCause().toString().contains("is null")) {
+133:-                                 fail++;
+134:-                                 b.append("\r\nNPEs should indicate which argument failed: " + m + " # " + i + " = " + p + ", tag = " + tag + ", params = " + Arrays.toString(callParams2));
+135:-                             }
+136:-                         }
+137:-                         if (success != shouldSucceed) {
+138:-                             fail++;
+139:-                             if (shouldSucceed) {
+140:-                                 b.append("\r\nFailed (should have succeeded): " + m + " # " + i + " = " + p + ", tag = " + tag + ", params = " + Arrays.toString(callParams2));
+141:-                                 b.append("\r\n    ").append(error);
+142:-                                 if (error.getCause() != null) {
+143:-                                     b.append("\r\n    ").append(error.getCause());
+144:-                                 }
+145:-                             } else {
+146:-                                 b.append("\r\nNo failure (should have failed): " + m + " # " + i + " = " + p + ", tag = " + tag + ", params = " + Arrays.toString(callParams2));
+147:-                             }
+148:-                             continue outer;
+149:-                         }
+150:-                         if (!errors.isEmpty()) {
+151:-                             fail++;
+152:-                             b.append("\r\nUndeliverable errors:");
+153:-                             for (Throwable err : errors) {
+154:-                                 b.append("\r\n    ").append(err);
+155:-                                 if (err.getCause() != null) {
+156:-                                     b.append("\r\n    ").append(err.getCause());
+157:-                                 }
+158:-                             }
+159:-                             continue outer;
+160:-                         }
+161:-                     }
+162:-                 }
+163:-             }
+164:-         }
+167:-             throw new AssertionError("Parameter validation problems: " + fail + b.toString());
+170:-         RxJavaPlugins.reset();
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 48
+Testing time : 2023-12-07 20:10:44
+gecs recommendation result of method completableDocRefersToCompletableTypes [2, 190]: 
+Recommending extracting code lines: 3, 5, 7, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 186, 188
+3:-     List<RxMethod> list = BaseTypeParser.parse(TestHelper.findSource("Completable"), "Completable");
+5:-     assertFalse(list.isEmpty());
+7:-     StringBuilder e = new StringBuilder();
+10:-         int jdx;
+11:-         if (m.javadoc != null) {
+12:-             jdx = 0;
+13:-             for (;;) {
+14:-                 int idx = m.javadoc.indexOf("onNext", jdx);
+15:-                 if (idx >= 0) {
+16:-                     if (!m.signature.contains("Publisher")
+17:-                             && !m.signature.contains("Flowable")
+18:-                             && !m.signature.contains("Observable")
+19:-                             && !m.signature.contains("ObservableSource")) {
+20:-                         e.append("java.lang.RuntimeException: Completable doc mentions onNext but no Flowable/Observable in signature\r\n at io.reactivex.rxjava3.core.")
+21:-                         .append("Completable.method(Completable.java:").append(m.javadocLine + lineNumber(m.javadoc, idx) - 1).append(")\r\n\r\n");
+22:-                     }
+23:- 
+24:-                     jdx = idx + 6;
+25:-                 } else {
+26:-                     break;
+27:-                 }
+28:-             }
+29:-             jdx = 0;
+30:-             for (;;) {
+31:-                 int idx = m.javadoc.indexOf("Subscriber", jdx);
+32:-                 if (idx >= 0) {
+33:-                     if (!m.signature.contains("Publisher")
+34:-                             && !m.signature.contains("Flowable")
+35:-                             && !m.signature.contains("TestSubscriber")) {
+36:-                         e.append("java.lang.RuntimeException: Completable doc mentions Subscriber but not using Flowable\r\n at io.reactivex.rxjava3.core.")
+37:-                         .append("Completable.method(Completable.java:").append(m.javadocLine + lineNumber(m.javadoc, idx) - 1).append(")\r\n\r\n");
+38:-                     }
+39:- 
+40:-                     jdx = idx + 6;
+41:-                 } else {
+42:-                     break;
+43:-                 }
+44:-             }
+45:-             jdx = 0;
+46:-             for (;;) {
+47:-                 int idx = m.javadoc.indexOf(" Subscription", jdx);
+48:-                 if (idx >= 0) {
+49:-                     if (!m.signature.contains("Flowable")
+50:-                             && !m.signature.contains("Publisher")
+51:-                     ) {
+52:-                         e.append("java.lang.RuntimeException: Completable doc mentions Subscription but not using Flowable\r\n at io.reactivex.rxjava3.core.")
+53:-                         .append("Completable.method(Completable.java:").append(m.javadocLine + lineNumber(m.javadoc, idx) - 1).append(")\r\n\r\n");
+54:-                     }
+55:- 
+56:-                     jdx = idx + 6;
+57:-                 } else {
+58:-                     break;
+59:-                 }
+60:-             }
+61:-             jdx = 0;
+62:-             for (;;) {
+63:-                 int idx = m.javadoc.indexOf("Observer", jdx);
+64:-                 if (idx >= 0) {
+65:-                     if (!m.signature.contains("ObservableSource")
+66:-                             && !m.signature.contains("Observable")
+67:-                             && !m.signature.contains("TestObserver")) {
+68:- 
+69:-                         if (idx < 11 || !m.javadoc.substring(idx - 11, idx + 8).equals("CompletableObserver")) {
+70:-                             e.append("java.lang.RuntimeException: Completable doc mentions Observer but not using Observable\r\n at io.reactivex.rxjava3.core.")
+71:-                             .append("Completable.method(Completable.java:").append(m.javadocLine + lineNumber(m.javadoc, idx) - 1).append(")\r\n\r\n");
+72:-                         }
+73:-                     }
+74:- 
+75:-                     jdx = idx + 6;
+76:-                 } else {
+77:-                     break;
+78:-                 }
+79:-             }
+80:-             jdx = 0;
+81:-             for (;;) {
+82:-                 int idx = m.javadoc.indexOf("Publisher", jdx);
+83:-                 if (idx >= 0) {
+84:-                     if (!m.signature.contains("Publisher")) {
+85:-                         if (idx == 0 || !m.javadoc.substring(idx - 1, idx + 9).equals("(Publisher")) {
+86:-                             e.append("java.lang.RuntimeException: Completable doc mentions Publisher but not in the signature\r\n at io.reactivex.rxjava3.core.")
+87:-                             .append("Completable.method(Completable.java:").append(m.javadocLine + lineNumber(m.javadoc, idx) - 1).append(")\r\n\r\n");
+88:-                         }
+89:-                     }
+90:- 
+91:-                     jdx = idx + 6;
+92:-                 } else {
+93:-                     break;
+94:-                 }
+95:-             }
+96:-             jdx = 0;
+97:-             for (;;) {
+98:-                 int idx = m.javadoc.indexOf("Flowable", jdx);
+99:-                 if (idx >= 0) {
+100:-                     if (!m.signature.contains("Flowable")) {
+101:-                         Pattern p = Pattern.compile("@see\\s+#[A-Za-z0-9 _.,()]*Flowable");
+102:-                         if (!p.matcher(m.javadoc).find()) {
+103:-                             e.append("java.lang.RuntimeException: Completable doc mentions Flowable but not in the signature\r\n at io.reactivex.rxjava3.core.")
+104:-                             .append("Completable.method(Completable.java:").append(m.javadocLine + lineNumber(m.javadoc, idx) - 1).append(")\r\n\r\n");
+105:-                         }
+106:-                     }
+107:-                     jdx = idx + 6;
+108:-                 } else {
+109:-                     break;
+110:-                 }
+111:-             }
+112:-             jdx = 0;
+113:-             for (;;) {
+114:-                 int idx = m.javadoc.indexOf("Single", jdx);
+115:-                 if (idx >= 0) {
+116:-                     if (!m.signature.contains("Single")) {
+117:-                         Pattern p = Pattern.compile("@see\\s+#[A-Za-z0-9 _.,()]*Single");
+118:-                         if (!p.matcher(m.javadoc).find()) {
+119:-                             e.append("java.lang.RuntimeException: Completable doc mentions Single but not in the signature\r\n at io.reactivex.rxjava3.core.")
+120:-                             .append("Completable.method(Completable.java:").append(m.javadocLine + lineNumber(m.javadoc, idx) - 1).append(")\r\n\r\n");
+121:-                         }
+122:-                     }
+123:-                     jdx = idx + 6;
+124:-                 } else {
+125:-                     break;
+126:-                 }
+127:-             }
+128:-             jdx = 0;
+129:-             for (;;) {
+130:-                 int idx = m.javadoc.indexOf("SingleSource", jdx);
+131:-                 if (idx >= 0) {
+132:-                     if (!m.signature.contains("SingleSource")) {
+133:-                         Pattern p = Pattern.compile("@see\\s+#[A-Za-z0-9 _.,()]*SingleSource");
+134:-                         if (!p.matcher(m.javadoc).find()) {
+135:-                             e.append("java.lang.RuntimeException: Completable doc mentions SingleSource but not in the signature\r\n at io.reactivex.rxjava3.core.")
+136:-                             .append("Completable.method(Completable.java:").append(m.javadocLine + lineNumber(m.javadoc, idx) - 1).append(")\r\n\r\n");
+137:-                         }
+138:-                     }
+139:-                     jdx = idx + 6;
+140:-                 } else {
+141:-                     break;
+142:-                 }
+143:-             }
+144:-             jdx = 0;
+145:-             for (;;) {
+146:-                 int idx = m.javadoc.indexOf(" Observable", jdx);
+147:-                 if (idx >= 0) {
+148:-                     if (!m.signature.contains("Observable")) {
+149:-                         Pattern p = Pattern.compile("@see\\s+#[A-Za-z0-9 _.,()]*Observable");
+150:-                         if (!p.matcher(m.javadoc).find()) {
+151:-                             e.append("java.lang.RuntimeException: Completable doc mentions Observable but not in the signature\r\n at io.reactivex.rxjava3.core.")
+152:-                             .append("Completable.method(Completable.java:").append(m.javadocLine + lineNumber(m.javadoc, idx) - 1).append(")\r\n\r\n");
+153:-                         }
+154:-                     }
+155:-                     jdx = idx + 6;
+156:-                 } else {
+157:-                     break;
+158:-                 }
+159:-             }
+160:-             jdx = 0;
+161:-             for (;;) {
+162:-                 int idx = m.javadoc.indexOf("ObservableSource", jdx);
+163:-                 if (idx >= 0) {
+164:-                     if (!m.signature.contains("ObservableSource")) {
+165:-                         Pattern p = Pattern.compile("@see\\s+#[A-Za-z0-9 _.,()]*ObservableSource");
+166:-                         if (!p.matcher(m.javadoc).find()) {
+167:-                             e.append("java.lang.RuntimeException: Completable doc mentions ObservableSource but not in the signature\r\n at io.reactivex.rxjava3.core.")
+168:-                             .append("Completable.method(Completable.java:").append(m.javadocLine + lineNumber(m.javadoc, idx) - 1).append(")\r\n\r\n");
+169:-                         }
+170:-                     }
+171:-                     jdx = idx + 6;
+172:-                 } else {
+173:-                     break;
+174:-                 }
+175:-             }
+176:- 
+177:-             checkAtReturnAndSignatureMatch("Completable", m, e, "Flowable", "Observable", "Maybe", "Single", "Completable", "Disposable", "Iterable", "Stream", "Future", "CompletionStage");
+178:- 
+179:-             aOrAn(e, m, "Completable");
+180:-             missingClosingDD(e, m, "Completable", "io.reactivex.rxjava3.core");
+181:-             backpressureMentionedWithoutAnnotation(e, m, "Completable");
+182:-         }
+186:-         System.out.println(e);
+188:-         fail(e.toString());
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 49
+Testing time : 2023-12-07 20:11:12
+gecs recommendation result of method testAtSpaceBoundaries [2, 88]: 
+Recommending extracting code lines: 25, 43, 58, 65, 66, 67, 68
+25:- 		iCodeMax = b.addInstruction(0, b.addr(-0x0002), b.host, b.buf(0xf4, 0));
+43:- 		dDataMin = b.addData(0, b.data(0x0000), IntegerDataType.dataType, b.buf(1, 2, 3, 4));
+58:- 		iCodeMax = b.addInstruction(0, b.addr(-0x0002), b.host, b.buf(0xf4, 0));
+65:- 	assertEquals(List.of(uCodePre, iCodeMax, dDataMin, uDataPost),
+66:- 		list(manager.codeUnits().get(0, b.addr(-0x0003), b.data(0x0004), true)));
+67:- 	assertEquals(List.of(uDataPost, dDataMin, iCodeMax, uCodePre),
+68:- 		list(manager.codeUnits().get(0, b.addr(-0x0003), b.data(0x0004), false)));
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 50
+Testing time : 2023-12-07 20:11:30
+gecs recommendation result of method disassembleRegion [2, 106]: 
+Recommending extracting code lines: 4, 13, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105
+4:- 	int alignment = currentProgram.getLanguage().getInstructionAlignment();
+13:- 		currentProgram.getLanguage().getParallelInstructionHelper();
+17:- 	for (AddressRange range : region.getAddressRanges(true)) {
+18:- 
+19:- 		Address nextAddr = range.getMinAddress();
+20:- 
+21:- 		InstructionBlock lastPseudoInstructionBlock = null;
+22:- 
+23:- 		while (nextAddr != null && nextAddr.compareTo(range.getMaxAddress()) <= 0) {
+24:- 
+25:- 			if ((nextAddr.getOffset() % alignment) != 0) {
+26:- 				nextAddr = nextAddr.next();
+27:- 				continue;
+28:- 			}
+29:- 
+30:- 			Instruction pseudoInstruction = null;
+31:- 			InstructionError error = null;
+32:- 
+33:- 			if (lastPseudoInstructionBlock != null) {
+34:- 				pseudoInstruction = lastPseudoInstructionBlock.getInstructionAt(nextAddr);
+35:- 				if (pseudoInstruction == null) {
+36:- 					error = lastPseudoInstructionBlock.getInstructionConflict();
+37:- 					if (error != null && !nextAddr.equals(error.getInstructionAddress())) {
+38:- 						error = null;
+39:- 					}
+40:- 				}
+41:- 			}
+42:- 
+43:- 			if (pseudoInstruction == null && error == null) {
+44:- 				memBuffer.setPosition(nextAddr);
+45:- 				lastPseudoInstructionBlock =
+46:- 					disassembler.pseudoDisassembleBlock(memBuffer, null, 1);
+47:- 				if (lastPseudoInstructionBlock != null) {
+48:- 					pseudoInstruction = lastPseudoInstructionBlock.getInstructionAt(nextAddr);
+49:- 					if (pseudoInstruction == null) {
+50:- 						error = lastPseudoInstructionBlock.getInstructionConflict();
+51:- 						if (error != null && !nextAddr.equals(error.getInstructionAddress())) {
+52:- 							error = null;
+53:- 						}
+54:- 					}
+55:- 				}
+56:- 			}
+57:- 
+58:- 			try {
+59:- 				if (pseudoInstruction != null) {
+60:- 					out.print(nextAddr.toString());
+61:- 					out.print(" ");
+62:- 					out.print(formatBytes(pseudoInstruction.getBytes()));
+63:- 					out.print(" ");
+64:- 
+65:- 					String prefix = null;
+66:- 					if (helper != null) {
+67:- 						prefix = helper.getMnemonicPrefix(pseudoInstruction);
+68:- 					}
+69:- 					if (prefix == null) {
+70:- 						prefix = "    ";
+71:- 					}
+72:- 					else {
+73:- 						prefix = StringUtilities.pad(prefix, ' ', -4);
+74:- 					}
+75:- 					out.println(prefix);
+76:- 
+77:- 					out.println(pseudoInstruction.toString());
+78:- 
+79:- 					nextAddr = pseudoInstruction.getMaxAddress().next();
+80:- 				}
+81:- 				else {
+82:- 					out.print(nextAddr.toString());
+83:- 					out.print(" ");
+84:- 					out.print(formatBytes(new byte[] { memBuffer.getByte(0) }));
+85:- 					out.print(" ERROR: ");
+86:- 					out.println(error.getConflictMessage());
+87:- 
+88:- 					nextAddr = nextAddr.add(alignment);
+89:- 				}
+90:- 
+91:- 				if ((++cnt % 20000) == 0) {
+92:- 					Msg.info(this, "Disassembled: " + cnt);
+93:- 				}
+94:- 			}
+95:- 			catch (AddressOutOfBoundsException e) {
+96:- 				nextAddr = null; // next range
+97:- 			}
+98:- 			catch (MemoryAccessException e) {
+99:- 				out.print(nextAddr.toString());
+100:- 				out.println(" ERROR: " + e.getMessage());
+101:- 				break;
+102:- 			}
+103:- 		}
+104:- 	}
+105:- 	Msg.info(this, "Disassembled: " + cnt + " instructions to " + outFile);
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 51
+Testing time : 2023-12-07 20:11:44
+gecs recommendation result of method testVersionLocalTruncationUpdate [2, 131]: 
+Recommending extracting code lines: 4
+4:- 	testVersionQuickUpdate();
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 52
+Testing time : 2023-12-07 20:11:57
+gecs recommendation result of method parseByte [2, 78]: 
+Recommending extracting code lines: 13, 14, 15, 75
+13:- 		if (c >= 'a' && c <= 'z') {
+14:- 			b = (byte) (c - 'a' + 0xe1);
+15:- 		}
+75:- 		throw new MDException("MDString parse error: invalid code1:" + c);
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 53
+Testing time : 2023-12-07 20:12:11
+gecs recommendation result of method grabFromFunction [2, 99]: 
+Recommending extracting code lines: 5, 28, 32, 38, 44, 46, 52, 53, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 93, 95
+5:- 	Variable locals[] = dbFunction.getLocalVariables();
+28:- 		VariableStorage storage = local.getVariableStorage();
+32:- 			id = symbol.getID();
+38:- 				newDynamicSymbol(id, name, dt, storage.getFirstVarnode().getOffset(), defAddr);
+44:- 				defAddr = dbFunction.getEntryPoint().addWrap(local.getFirstUseOffset());
+46:- 			sym = newMappedSymbol(id, name, dt, storage, defAddr, -1);
+52:- 	Parameter[] p = dbFunction.getParameters();
+53:- 	boolean lock = (dbFunction.getSignatureSource() != SourceType.DEFAULT);
+59:- 	for (int i = 0; i < p.length; ++i) {
+60:- 		Parameter var = p[i];
+61:- 		if (!var.isValid()) {
+62:- 			// TODO: exclude parameters which don't have valid storage ??
+63:- 			continue;
+64:- 		}
+65:- 		DataType dt = var.getDataType();
+66:- 		String name = var.getName();
+67:- 		if (name.length() > 2 && name.charAt(name.length() - 2) == '$') {
+68:- 			// An indication of names like "name", "name@1", "name@2"
+69:- 			if (name.charAt(name.length() - 1) == '1') {
+70:- 				if (mergeNames == null) {
+71:- 					mergeNames = new ArrayList<>();
+72:- 				}
+73:- 				mergeNames.add(name);
+74:- 			}
+75:- 		}
+76:- 		VariableStorage storage = var.getVariableStorage();
+77:- 		Address resAddr = storage.isStackStorage() ? null : pcaddr;
+78:- 		long id = 0;
+79:- 		Symbol symbol = var.getSymbol();
+80:- 		if (symbol != null) {
+81:- 			id = symbol.getID();
+82:- 		}
+83:- 		HighSymbol paramSymbol = newMappedSymbol(id, name, dt, storage, resAddr, i);
+84:- 		paramList.add(paramSymbol);
+85:- 		boolean namelock = true;
+86:- 		if (!includeDefaultNames) {
+87:- 			namelock = isUserDefinedName(name);
+88:- 		}
+89:- 		paramSymbol.setNameLock(namelock);
+90:- 		paramSymbol.setTypeLock(lock);
+91:- 	}
+93:- 	paramSymbols = new HighSymbol[paramList.size()];
+95:- 	Arrays.sort(paramSymbols, PARAM_SYMBOL_SLOT_COMPARATOR);
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 54
+Testing time : 2023-12-07 20:12:28
+gecs recommendation result of method processTag [2, 104]: 
+Recommending extracting code lines: 5, 6, 7, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 76, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101
+5:- 	if (tagBody.indexOf('<') >= 0 || tagBody.indexOf('>') >= 0) {
+6:- 		throw new IOException("Bad Tag at line " + lineNum);
+7:- 	}
+16:- 	for (int ix = 0; ix < end; ix++) {
+17:- 		char c = tagBody.charAt(ix);
+18:- 
+19:- 		switch (mode) {
+20:- 
+21:- 			case READING_ATTR:
+22:- 				if (c == '=') {
+23:- 					attr = buf.toString().toLowerCase();
+24:- 					mode = LOOKING_FOR_VALUE;
+25:- 					break;
+26:- 				}
+27:- 				if (c == ' ' || c == '\t') {
+28:- 					attr = buf.toString().toLowerCase();
+29:- 					map.put(attr, null);
+30:- 					mode = LOOKING_FOR_NEXT_ATTR;
+31:- 					break;
+32:- 				}
+33:- 				buf.append(c);
+34:- 				break;
+35:- 
+36:- 			case LOOKING_FOR_VALUE:
+37:- 				if (c == ' ' || c == '\t') {
+38:- 					// we now allow spaces after the '=', but before the '"' starts, as our 
+39:- 					// tidy tool breaks on the '=' sometimes
+40:- 					//map.put(attr, null);
+41:- 					//mode = LOOKING_FOR_NEXT_ATTR;
+42:- 					break;
+43:- 				}
+44:- 				if (c == '"' || c == '\'') {
+45:- 					buf = new StringBuffer();
+46:- 					mode = READING_VALUE;
+47:- 					term = c;
+48:- 					break;
+49:- 				}
+50:- 				buf = new StringBuffer();
+51:- 				buf.append(c);
+52:- 				mode = READING_VALUE;
+53:- 				term = 0;
+54:- 				break;
+55:- 
+56:- 			case READING_VALUE:
+57:- 				if (c == term || (term == 0 && (c == ' ' || c == '\t'))) {
+58:- 					map.put(attr, buf.toString());
+59:- 					mode = LOOKING_FOR_NEXT_ATTR;
+60:- 					break;
+61:- 				}
+62:- 				buf.append(c);
+63:- 				break;
+64:- 
+65:- 			default:
+66:- 				if (c == ' ' || c == '\t') {
+67:- 					continue;
+68:- 				}
+69:- 				buf = new StringBuffer();
+70:- 				buf.append(c);
+71:- 				mode = READING_ATTR;
+72:- 		}
+73:- 	}
+76:- 		map.put(buf.toString().toLowerCase(), null);
+88:- 	buf.append('<');
+89:- 	buf.append(tagType);
+90:- 	Iterator<String> iter = map.keySet().iterator();
+91:- 	while (iter.hasNext()) {
+92:- 		attr = iter.next();
+93:- 		String value = map.get(attr);
+94:- 		buf.append(' ');
+95:- 		buf.append(attr);
+96:- 		if (value != null) {
+97:- 			buf.append("=\"");
+98:- 			buf.append(value);
+99:- 			buf.append("\"");
+100:- 		}
+101:- 	}
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 55
+Testing time : 2023-12-07 20:12:48
+gecs recommendation result of method flowConstants [2, 188]: 
+Recommending extracting code lines: 14, 16, 17, 20, 21, 22, 23, 24, 25, 26, 27, 30, 33, 34, 42, 43, 44, 45, 50, 51, 54, 55, 93, 94, 95, 96, 97, 98, 99, 100, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 147, 148, 149, 167, 175, 176, 177, 178, 179, 181
+14:- 				FlowType ftype = instr.getFlowType();
+16:- 					Varnode pcVal = context.getRegisterVarnodeValue(
+17:- 						program.getLanguage().getProgramCounter());
+20:- 							!instr.getFlowType().isTerminal()) {
+21:- 							// need to set the return override
+22:- 							instr.setFlowOverride(FlowOverride.RETURN);
+23:- 							// get rid of any references that might have been put on from
+24:- 							// bad flows
+25:- 							ReferenceManager refMgr = program.getReferenceManager();
+26:- 							refMgr.removeAllReferencesFrom(instr.getAddress());
+27:- 						}
+30:- 					Varnode lrVal = context.getRegisterVarnodeValue(lrRegister);
+33:- 							long target = lrVal.getAddress().getOffset();
+34:- 							Address addr = instr.getMaxAddress().add(1);
+42:- 								if (instr.getFlowOverride() != FlowOverride.NONE) {
+43:- 									return false;
+44:- 								}
+45:- 								instr.setFlowOverride(FlowOverride.CALL);
+50:- 								Function f = program.getFunctionManager().getFunctionContaining(
+51:- 									instr.getMinAddress());
+54:- 										CreateFunctionCmd.fixupFunctionBody(program, f,
+55:- 											monitor);
+93:- 			private boolean isLinkRegister(VarnodeContext context, Varnode pcVal) {
+94:- 				return (pcVal.isRegister() &&
+95:- 					pcVal.getAddress().equals(lrRegister.getAddress())) ||
+96:- 					(context.isSymbol(pcVal) &&
+97:- 						pcVal.getAddress().getAddressSpace().getName().equals(
+98:- 							lrRegister.getName()) &&
+99:- 						pcVal.getOffset() == 0);
+100:- 			}
+106:- 					program.getMemory().contains(address) && address.getOffset() != 0) {
+107:- 					if (instr.getMnemonicString().startsWith("tb")) {
+108:- 						return false;
+109:- 					}
+110:- 					doArmThumbDisassembly(program, instr, context, address, instr.getFlowType(),
+111:- 						true, monitor);
+112:- 					super.evaluateReference(context, instr, pcodeop, address, size, dataType, refType);
+113:- 					return !symEval.encounteredBranch();
+114:- 				}
+115:- 				if (refType.isData() && program.getMemory().contains(address)) {
+116:- 					if (refType.isRead() || refType.isWrite()) {
+117:- 						int numOperands = instr.getNumOperands();
+118:- 						// if two operands, then all read/write refs go on the 2nd operand
+119:- 						createData(program, address, size);
+120:- 						if (numOperands <= 2) {
+121:- 							instr.addOperandReference(instr.getNumOperands() - 1, address, refType,
+122:- 								SourceType.ANALYSIS);
+123:- 							return false;
+124:- 						}
+125:- 						return true;
+126:- 					}
+127:- 				}
+128:- 				else if (refType.isCall() && refType.isComputed() && !address.isExternalAddress()) {
+129:- 					// must disassemble right now, because TB flag could get set back at end of blx
+130:- 					doArmThumbDisassembly(program, instr, context, address, instr.getFlowType(),
+131:- 						true, monitor);
+132:- 				}
+147:- 					(refs.length == 1 && refs[0].getReferenceType().isData()) ||
+148:- 					symEval.encounteredBranch()) {
+149:- 					destSet.addRange(instruction.getMinAddress(), instruction.getMinAddress());
+167:- 						instruction.setFlowOverride(FlowOverride.BRANCH);
+175:- 	eval.setTrustWritableMemory(trustWriteMemOption)
+176:- 	    .setMinpeculativeOffset(minSpeculativeRefAddress)
+177:- 	    .setMaxSpeculativeOffset(maxSpeculativeRefAddress)
+178:- 	    .setMinStoreLoadOffset(minStoreLoadRefAddress)
+179:- 	    .setCreateComplexDataFromPointers(createComplexDataFromPointers);
+181:- 	AddressSet resultSet = symEval.flowConstants(flowStart, flowSet, eval, true, monitor);
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 56
+Testing time : 2023-12-07 20:13:05
+gecs recommendation result of method updateFunction [2, 167]: 
+Recommending extracting code lines: 54, 55, 56, 57, 58, 59, 61, 62, 63, 71, 72, 73, 74, 75, 76, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 117, 118, 124, 125, 126, 127, 128, 129, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 153, 154, 155, 160
+54:- 				CompilerSpec.CALLING_CONVENTION_thiscall.equals(callingConvention) &&
+55:- 				newParams.size() != 0) {
+56:- 				// Attempt to remove inferred unnamed 'this' parameter
+57:- 				// WARNING! This is a bit of a hack - not sure how to account for what may be auto-params
+58:- 				// within a list of parameters computed via analysis
+59:- 				Variable firstParam = newParams.get(0);
+61:- 					firstParam.getLength() == program.getDefaultPointerSize()) {
+62:- 					newParams.remove(0);
+63:- 				}
+71:- 		for (Symbol s : program.getSymbolTable().getSymbols(this)) {
+72:- 			if (s.getSource() != SourceType.DEFAULT &&
+73:- 				s.getSymbolType() != SymbolType.PARAMETER) {
+74:- 				nonParamNames.add(s.getName());
+75:- 			}
+76:- 		}
+81:- 		for (int i = 0; i < newParams.size(); i++) {
+82:- 			Variable p = newParams.get(i);
+83:- 			if (!useCustomStorage && (p instanceof AutoParameterImpl)) {
+84:- 				continue;
+85:- 			}
+86:- 			if (p.isUniqueVariable()) {
+87:- 				throw new IllegalArgumentException(
+88:- 					"Invalid parameter specified: UniqueVariable not allowed");
+89:- 			}
+90:- 			checkForParameterNameConflict(p, newParams, nonParamNames);
+91:- 			clonedParams.add(getResolvedVariable(p, false, !useCustomStorage));
+92:- 		}
+117:- 			oldParam.setName(newParam.getName(), newParam.getSource());
+118:- 			oldParam.setStorageAndDataType(newParam.getVariableStorage(), dt);
+124:- 		for (int i = newParamIndex; i < oldParams.size(); i++) {
+125:- 			ParameterDB oldParam = oldParams.get(i);
+126:- 			Symbol s = oldParam.getSymbol();
+127:- 			symbolMap.remove(s);
+128:- 			s.delete();
+129:- 		}
+133:- 		for (int i = newParamIndex; i < newParams.size(); i++) {
+134:- 			Variable newParam = newParams.get(i);
+135:- 			DataType dt = (newParam instanceof Parameter && !useCustomStorage)
+136:- 					? ((Parameter) newParam).getFormalDataType()
+137:- 					: newParam.getDataType();
+138:- 			VariableStorage storage = useCustomStorage ? newParam.getVariableStorage()
+139:- 					: VariableStorage.UNASSIGNED_STORAGE;
+140:- 			String name = newParam.getName();
+141:- 			if (name == null || name.length() == 0) {
+142:- 				name = SymbolUtilities.getDefaultParamName(i);
+143:- 			}
+144:- 			VariableSymbolDB s = symbolMgr.createVariableSymbol(name, this,
+145:- 				SymbolType.PARAMETER, i, storage, newParam.getSource());
+146:- 			s.setStorageAndDataType(storage, dt);
+147:- 			ParameterDB paramDb = new ParameterDB(this, s);
+148:- 			paramDb.setComment(newParam.getComment());
+149:- 			params.add(i, paramDb);
+150:- 			symbolMap.put(s, paramDb);
+151:- 		}
+153:- 		if (source.isHigherPriorityThan(getStoredSignatureSource())) {
+154:- 			setSignatureSource(source);
+155:- 		}
+160:- 		manager.functionChanged(this, ChangeManager.FUNCTION_CHANGED_PARAMETERS);
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 57
+Testing time : 2023-12-07 20:13:21
+gecs recommendation result of method testOperandFieldOptions [2, 145]: 
+Recommending extracting code lines: 4, 6, 29, 30, 33, 39, 43, 45, 51, 52, 56, 60, 64, 66, 68, 72, 76, 82, 86, 88, 92, 99, 105, 114, 117, 127, 130
+4:- 	showTool(tool);
+6:- 	Options options = tool.getOptions(GhidraOptions.CATEGORY_BROWSER_FIELDS);
+29:- 	assertTrue(cb.goToField(addr("0x100eee0"), "Address", 0, 0));
+30:- 	ListingTextField btf = (ListingTextField) cb.getCurrentField();
+33:- 	options.setBoolean(names.get(4), true);
+39:- 	assertTrue(cb.goToField(addr("0x1002d06"), "Operands", 0, 0));
+43:- 	options.setBoolean(names.get(9), false);
+45:- 	cb.goToField(addr("0x1002d06"), "Operands", 0, 0);
+51:- 	Command cmd = new AddRegisterRefCmd(addr("0x1002d0b"), 0, program.getRegister("EDI"),
+52:- 		SourceType.USER_DEFINED);
+56:- 	assertTrue(cb.goToField(addr("0x1002d0b"), "Operands", 0, 0));
+60:- 	assertTrue(cb.goToField(addr("0x1002d0f"), "Operands", 0, 0));
+64:- 	options.setBoolean(names.get(7), true);
+66:- 	cb.goToField(addr("0x1002d0f"), "Operands", 0, 0);
+68:- 	assertEquals("local_EDI_22,local_EDI_22", btf.getText());
+72:- 	cb.goToField(addr("0x1002d0f"), "Operands", 0, 0);
+76:- 	cb.goToField(addr("0x1002d0b"), "Operands", 0, 0);
+82:- 	cb.goToField(addr("0x100eee0"), "Operands", 0, 0);
+86:- 	options.setBoolean(names.get(4), false);
+88:- 	cb.goToField(addr("0x100eee0"), "Operands", 0, 0);
+92:- 	assertTrue(cb.goToField(addr("0x10061a7"), "Operands", 0, 0));
+99:- 	cb.goToField(addr("0x10061a7"), "Operands", 0, 0);
+105:- 	cb.goToField(addr("0x1003daa"), "Operands", 0, 0);
+114:- 	options.setCustomOption(names.get(3), namespaceOption);
+117:- 	cb.goToField(addr("0x1003daa"), "Operands", 0, 0);
+127:- 	options.setCustomOption(names.get(3), namespaceOption);
+130:- 	cb.goToField(addr("0x1003daa"), "Operands", 0, 0);
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 58
+Testing time : 2023-12-07 20:13:47
+gecs recommendation result of method getRecord [2, 168]: 
+Recommending extracting code lines: 4, 6, 7, 8, 9, 10, 11, 25, 31, 32, 33, 38, 42, 78, 82, 83, 84, 115, 116, 120, 130, 131, 132, 137, 159
+4:- 	String op = Long.toString(ref[1]);
+6:- 	 * However, it does use "array type codes" to determine the primitive 
+7:- 	 * type of the elements of the new array.  We use the cpool operator to
+8:- 	 * look up the string token corresponding to the primitive type.
+9:- 	 */
+10:- 	if (op.equals(CPOOL_NEWARRAY)) {
+11:- 		res.tag = ConstantPool.POINTER_METHOD;
+25:- 	AbstractConstantPoolInfoJava poolRef = constantPool[(int) ref[0]];
+31:- 			int name_index = ((ConstantPoolClassInfo) poolRef).getNameIndex();
+32:- 			String fullyQualifiedName =
+33:- 				((ConstantPoolUtf8Info) constantPool[name_index]).getString();
+38:- 				sb.append(CategoryPath.DELIMITER_CHAR);
+42:- 			res.type = new PointerDataType(dtManager.getDataType(dataPath));
+78:- 			name_and_type_index = refInfo.getNameAndTypeIndex();
+82:- 		case CPOOL_INVOKESTATIC:
+83:- 			refInfo = (AbstractConstantPoolReferenceInfo) poolRef;
+84:- 			name_and_type_index = refInfo.getNameAndTypeIndex();
+115:- 				res.type = DescriptorDecoder.getReferenceTypeOfDescriptor("java/lang/String",
+116:- 					dtManager, false);
+120:- 				name_index = ((ConstantPoolClassInfo) poolRef).getNameIndex();
+130:- 				name_index = ((ConstantPoolMethodTypeInfo) poolRef).getDescriptorIndex();
+131:- 				res.token = ((ConstantPoolUtf8Info) constantPool[name_index]).getString();
+132:- 				res.type = dtManager.getPointer(DWordDataType.dataType);
+137:- 				res.type = dtManager.getPointer(DWordDataType.dataType);
+159:- 			int nameIndex = ((ConstantPoolClassInfo) poolRef).getNameIndex();
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 59
+Testing time : 2023-12-07 20:14:10
+gecs recommendation result of method testAddSynchronizedDomainObject [2, 300]: 
+Recommending extracting code lines: 4, 23, 24, 29, 30, 31, 32, 34, 37, 40, 51, 54, 67, 68, 72, 89, 100, 112, 113, 126, 127, 131, 148, 155, 156, 158, 170, 171, 173, 174, 187, 188, 207, 208, 210, 211, 216, 217, 218, 219, 231, 232, 234, 235, 248, 253, 267, 269, 270, 278, 280, 292
+4:- 	assertNull(obj1.getCurrentTransactionInfo());
+23:- 	assertNull(obj1.getSynchronizedDomainObjects());
+24:- 	assertNull(obj2.getSynchronizedDomainObjects());
+29:- 	catch (LockException e) {
+30:- 		e.printStackTrace();
+31:- 		Assert.fail(e.getMessage());
+32:- 	}
+34:- 	DomainObject[] synchronizedDomainObjects = obj1.getSynchronizedDomainObjects();
+37:- 	assertEquals(obj1, synchronizedDomainObjects[0]);
+40:- 	assertArrayEquals(synchronizedDomainObjects, obj2.getSynchronizedDomainObjects());
+51:- 	assertEquals(UNDO_STATE_CHANGE1, events1[events1.length - 1]);
+54:- 	assertEquals(UNDO_STATE_CHANGE2, events2[events2.length - 1]);
+67:- 		assertTrue(Arrays.equals(new String[] { START, UNDO_STATE_CHANGE1 }, events1));
+68:- 		assertTrue(Arrays.equals(new String[] { START, UNDO_STATE_CHANGE2 }, events2));
+72:- 			propertyList2.setString("A2.B2", "TestB2");
+89:- 		assertEquals("TestB2", propertyList2.getString("A2.B2", "NULL"));
+100:- 	assertNull(obj1.getCurrentTransactionInfo());
+112:- 	assertTrue(Arrays.equals(new String[] { END, UNDO_STATE_CHANGE1 }, events1));
+113:- 	assertTrue(Arrays.equals(new String[] { END, UNDO_STATE_CHANGE2 }, events2));
+126:- 		assertTrue(Arrays.equals(new String[] { START, UNDO_STATE_CHANGE1 }, events1));
+127:- 		assertTrue(Arrays.equals(new String[] { START, UNDO_STATE_CHANGE2 }, events2));
+131:- 			propertyList2.setString("A2.B2", "TestB2");
+148:- 		assertEquals("TestB2", propertyList2.getString("A2.B2", "NULL"));
+155:- 	assertEquals("TestB1", propertyList1.getString("A1.B1", "NULL"));
+156:- 	assertEquals("TestB2", propertyList2.getString("A2.B2", "NULL"));
+158:- 	assertNull(obj1.getCurrentTransactionInfo());
+170:- 	assertTrue(Arrays.equals(new String[] { END, UNDO_STATE_CHANGE1 }, events1));
+171:- 	assertTrue(Arrays.equals(new String[] { END, UNDO_STATE_CHANGE2 }, events2));
+173:- 	assertEquals("obj1: Test1\nobj2: Test2", obj1.getUndoName());
+174:- 	assertEquals("obj1: Test1\nobj2: Test2", obj2.getUndoName());
+187:- 	assertTrue(Arrays.equals(new String[] { UNDO_STATE_CHANGE1 }, events1));
+188:- 	assertTrue(Arrays.equals(new String[] { UNDO_STATE_CHANGE2 }, events2));
+207:- 	assertTrue(Arrays.equals(new String[] { UNDO_STATE_CHANGE1 }, events1));
+208:- 	assertTrue(Arrays.equals(new String[] { UNDO_STATE_CHANGE2 }, events2));
+210:- 	assertEquals("TestB1", propertyList1.getString("A1.B1", "NULL"));
+211:- 	assertEquals("TestB2", propertyList2.getString("A2.B2", "NULL"));
+216:- 	catch (LockException e) {
+217:- 		e.printStackTrace();
+218:- 		Assert.fail();
+219:- 	}
+231:- 	assertTrue(Arrays.equals(new String[] { UNDO_STATE_CHANGE1 }, events1));
+232:- 	assertTrue(Arrays.equals(new String[] { UNDO_STATE_CHANGE2 }, events2));
+234:- 	assertEquals("TestB1", propertyList1.getString("A1.B1", "NULL"));
+235:- 	assertEquals("TestB2", propertyList2.getString("A2.B2", "NULL"));
+248:- 		assertTrue(Arrays.equals(new String[] { START, UNDO_STATE_CHANGE1 }, events1));
+253:- 			propertyList2.setString("A2.C2", "TestC2");
+267:- 		assertTrue(Arrays.equals(new String[] { END, UNDO_STATE_CHANGE2 }, events2));
+269:- 		assertEquals("TestC1", propertyList1.getString("A1.C1", "NULL"));
+270:- 		assertEquals("TestC2", propertyList2.getString("A2.C2", "NULL"));
+278:- 	assertEquals("TestC2", propertyList2.getString("A2.C2", "NULL"));
+280:- 	assertNull(obj1.getCurrentTransactionInfo());
+292:- 	assertTrue(Arrays.equals(new String[] { END, UNDO_STATE_CHANGE1 }, events1));
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 60
+Testing time : 2023-12-07 20:16:25
+gecs recommendation result of method processType [2, 1924]: 
+Recommending extracting code lines: 
+-----------------------------------------------------------------------------------------------

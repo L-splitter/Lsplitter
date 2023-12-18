@@ -1,0 +1,2301 @@
+-----------------------------------------------------------------------------------------------
+Testing data : 1
+Testing time : 2023-12-07 19:48:00
+gecs recommendation result of method getDefaultNamedXContents [2, 83]: 
+Recommending extracting code lines: 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 35, 36, 37, 38, 39, 41, 42, 43, 44, 45, 46, 47, 48, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 62, 63, 64, 65, 66, 69, 70, 71, 72, 73, 76, 77, 78, 79, 80
+3:-     Map<String, ContextParser<Object, ? extends Aggregation>> map = new HashMap<>();
+4:-     map.put(CardinalityAggregationBuilder.NAME, (p, c) -> ParsedCardinality.fromXContent(p, (String) c));
+5:-     map.put(InternalHDRPercentiles.NAME, (p, c) -> ParsedHDRPercentiles.fromXContent(p, (String) c));
+6:-     map.put(InternalHDRPercentileRanks.NAME, (p, c) -> ParsedHDRPercentileRanks.fromXContent(p, (String) c));
+7:-     map.put(InternalTDigestPercentiles.NAME, (p, c) -> ParsedTDigestPercentiles.fromXContent(p, (String) c));
+8:-     map.put(InternalTDigestPercentileRanks.NAME, (p, c) -> ParsedTDigestPercentileRanks.fromXContent(p, (String) c));
+9:-     map.put(PercentilesBucketPipelineAggregationBuilder.NAME, (p, c) -> ParsedPercentilesBucket.fromXContent(p, (String) c));
+10:-     map.put(MedianAbsoluteDeviationAggregationBuilder.NAME, (p, c) -> ParsedMedianAbsoluteDeviation.fromXContent(p, (String) c));
+11:-     map.put(MinAggregationBuilder.NAME, (p, c) -> ParsedMin.fromXContent(p, (String) c));
+12:-     map.put(MaxAggregationBuilder.NAME, (p, c) -> ParsedMax.fromXContent(p, (String) c));
+13:-     map.put(SumAggregationBuilder.NAME, (p, c) -> ParsedSum.fromXContent(p, (String) c));
+14:-     map.put(AvgAggregationBuilder.NAME, (p, c) -> ParsedAvg.fromXContent(p, (String) c));
+15:-     map.put(WeightedAvgAggregationBuilder.NAME, (p, c) -> ParsedWeightedAvg.fromXContent(p, (String) c));
+16:-     map.put(ValueCountAggregationBuilder.NAME, (p, c) -> ParsedValueCount.fromXContent(p, (String) c));
+17:-     map.put(InternalSimpleValue.NAME, (p, c) -> ParsedSimpleValue.fromXContent(p, (String) c));
+18:-     map.put(DerivativePipelineAggregationBuilder.NAME, (p, c) -> ParsedDerivative.fromXContent(p, (String) c));
+19:-     map.put(InternalBucketMetricValue.NAME, (p, c) -> ParsedBucketMetricValue.fromXContent(p, (String) c));
+20:-     map.put(StatsAggregationBuilder.NAME, (p, c) -> ParsedStats.fromXContent(p, (String) c));
+21:-     map.put(StatsBucketPipelineAggregationBuilder.NAME, (p, c) -> ParsedStatsBucket.fromXContent(p, (String) c));
+22:-     map.put(ExtendedStatsAggregationBuilder.NAME, (p, c) -> ParsedExtendedStats.fromXContent(p, (String) c));
+23:-     map.put(ExtendedStatsBucketPipelineAggregationBuilder.NAME, (p, c) -> ParsedExtendedStatsBucket.fromXContent(p, (String) c));
+24:-     map.put(GeoBoundsAggregationBuilder.NAME, (p, c) -> ParsedGeoBounds.fromXContent(p, (String) c));
+25:-     map.put(GeoCentroidAggregationBuilder.NAME, (p, c) -> ParsedGeoCentroid.fromXContent(p, (String) c));
+26:-     map.put(HistogramAggregationBuilder.NAME, (p, c) -> ParsedHistogram.fromXContent(p, (String) c));
+27:-     map.put(DateHistogramAggregationBuilder.NAME, (p, c) -> ParsedDateHistogram.fromXContent(p, (String) c));
+28:-     map.put(AutoDateHistogramAggregationBuilder.NAME, (p, c) -> ParsedAutoDateHistogram.fromXContent(p, (String) c));
+29:-     map.put(VariableWidthHistogramAggregationBuilder.NAME, (p, c) -> ParsedVariableWidthHistogram.fromXContent(p, (String) c));
+30:-     map.put(StringTerms.NAME, (p, c) -> ParsedStringTerms.fromXContent(p, (String) c));
+31:-     map.put(LongTerms.NAME, (p, c) -> ParsedLongTerms.fromXContent(p, (String) c));
+32:-     map.put(DoubleTerms.NAME, (p, c) -> ParsedDoubleTerms.fromXContent(p, (String) c));
+33:-     map.put(LongRareTerms.NAME, (p, c) -> ParsedLongRareTerms.fromXContent(p, (String) c));
+35:-     map.put(MissingAggregationBuilder.NAME, (p, c) -> ParsedMissing.fromXContent(p, (String) c));
+36:-     map.put(NestedAggregationBuilder.NAME, (p, c) -> ParsedNested.fromXContent(p, (String) c));
+37:-     map.put(ReverseNestedAggregationBuilder.NAME, (p, c) -> ParsedReverseNested.fromXContent(p, (String) c));
+38:-     map.put(GlobalAggregationBuilder.NAME, (p, c) -> ParsedGlobal.fromXContent(p, (String) c));
+39:-     map.put(FilterAggregationBuilder.NAME, (p, c) -> ParsedFilter.fromXContent(p, (String) c));
+41:-     map.put(GeoHashGridAggregationBuilder.NAME, (p, c) -> ParsedGeoHashGrid.fromXContent(p, (String) c));
+42:-     map.put(GeoTileGridAggregationBuilder.NAME, (p, c) -> ParsedGeoTileGrid.fromXContent(p, (String) c));
+43:-     map.put(RangeAggregationBuilder.NAME, (p, c) -> ParsedRange.fromXContent(p, (String) c));
+44:-     map.put(DateRangeAggregationBuilder.NAME, (p, c) -> ParsedDateRange.fromXContent(p, (String) c));
+45:-     map.put(GeoDistanceAggregationBuilder.NAME, (p, c) -> ParsedGeoDistance.fromXContent(p, (String) c));
+46:-     map.put(FiltersAggregationBuilder.NAME, (p, c) -> ParsedFilters.fromXContent(p, (String) c));
+47:-     map.put(AdjacencyMatrixAggregationBuilder.NAME, (p, c) -> ParsedAdjacencyMatrix.fromXContent(p, (String) c));
+48:-     map.put(SignificantLongTerms.NAME, (p, c) -> ParsedSignificantLongTerms.fromXContent(p, (String) c));
+50:-     map.put(ScriptedMetricAggregationBuilder.NAME, (p, c) -> ParsedScriptedMetric.fromXContent(p, (String) c));
+51:-     map.put(IpRangeAggregationBuilder.NAME, (p, c) -> ParsedBinaryRange.fromXContent(p, (String) c));
+52:-     map.put(TopHitsAggregationBuilder.NAME, (p, c) -> ParsedTopHits.fromXContent(p, (String) c));
+53:-     map.put(CompositeAggregationBuilder.NAME, (p, c) -> ParsedComposite.fromXContent(p, (String) c));
+54:-     map.put(StringStatsAggregationBuilder.NAME, (p, c) -> ParsedStringStats.PARSER.parse(p, (String) c));
+55:-     map.put(TopMetricsAggregationBuilder.NAME, (p, c) -> ParsedTopMetrics.PARSER.parse(p, (String) c));
+56:-     map.put(TimeSeriesAggregationBuilder.NAME, (p, c) -> ParsedTimeSeries.fromXContent(p, (String) (c)));
+57:-     List<NamedXContentRegistry.Entry> entries = map.entrySet()
+58:-         .stream()
+59:-         .map(entry -> new NamedXContentRegistry.Entry(Aggregation.class, new ParseField(entry.getKey()), entry.getValue()))
+60:-         .collect(Collectors.toList());
+62:-         new NamedXContentRegistry.Entry(
+63:-             Suggest.Suggestion.class,
+64:-             new ParseField(TermSuggestionBuilder.SUGGESTION_NAME),
+65:-             (parser, context) -> TermSuggestion.fromXContent(parser, (String) context)
+66:-         )
+69:-         new NamedXContentRegistry.Entry(
+70:-             Suggest.Suggestion.class,
+71:-             new ParseField(PhraseSuggestionBuilder.SUGGESTION_NAME),
+72:-             (parser, context) -> PhraseSuggestion.fromXContent(parser, (String) context)
+73:-         )
+76:-         new NamedXContentRegistry.Entry(
+77:-             Suggest.Suggestion.class,
+78:-             new ParseField(CompletionSuggestionBuilder.SUGGESTION_NAME),
+79:-             (parser, context) -> CompletionSuggestion.fromXContent(parser, (String) context)
+80:-         )
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 2
+Testing time : 2023-12-07 19:48:12
+gecs recommendation result of method testExecuteFailedActionTransform [2, 83]: 
+Recommending extracting code lines: 4, 5, 6, 7, 8, 10, 11, 12, 14, 15, 16, 19, 20, 21, 23, 26, 27, 28, 29, 32, 33, 36, 43, 44, 45, 46, 50, 51, 52, 54, 57, 59, 61, 62, 63, 64, 65, 67, 68, 69, 70, 71, 72, 73, 74, 75, 77, 79, 80, 82
+4:-     when(watch.id()).thenReturn("_id");
+5:-     GetResponse getResponse = mock(GetResponse.class);
+6:-     when(getResponse.isExists()).thenReturn(true);
+7:-     mockGetWatchResponse(client, "_id", getResponse);
+8:-     when(parser.parseWithSecrets(eq(watch.id()), eq(true), any(), any(), any(), anyLong(), anyLong())).thenReturn(watch);
+10:-     ZonedDateTime now = clock.instant().atZone(ZoneOffset.UTC);
+11:-     ScheduleTriggerEvent event = new ScheduleTriggerEvent("_id", now, now);
+12:-     TriggeredExecutionContext context = new TriggeredExecutionContext(watch.id(), now, event, timeValueSeconds(5));
+14:-     Condition.Result conditionResult = InternalAlwaysCondition.RESULT_INSTANCE;
+15:-     ExecutableCondition condition = mock(ExecutableCondition.class);
+16:-     when(condition.execute(any(WatchExecutionContext.class))).thenReturn(conditionResult);
+19:-     Transform.Result watchTransformResult = mock(Transform.Result.class);
+20:-     when(watchTransformResult.status()).thenReturn(Transform.Result.Status.SUCCESS);
+21:-     when(watchTransformResult.payload()).thenReturn(payload);
+23:-     when(watchTransform.execute(context, payload)).thenReturn(watchTransformResult);
+26:-     Throttler.Result throttleResult = mock(Throttler.Result.class);
+27:-     when(throttleResult.throttle()).thenReturn(false);
+28:-     ActionThrottler throttler = mock(ActionThrottler.class);
+29:-     when(throttler.throttle("_action", context)).thenReturn(throttleResult);
+32:-     ExecutableCondition actionCondition = null;
+33:-     Condition.Result actionConditionResult = null;
+36:-         Tuple<ExecutableCondition, Condition.Result> pair = whenCondition(context);
+43:-     Transform.Result actionTransformResult = mock(Transform.Result.class);
+44:-     when(actionTransformResult.status()).thenReturn(Transform.Result.Status.FAILURE);
+45:-     when(actionTransformResult.reason()).thenReturn("_reason");
+46:-     ExecutableTransform actionTransform = mock(ExecutableTransform.class);
+50:-     Action.Result actionResult = mock(Action.Result.class);
+51:-     when(actionResult.type()).thenReturn("_action_type");
+52:-     when(actionResult.status()).thenReturn(Action.Result.Status.SUCCESS);
+54:-     when(action.logger()).thenReturn(logger);
+57:-     ActionWrapper actionWrapper = new ActionWrapper("_action", throttler, actionCondition, actionTransform, action, null, null);
+59:-     WatchStatus watchStatus = new WatchStatus(now, singletonMap("_action", new ActionStatus(now)));
+61:-     when(watch.input()).thenReturn(input);
+62:-     when(watch.condition()).thenReturn(condition);
+63:-     when(watch.transform()).thenReturn(watchTransform);
+64:-     when(watch.actions()).thenReturn(Arrays.asList(actionWrapper));
+65:-     when(watch.status()).thenReturn(watchStatus);
+67:-     WatchRecord watchRecord = executionService.execute(context);
+68:-     assertThat(watchRecord.result().inputResult(), is(inputResult));
+69:-     assertThat(watchRecord.result().conditionResult(), is(conditionResult));
+70:-     assertThat(watchRecord.result().transformResult(), is(watchTransformResult));
+71:-     assertThat(watchRecord.result().actionsResults(), notNullValue());
+72:-     assertThat(watchRecord.result().actionsResults().size(), is(1));
+73:-     assertThat(watchRecord.result().actionsResults().get("_action").condition(), is(actionConditionResult));
+74:-     assertThat(watchRecord.result().actionsResults().get("_action").transform(), is(actionTransformResult));
+75:-     assertThat(watchRecord.result().actionsResults().get("_action").action().status(), is(Action.Result.Status.FAILURE));
+77:-     verify(historyStore, times(1)).put(watchRecord);
+79:-     verify(condition, times(1)).execute(context);
+80:-     verify(watchTransform, times(1)).execute(context, payload);
+82:-     verify(action, never()).execute("_action", context, payload);
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 3
+Testing time : 2023-12-07 19:48:41
+gecs recommendation result of method masterOperation [2, 213]: 
+Recommending extracting code lines: 3, 4, 5, 6, 7, 8, 11, 13, 14, 21, 22, 23, 24, 25, 26, 27, 28, 31, 32, 33, 34, 35, 36, 37, 38, 39, 45, 46, 47, 48, 49, 50, 51, 52, 57, 58, 59, 60, 61, 62, 63, 64, 68, 70, 71, 72, 73, 74, 75, 80, 81, 82, 83, 84, 87, 88, 89, 90, 91, 92, 93, 96, 97, 98, 99, 100, 101, 102, 103, 104, 106, 107, 108, 109, 110, 111, 112, 113, 114, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 134, 135, 136, 137, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 181, 182, 183, 184, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 205, 206, 207, 208, 209, 210, 211, 212
+3:-     Task task,
+4:-     PutTrainedModelAction.Request request,
+5:-     ClusterState state,
+6:-     ActionListener<Response> listener
+7:- ) {
+8:-     TrainedModelConfig config = request.getTrainedModelConfig();
+11:-             config.ensureParsedDefinition(xContentRegistry);
+13:-     } catch (IOException ex) {
+14:-         listener.onFailure(ExceptionsHelper.badRequestException("Failed to parse definition for [{}]", ex, config.getModelId()));
+21:-         try {
+22:-             config.getModelDefinition().getTrainedModel().validate();
+23:-         } catch (ElasticsearchException ex) {
+24:-             listener.onFailure(
+25:-                 ExceptionsHelper.badRequestException("Definition for [{}] has validation failures.", ex, config.getModelId())
+26:-             );
+27:-             return;
+28:-         }
+31:-         if (trainedModelType == null) {
+32:-             listener.onFailure(
+33:-                 ExceptionsHelper.badRequestException(
+34:-                     "Unknown trained model definition class [{}]",
+35:-                     config.getModelDefinition().getTrainedModel().getName()
+36:-                 )
+37:-             );
+38:-             return;
+39:-         }
+45:-             listener.onFailure(
+46:-                 ExceptionsHelper.badRequestException(
+47:-                     "{} [{}] does not match the model definition type [{}]",
+48:-                     TrainedModelConfig.MODEL_TYPE.getPreferredName(),
+49:-                     config.getModelType(),
+50:-                     trainedModelType
+51:-                 )
+52:-             );
+57:-             listener.onFailure(
+58:-                 ExceptionsHelper.badRequestException(
+59:-                     "Model [{}] inference config type [{}] does not support definition target type [{}]",
+60:-                     config.getModelId(),
+61:-                     config.getInferenceConfig().getName(),
+62:-                     config.getModelDefinition().getTrainedModel().targetType()
+63:-                 )
+64:-             );
+68:-         TransportVersion minCompatibilityVersion = config.getModelDefinition().getTrainedModel().getMinimalCompatibilityVersion();
+70:-             listener.onFailure(
+71:-                 ExceptionsHelper.badRequestException(
+72:-                     "Cannot create model [{}] while cluster upgrade is in progress.",
+73:-                     config.getModelId()
+74:-                 )
+75:-             );
+80:-     TrainedModelConfig.Builder trainedModelConfig = new TrainedModelConfig.Builder(config).setVersion(MlConfigVersion.CURRENT)
+81:-         .setCreateTime(Instant.now())
+82:-         .setCreatedBy("api_user")
+83:-         .setLicenseLevel(License.OperationMode.PLATINUM.description());
+84:-     AtomicReference<ModelPackageConfig> modelPackageConfigHolder = new AtomicReference<>();
+87:-         trainedModelConfig.setModelSize(config.getModelDefinition().ramBytesUsed())
+88:-             .setEstimatedOperations(config.getModelDefinition().getTrainedModel().estimatedNumOperations());
+89:-     } else {
+90:-         // Set default location for the given model type.
+91:-         trainedModelConfig.setLocation(
+92:-             Optional.ofNullable(config.getModelType()).orElse(TrainedModelType.TREE_ENSEMBLE).getDefaultLocation(config.getModelId())
+93:-         );
+96:-     if (ModelAliasMetadata.fromState(state).getModelId(trainedModelConfig.getModelId()) != null) {
+97:-         listener.onFailure(
+98:-             ExceptionsHelper.badRequestException(
+99:-                 "requested model_id [{}] is the same as an existing model_alias. Model model_aliases and ids must be unique",
+100:-                 config.getModelId()
+101:-             )
+102:-         );
+103:-         return;
+104:-     }
+106:-     if (TrainedModelAssignmentMetadata.fromState(state).hasDeployment(trainedModelConfig.getModelId())) {
+107:-         listener.onFailure(
+108:-             ExceptionsHelper.badRequestException(
+109:-                 "Cannot create model [{}] the id is the same as an current model deployment",
+110:-                 config.getModelId()
+111:-             )
+112:-         );
+113:-         return;
+114:-     }
+116:-     ActionListener<Boolean> finishedStoringListener = ActionListener.wrap(bool -> {
+117:-         TrainedModelConfig configToReturn = trainedModelConfig.clearDefinition().build();
+118:-         if (modelPackageConfigHolder.get() != null) {
+119:-             triggerModelFetchIfNecessary(
+120:-                 configToReturn.getModelId(),
+121:-                 modelPackageConfigHolder.get(),
+122:-                 request.isWaitForCompletion(),
+123:-                 ActionListener.wrap(
+124:-                     downloadTriggered -> listener.onResponse(new PutTrainedModelAction.Response(configToReturn)),
+125:-                     listener::onFailure
+126:-                 )
+127:-             );
+128:-         } else {
+129:-             listener.onResponse(new PutTrainedModelAction.Response(configToReturn));
+130:-         }
+131:-     }, listener::onFailure);
+134:-     ActionListener<Void> checkStorageIndexSizeListener = ActionListener.wrap(
+135:-         r -> trainedModelProvider.storeTrainedModel(trainedModelConfig.build(), finishedStoringListener, isPackageModel),
+136:-         listener::onFailure
+137:-     );
+139:-     ActionListener<Void> tagsModelIdCheckListener = ActionListener.wrap(r -> {
+140:-         if (TrainedModelType.PYTORCH.equals(trainedModelConfig.getModelType())) {
+141:-             client.admin()
+142:-                 .indices()
+143:-                 .prepareStats(InferenceIndexConstants.nativeDefinitionStore())
+144:-                 .clear()
+145:-                 .setStore(true)
+146:-                 .execute(ActionListener.wrap(stats -> {
+147:-                     IndexStats indexStats = stats.getIndices().get(InferenceIndexConstants.nativeDefinitionStore());
+148:-                     if (indexStats != null
+149:-                         && indexStats.getTotal().getStore().getSizeInBytes() > MAX_NATIVE_DEFINITION_INDEX_SIZE.getBytes()) {
+150:-                         listener.onFailure(
+151:-                             new ElasticsearchStatusException(
+152:-                                 "Native model store has exceeded the maximum acceptable size of {}, "
+153:-                                     + "please delete older unused pytorch models",
+154:-                                 RestStatus.CONFLICT,
+155:-                                 MAX_NATIVE_DEFINITION_INDEX_SIZE.toString()
+156:-                             )
+157:-                         );
+158:-                         return;
+159:-                     }
+160:- 
+161:-                     checkStorageIndexSizeListener.onResponse(null);
+162:-                 }, e -> {
+163:-                     if (ExceptionsHelper.unwrapCause(e) instanceof ResourceNotFoundException) {
+164:-                         checkStorageIndexSizeListener.onResponse(null);
+165:-                         return;
+166:-                     }
+167:-                     listener.onFailure(
+168:-                         new ElasticsearchStatusException(
+169:-                             "Unable to calculate stats for definition storage index [{}], please try again later",
+170:-                             RestStatus.SERVICE_UNAVAILABLE,
+171:-                             e,
+172:-                             InferenceIndexConstants.nativeDefinitionStore()
+173:-                         )
+174:-                     );
+175:-                 }));
+176:-             return;
+177:-         }
+178:-         checkStorageIndexSizeListener.onResponse(null);
+179:-     }, listener::onFailure);
+181:-     ActionListener<Void> modelIdTagCheckListener = ActionListener.wrap(
+182:-         r -> checkTagsAgainstModelIds(request.getTrainedModelConfig().getTags(), tagsModelIdCheckListener),
+183:-         listener::onFailure
+184:-     );
+186:-     ActionListener<Void> handlePackageAndTagsListener = ActionListener.wrap(r -> {
+187:-         if (isPackageModel) {
+188:-             resolvePackageConfig(trainedModelConfig.getModelId(), ActionListener.wrap(resolvedModelPackageConfig -> {
+189:-                 try {
+190:-                     TrainedModelValidator.validatePackage(trainedModelConfig, resolvedModelPackageConfig, state);
+191:-                 } catch (ValidationException e) {
+192:-                     listener.onFailure(e);
+193:-                     return;
+194:-                 }
+195:-                 modelPackageConfigHolder.set(resolvedModelPackageConfig);
+196:-                 setTrainedModelConfigFieldsFromPackagedModel(trainedModelConfig, resolvedModelPackageConfig, xContentRegistry);
+197:- 
+198:-                 checkModelIdAgainstTags(trainedModelConfig.getModelId(), modelIdTagCheckListener);
+199:-             }, listener::onFailure));
+200:-         } else {
+201:-             checkModelIdAgainstTags(trainedModelConfig.getModelId(), modelIdTagCheckListener);
+202:-         }
+203:-     }, listener::onFailure);
+205:-     checkForExistingTask(
+206:-         client,
+207:-         trainedModelConfig.getModelId(),
+208:-         request.isWaitForCompletion(),
+209:-         listener,
+210:-         handlePackageAndTagsListener,
+211:-         request.timeout()
+212:-     );
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 4
+Testing time : 2023-12-07 19:48:59
+gecs recommendation result of method testValidateSearchContext [2, 143]: 
+Recommending extracting code lines: 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142
+4:-     when(shardSearchRequest.scroll()).thenReturn(new Scroll(TimeValue.timeValueMinutes(between(1, 10))));
+6:-         LegacyReaderContext readerContext = new LegacyReaderContext(
+7:-             new ShardSearchContextId(UUIDs.randomBase64UUID(), 0L),
+8:-             indexService,
+9:-             shard,
+10:-             shard.acquireSearcherSupplier(),
+11:-             shardSearchRequest,
+12:-             Long.MAX_VALUE
+13:-         )
+14:-     ) {
+15:-         readerContext.putInContext(
+16:-             AuthenticationField.AUTHENTICATION_KEY,
+17:-             AuthenticationTestHelper.builder()
+18:-                 .user(new User("test", "role"))
+19:-                 .realmRef(new RealmRef("realm", "file", "node"))
+20:-                 .build(false)
+21:-         );
+22:-         final IndicesAccessControl indicesAccessControl = mock(IndicesAccessControl.class);
+23:-         readerContext.putInContext(AuthorizationServiceField.INDICES_PERMISSIONS_KEY, indicesAccessControl);
+24:-         MockLicenseState licenseState = mock(MockLicenseState.class);
+25:-         when(licenseState.isAllowed(Security.AUDITING_FEATURE)).thenReturn(true);
+26:-         ThreadContext threadContext = new ThreadContext(Settings.EMPTY);
+27:-         final SecurityContext securityContext = new SecurityContext(Settings.EMPTY, threadContext);
+28:-         AuditTrail auditTrail = mock(AuditTrail.class);
+29:-         AuditTrailService auditTrailService = new AuditTrailService(auditTrail, licenseState);
+30:- 
+31:-         SecuritySearchOperationListener listener = new SecuritySearchOperationListener(securityContext, auditTrailService);
+32:-         try (StoredContext ignore = threadContext.newStoredContext()) {
+33:-             Authentication authentication = AuthenticationTestHelper.builder()
+34:-                 .user(new User("test", "role"))
+35:-                 .realmRef(new RealmRef("realm", "file", "node"))
+36:-                 .build(false);
+37:-             authentication.writeToContext(threadContext);
+38:-             listener.validateReaderContext(readerContext, Empty.INSTANCE);
+39:-             assertThat(threadContext.getTransient(AuthorizationServiceField.INDICES_PERMISSIONS_KEY), is(indicesAccessControl));
+40:-             verifyNoMoreInteractions(auditTrail);
+41:-         }
+42:- 
+43:-         try (StoredContext ignore = threadContext.newStoredContext()) {
+44:-             final String nodeName = randomAlphaOfLengthBetween(1, 8);
+45:-             final String realmName = randomAlphaOfLengthBetween(1, 16);
+46:-             Authentication authentication = AuthenticationTestHelper.builder()
+47:-                 .user(new User("test", "role"))
+48:-                 .realmRef(new RealmRef(realmName, "file", nodeName))
+49:-                 .build(false);
+50:-             authentication.writeToContext(threadContext);
+51:-             listener.validateReaderContext(readerContext, Empty.INSTANCE);
+52:-             assertThat(threadContext.getTransient(AuthorizationServiceField.INDICES_PERMISSIONS_KEY), is(indicesAccessControl));
+53:-             verifyNoMoreInteractions(auditTrail);
+54:-         }
+55:- 
+56:-         try (StoredContext ignore = threadContext.newStoredContext()) {
+57:-             final String nodeName = randomBoolean() ? "node" : randomAlphaOfLengthBetween(1, 8);
+58:-             final String realmName = randomBoolean() ? "realm" : randomAlphaOfLengthBetween(1, 16);
+59:-             final String type = randomAlphaOfLengthBetween(5, 16);
+60:-             Authentication authentication = AuthenticationTestHelper.builder()
+61:-                 .user(new User("test", "role"))
+62:-                 .realmRef(new RealmRef(realmName, type, nodeName))
+63:-                 .build(false);
+64:-             authentication.writeToContext(threadContext);
+65:-             threadContext.putTransient(ORIGINATING_ACTION_KEY, "action");
+66:-             threadContext.putTransient(
+67:-                 AUTHORIZATION_INFO_KEY,
+68:-                 (AuthorizationInfo) () -> Collections.singletonMap(
+69:-                     PRINCIPAL_ROLES_FIELD_NAME,
+70:-                     authentication.getEffectiveSubject().getUser().roles()
+71:-                 )
+72:-             );
+73:-             final InternalScrollSearchRequest request = new InternalScrollSearchRequest();
+74:-             SearchContextMissingException expected = expectThrows(
+75:-                 SearchContextMissingException.class,
+76:-                 () -> listener.validateReaderContext(readerContext, request)
+77:-             );
+78:-             assertEquals(readerContext.id(), expected.contextId());
+79:-             assertThat(threadContext.getTransient(AuthorizationServiceField.INDICES_PERMISSIONS_KEY), nullValue());
+80:-             verify(auditTrail).accessDenied(
+81:-                 eq(null),
+82:-                 eq(authentication),
+83:-                 eq("action"),
+84:-                 eq(request),
+85:-                 authzInfoRoles(authentication.getEffectiveSubject().getUser().roles())
+86:-             );
+87:-         }
+88:- 
+89:-         // another user running as the original user
+90:-         try (StoredContext ignore = threadContext.newStoredContext()) {
+91:-             final String nodeName = randomBoolean() ? "node" : randomAlphaOfLengthBetween(1, 8);
+92:-             final String realmName = randomBoolean() ? "realm" : randomAlphaOfLengthBetween(1, 16);
+93:-             final String type = randomAlphaOfLengthBetween(5, 16);
+94:-             Authentication authentication = AuthenticationTestHelper.builder()
+95:-                 .user(new User("authenticated", "runas"))
+96:-                 .realmRef(new RealmRef(realmName, type, nodeName))
+97:-                 .runAs()
+98:-                 .user(new User("test", "role"))
+99:-                 .realmRef(new RealmRef(randomAlphaOfLengthBetween(1, 16), "file", nodeName))
+100:-                 .build();
+101:-             authentication.writeToContext(threadContext);
+102:-             threadContext.putTransient(ORIGINATING_ACTION_KEY, "action");
+103:-             final InternalScrollSearchRequest request = new InternalScrollSearchRequest();
+104:-             listener.validateReaderContext(readerContext, request);
+105:-             assertThat(threadContext.getTransient(AuthorizationServiceField.INDICES_PERMISSIONS_KEY), is(indicesAccessControl));
+106:-             verifyNoMoreInteractions(auditTrail);
+107:-         }
+108:- 
+109:-         // the user that authenticated for the run as request
+110:-         try (StoredContext ignore = threadContext.newStoredContext()) {
+111:-             final String nodeName = randomBoolean() ? "node" : randomAlphaOfLengthBetween(1, 8);
+112:-             final String realmName = randomBoolean() ? "realm" : randomAlphaOfLengthBetween(1, 16);
+113:-             final String type = randomAlphaOfLengthBetween(5, 16);
+114:-             Authentication authentication = AuthenticationTestHelper.builder()
+115:-                 .user(new User("authenticated", "runas"))
+116:-                 .realmRef(new RealmRef(realmName, type, nodeName))
+117:-                 .build(false);
+118:-             authentication.writeToContext(threadContext);
+119:-             threadContext.putTransient(ORIGINATING_ACTION_KEY, "action");
+120:-             threadContext.putTransient(
+121:-                 AUTHORIZATION_INFO_KEY,
+122:-                 (AuthorizationInfo) () -> Collections.singletonMap(
+123:-                     PRINCIPAL_ROLES_FIELD_NAME,
+124:-                     authentication.getEffectiveSubject().getUser().roles()
+125:-                 )
+126:-             );
+127:-             final InternalScrollSearchRequest request = new InternalScrollSearchRequest();
+128:-             SearchContextMissingException expected = expectThrows(
+129:-                 SearchContextMissingException.class,
+130:-                 () -> listener.validateReaderContext(readerContext, request)
+131:-             );
+132:-             assertEquals(readerContext.id(), expected.contextId());
+133:-             assertThat(threadContext.getTransient(AuthorizationServiceField.INDICES_PERMISSIONS_KEY), nullValue());
+134:-             verify(auditTrail).accessDenied(
+135:-                 eq(null),
+136:-                 eq(authentication),
+137:-                 eq("action"),
+138:-                 eq(request),
+139:-                 authzInfoRoles(authentication.getEffectiveSubject().getUser().roles())
+140:-             );
+141:-         }
+142:-     }
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 5
+Testing time : 2023-12-07 19:49:18
+gecs recommendation result of method testBuildTable [2, 120]: 
+Recommending extracting code lines: 3, 4, 5, 7, 8, 11, 14, 15, 16, 17, 20, 24, 25, 26, 27, 28, 29, 30, 31, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 77, 78, 79, 80, 82, 83, 86, 87, 88, 89, 90, 91, 92, 94, 95, 97, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119
+3:-     final int numIndices = randomIntBetween(3, 20);
+4:-     final Map<String, Settings> indicesSettings = new LinkedHashMap<>();
+5:-     final Map<String, IndexStats> indicesStats = new HashMap<>();
+7:-     final Metadata.Builder metadata = Metadata.builder();
+8:-     final RoutingTable.Builder routingTable = RoutingTable.builder();
+11:-         String indexName = "index-" + i;
+14:-             .put(IndexMetadata.SETTING_VERSION_CREATED, IndexVersion.current())
+15:-             .put(IndexMetadata.SETTING_INDEX_UUID, UUIDs.randomBase64UUID())
+16:-             .put(IndexSettings.INDEX_SEARCH_THROTTLED.getKey(), randomBoolean())
+17:-             .build();
+20:-         IndexMetadata.State indexState = randomBoolean() ? IndexMetadata.State.OPEN : IndexMetadata.State.CLOSE;
+24:-             int numberOfReplicas = healthStatus == ClusterHealthStatus.YELLOW ? 1 : randomInt(1);
+25:-             IndexMetadata indexMetadata = IndexMetadata.builder(indexName)
+26:-                 .settings(indexSettings)
+27:-                 .creationDate(System.currentTimeMillis())
+28:-                 .numberOfShards(numberOfShards)
+29:-                 .numberOfReplicas(numberOfReplicas)
+30:-                 .state(indexState)
+31:-                 .build();
+34:-             if (frequently()) {
+35:-                 Index index = indexMetadata.getIndex();
+36:-                 IndexRoutingTable.Builder indexRoutingTable = IndexRoutingTable.builder(index);
+37:-                 switch (randomFrom(ClusterHealthStatus.values())) {
+38:-                     case GREEN:
+39:-                         IntStream.range(0, numberOfShards)
+40:-                             .mapToObj(n -> new ShardId(index, n))
+41:-                             .map(shardId -> TestShardRouting.newShardRouting(shardId, "nodeA", true, ShardRoutingState.STARTED))
+42:-                             .forEach(indexRoutingTable::addShard);
+43:-                         if (numberOfReplicas > 0) {
+44:-                             IntStream.range(0, numberOfShards)
+45:-                                 .mapToObj(n -> new ShardId(index, n))
+46:-                                 .map(shardId -> TestShardRouting.newShardRouting(shardId, "nodeB", false, ShardRoutingState.STARTED))
+47:-                                 .forEach(indexRoutingTable::addShard);
+48:-                         }
+49:-                         break;
+50:-                     case YELLOW:
+51:-                         IntStream.range(0, numberOfShards)
+52:-                             .mapToObj(n -> new ShardId(index, n))
+53:-                             .map(shardId -> TestShardRouting.newShardRouting(shardId, "nodeA", true, ShardRoutingState.STARTED))
+54:-                             .forEach(indexRoutingTable::addShard);
+55:-                         if (numberOfReplicas > 0) {
+56:-                             IntStream.range(0, numberOfShards)
+57:-                                 .mapToObj(n -> new ShardId(index, n))
+58:-                                 .map(shardId -> TestShardRouting.newShardRouting(shardId, null, false, ShardRoutingState.UNASSIGNED))
+59:-                                 .forEach(indexRoutingTable::addShard);
+60:-                         }
+61:-                         break;
+62:-                     case RED:
+63:-                         break;
+64:-                 }
+65:-                 routingTable.add(indexRoutingTable);
+66:- 
+67:-                 if (frequently()) {
+68:-                     IndexStats indexStats = mock(IndexStats.class);
+69:-                     when(indexStats.getPrimaries()).thenReturn(new CommonStats());
+70:-                     when(indexStats.getTotal()).thenReturn(new CommonStats());
+71:-                     indicesStats.put(indexName, indexStats);
+72:-                 }
+73:-             }
+77:-     final ClusterState clusterState = ClusterState.builder(ClusterState.EMPTY_STATE)
+78:-         .metadata(metadata)
+79:-         .routingTable(randomBoolean() ? routingTable : RoutingTable.builder())
+80:-         .build();
+82:-     final RestIndicesAction action = new RestIndicesAction();
+83:-     final Table table = action.buildTable(new FakeRestRequest(), indicesSettings, clusterState, indicesStats);
+86:-     List<Table.Cell> headers = table.getHeaders();
+87:-     assertThat(headers.get(0).value, equalTo("health"));
+88:-     assertThat(headers.get(1).value, equalTo("status"));
+89:-     assertThat(headers.get(2).value, equalTo("index"));
+90:-     assertThat(headers.get(3).value, equalTo("uuid"));
+91:-     assertThat(headers.get(4).value, equalTo("pri"));
+92:-     assertThat(headers.get(5).value, equalTo("rep"));
+94:-     final List<List<Table.Cell>> rows = table.getRows();
+95:-     assertThat(rows.size(), equalTo(clusterState.metadata().indices().size()));
+97:-     final var clusterStateHealth = new ClusterStateHealth(clusterState);
+99:-     for (final List<Table.Cell> row : rows) {
+100:-         final String indexName = (String) row.get(2).value;
+101:- 
+102:-         ClusterIndexHealth indexHealth = clusterStateHealth.getIndices().get(indexName);
+103:-         IndexStats indexStats = indicesStats.get(indexName);
+104:-         IndexMetadata indexMetadata = clusterState.metadata().index(indexName);
+105:- 
+106:-         if (indexHealth != null) {
+107:-             assertThat(row.get(0).value, equalTo(indexHealth.getStatus().toString().toLowerCase(Locale.ROOT)));
+108:-         } else if (indexStats != null) {
+109:-             assertThat(row.get(0).value, equalTo("red*"));
+110:-         } else {
+111:-             assertThat(row.get(0).value, equalTo(""));
+112:-         }
+113:- 
+114:-         assertThat(row.get(1).value, equalTo(indexMetadata.getState().toString().toLowerCase(Locale.ROOT)));
+115:-         assertThat(row.get(2).value, equalTo(indexName));
+116:-         assertThat(row.get(3).value, equalTo(indexMetadata.getIndexUUID()));
+117:-         assertThat(row.get(4).value, equalTo(indexMetadata.getNumberOfShards()));
+118:-         assertThat(row.get(5).value, equalTo(indexMetadata.getNumberOfReplicas()));
+119:-     }
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 6
+Testing time : 2023-12-07 19:49:40
+gecs recommendation result of method testFromXContent [2, 166]: 
+Recommending extracting code lines: 3, 5, 7, 8, 9, 10, 11, 12, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 145, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165
+3:-     UpdateRequest request = new UpdateRequest("test", "1");
+5:-     request.fromXContent(createParser(XContentFactory.jsonBuilder().startObject().field("script", "script1").endObject()));
+7:-     assertThat(script, notNullValue());
+8:-     assertThat(script.getIdOrCode(), equalTo("script1"));
+9:-     assertThat(script.getType(), equalTo(ScriptType.INLINE));
+10:-     assertThat(script.getLang(), equalTo(Script.DEFAULT_SCRIPT_LANG));
+11:-     Map<String, Object> params = script.getParams();
+12:-     assertThat(params, equalTo(emptyMap()));
+15:-     request.fromXContent(
+16:-         createParser(
+17:-             XContentFactory.jsonBuilder().startObject().startObject("script").field("source", "script1").endObject().endObject()
+18:-         )
+19:-     );
+20:-     script = request.script();
+21:-     assertThat(script, notNullValue());
+22:-     assertThat(script.getIdOrCode(), equalTo("script1"));
+23:-     assertThat(script.getType(), equalTo(ScriptType.INLINE));
+24:-     assertThat(script.getLang(), equalTo(Script.DEFAULT_SCRIPT_LANG));
+25:-     params = script.getParams();
+26:-     assertThat(params, equalTo(emptyMap()));
+29:-     request = new UpdateRequest("test", "1");
+30:-     request.fromXContent(
+31:-         createParser(
+32:-             XContentFactory.jsonBuilder()
+33:-                 .startObject()
+34:-                 .startObject("script")
+35:-                 .field("source", "script1")
+36:-                 .startObject("params")
+37:-                 .field("param1", "value1")
+38:-                 .endObject()
+39:-                 .endObject()
+40:-                 .endObject()
+41:-         )
+42:-     );
+43:-     script = request.script();
+44:-     assertThat(script, notNullValue());
+45:-     assertThat(script.getIdOrCode(), equalTo("script1"));
+46:-     assertThat(script.getType(), equalTo(ScriptType.INLINE));
+47:-     assertThat(script.getLang(), equalTo(Script.DEFAULT_SCRIPT_LANG));
+48:-     params = script.getParams();
+49:-     assertThat(params, notNullValue());
+50:-     assertThat(params.size(), equalTo(1));
+51:-     assertThat(params.get("param1").toString(), equalTo("value1"));
+53:-     request = new UpdateRequest("test", "1");
+54:-     request.fromXContent(
+55:-         createParser(
+56:-             XContentFactory.jsonBuilder()
+57:-                 .startObject()
+58:-                 .startObject("script")
+59:-                 .startObject("params")
+60:-                 .field("param1", "value1")
+61:-                 .endObject()
+62:-                 .field("source", "script1")
+63:-                 .endObject()
+64:-                 .endObject()
+65:-         )
+66:-     );
+67:-     script = request.script();
+68:-     assertThat(script, notNullValue());
+69:-     assertThat(script.getIdOrCode(), equalTo("script1"));
+70:-     assertThat(script.getType(), equalTo(ScriptType.INLINE));
+71:-     assertThat(script.getLang(), equalTo(Script.DEFAULT_SCRIPT_LANG));
+72:-     params = script.getParams();
+73:-     assertThat(params, notNullValue());
+74:-     assertThat(params.size(), equalTo(1));
+75:-     assertThat(params.get("param1").toString(), equalTo("value1"));
+78:-     request = new UpdateRequest("test", "1");
+79:-     request.fromXContent(
+80:-         createParser(
+81:-             XContentFactory.jsonBuilder()
+82:-                 .startObject()
+83:-                 .startObject("script")
+84:-                 .startObject("params")
+85:-                 .field("param1", "value1")
+86:-                 .endObject()
+87:-                 .field("source", "script1")
+88:-                 .endObject()
+89:-                 .startObject("upsert")
+90:-                 .field("field1", "value1")
+91:-                 .startObject("compound")
+92:-                 .field("field2", "value2")
+93:-                 .endObject()
+94:-                 .endObject()
+95:-                 .endObject()
+96:-         )
+97:-     );
+98:-     script = request.script();
+99:-     assertThat(script, notNullValue());
+100:-     assertThat(script.getIdOrCode(), equalTo("script1"));
+101:-     assertThat(script.getType(), equalTo(ScriptType.INLINE));
+102:-     assertThat(script.getLang(), equalTo(Script.DEFAULT_SCRIPT_LANG));
+103:-     params = script.getParams();
+104:-     assertThat(params, notNullValue());
+105:-     assertThat(params.size(), equalTo(1));
+106:-     assertThat(params.get("param1").toString(), equalTo("value1"));
+107:-     Map<String, Object> upsertDoc = XContentHelper.convertToMap(
+108:-         request.upsertRequest().source(),
+109:-         true,
+110:-         request.upsertRequest().getContentType()
+111:-     ).v2();
+112:-     assertThat(upsertDoc.get("field1").toString(), equalTo("value1"));
+115:-     request = new UpdateRequest("test", "1");
+116:-     request.fromXContent(
+117:-         createParser(
+118:-             XContentFactory.jsonBuilder()
+119:-                 .startObject()
+120:-                 .startObject("upsert")
+121:-                 .field("field1", "value1")
+122:-                 .startObject("compound")
+123:-                 .field("field2", "value2")
+124:-                 .endObject()
+125:-                 .endObject()
+126:-                 .startObject("script")
+127:-                 .startObject("params")
+128:-                 .field("param1", "value1")
+129:-                 .endObject()
+130:-                 .field("source", "script1")
+131:-                 .endObject()
+132:-                 .endObject()
+133:-         )
+134:-     );
+135:-     script = request.script();
+136:-     assertThat(script, notNullValue());
+137:-     assertThat(script.getIdOrCode(), equalTo("script1"));
+138:-     assertThat(script.getType(), equalTo(ScriptType.INLINE));
+139:-     assertThat(script.getLang(), equalTo(Script.DEFAULT_SCRIPT_LANG));
+140:-     params = script.getParams();
+141:-     assertThat(params, notNullValue());
+142:-     assertThat(params.size(), equalTo(1));
+143:-     assertThat(params.get("param1").toString(), equalTo("value1"));
+145:-     assertThat(upsertDoc.get("field1").toString(), equalTo("value1"));
+149:-     request = new UpdateRequest("test", "1");
+150:-     request.fromXContent(
+151:-         createParser(
+152:-             XContentFactory.jsonBuilder()
+153:-                 .startObject()
+154:-                 .startObject("doc")
+155:-                 .field("field1", "value1")
+156:-                 .startObject("compound")
+157:-                 .field("field2", "value2")
+158:-                 .endObject()
+159:-                 .endObject()
+160:-                 .endObject()
+161:-         )
+162:-     );
+163:-     Map<String, Object> doc = request.doc().sourceAsMap();
+164:-     assertThat(doc.get("field1").toString(), equalTo("value1"));
+165:-     assertThat(((Map<String, Object>) doc.get("compound")).get("field2").toString(), equalTo("value2"));
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 7
+Testing time : 2023-12-07 19:50:05
+gecs recommendation result of method testAllocationFilteringPreventsShardMove [2, 110]: 
+Recommending extracting code lines: 4, 6, 8, 9, 13, 16, 17, 19, 20, 21, 22, 25, 26, 27, 30, 31, 34, 37, 40, 41, 42, 43, 44, 45, 46, 49, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 67, 68, 69, 72, 73, 74, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109
+4:-     internalCluster().startNodes(2);
+6:-     prepareIndex(1, 0);
+8:-     logger.info("--> setting up allocation filtering to prevent allocation to both nodes");
+9:-     updateIndexSettings(Settings.builder().put("index.routing.allocation.include._name", "non_existent_node"), "idx");
+13:-     ClusterAllocationExplanation explanation = runExplain(true, includeYesDecisions, includeDiskInfo);
+16:-     boolean isPrimary = explanation.isPrimary();
+17:-     ShardRoutingState shardRoutingState = explanation.getShardState();
+19:-     UnassignedInfo unassignedInfo = explanation.getUnassignedInfo();
+20:-     ClusterInfo clusterInfo = explanation.getClusterInfo();
+21:-     AllocateUnassignedDecision allocateDecision = explanation.getShardAllocationDecision().getAllocateDecision();
+22:-     MoveDecision moveDecision = explanation.getShardAllocationDecision().getMoveDecision();
+25:-     assertEquals("idx", shardId.getIndexName());
+26:-     assertEquals(0, shardId.getId());
+27:-     assertTrue(isPrimary);
+30:-     assertEquals(ShardRoutingState.STARTED, shardRoutingState);
+31:-     assertNotNull(currentNode);
+34:-     assertNull(unassignedInfo);
+37:-     verifyClusterInfo(clusterInfo, includeDiskInfo, 2);
+40:-     assertFalse(allocateDecision.isDecisionTaken());
+41:-     assertTrue(moveDecision.isDecisionTaken());
+42:-     assertEquals(AllocationDecision.NO, moveDecision.getAllocationDecision());
+43:-     assertEquals(Explanations.Move.NO, moveDecision.getExplanation());
+44:-     assertFalse(moveDecision.canRemain());
+45:-     assertFalse(moveDecision.forceMove());
+46:-     assertFalse(moveDecision.canRebalanceCluster());
+49:-     assertEquals(0, moveDecision.getCurrentNodeRanking());
+51:-     assertNotNull(moveDecision.getCanRemainDecision());
+52:-     assertEquals(Decision.Type.NO, moveDecision.getCanRemainDecision().type());
+53:-     for (Decision d : moveDecision.getCanRemainDecision().getDecisions()) {
+54:-         if (d.label().equals("filter")) {
+55:-             assertEquals(Decision.Type.NO, d.type());
+56:-             assertEquals(
+57:-                 "node does not match index setting [index.routing.allocation.include] filters [_name:\"non_existent_node\"]",
+58:-                 d.getExplanation()
+59:-             );
+60:-         } else {
+61:-             assertEquals(Decision.Type.YES, d.type());
+62:-             assertNotNull(d.getExplanation());
+63:-         }
+64:-     }
+67:-     NodeAllocationResult result = moveDecision.getNodeDecisions().get(0);
+68:-     assertNotNull(result.getNode());
+69:-     assertEquals(1, result.getWeightRanking());
+72:-         assertThat(result.getCanAllocateDecision().getDecisions().size(), greaterThan(1));
+73:-     } else {
+74:-         assertEquals(1, result.getCanAllocateDecision().getDecisions().size());
+76:-     for (Decision d : result.getCanAllocateDecision().getDecisions()) {
+77:-         if (d.label().equals("filter")) {
+78:-             assertEquals(Decision.Type.NO, d.type());
+79:-             assertEquals(
+80:-                 "node does not match index setting [index.routing.allocation.include] filters [_name:\"non_existent_node\"]",
+81:-                 d.getExplanation()
+82:-             );
+83:-         } else {
+84:-             assertEquals(Decision.Type.YES, d.type());
+85:-             assertNotNull(d.getExplanation());
+86:-         }
+87:-     }
+90:-     try (XContentParser parser = getParser(explanation)) {
+91:-         verifyShardInfo(parser, true, includeDiskInfo, ShardRoutingState.STARTED);
+92:-         parser.nextToken();
+93:-         assertEquals("can_remain_on_current_node", parser.currentName());
+94:-         parser.nextToken();
+95:-         assertEquals(AllocationDecision.NO.toString(), parser.text());
+96:-         parser.nextToken();
+97:-         assertEquals("can_remain_decisions", parser.currentName());
+98:-         verifyDeciders(parser, AllocationDecision.NO);
+99:-         parser.nextToken();
+100:-         assertEquals("can_move_to_other_node", parser.currentName());
+101:-         parser.nextToken();
+102:-         assertEquals(AllocationDecision.NO.toString(), parser.text());
+103:-         parser.nextToken();
+104:-         assertEquals("move_explanation", parser.currentName());
+105:-         parser.nextToken();
+106:-         assertEquals(Explanations.Move.NO, parser.text());
+107:-         verifyNodeDecisions(parser, allNodeDecisions(AllocationDecision.NO, true), includeYesDecisions, false);
+108:-         assertEquals(Token.END_OBJECT, parser.nextToken());
+109:-     }
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 8
+Testing time : 2023-12-07 19:50:51
+gecs recommendation result of method testAutoscalingCapacity [2, 452]: 
+Recommending extracting code lines: 5, 7, 8, 9, 10, 11, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451
+5:-     final long AUTO_ML_MEMORY_FOR_64GB_NODE = NativeMemoryCalculator.allowedBytesForMl(BYTES_IN_64GB, randomIntBetween(5, 90), true);
+7:-     NativeMemoryCapacity capacity = new NativeMemoryCapacity(
+8:-         ByteSizeValue.ofGb(4).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes(),
+9:-         ByteSizeValue.ofGb(1).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes(),
+10:-         ByteSizeValue.ofMb(50).getBytes()
+11:-     );
+14:-     {
+15:-         MlMemoryAutoscalingCapacity autoscalingCapacity = capacity.autoscalingCapacity(
+16:-             25,
+17:-             false,
+18:-             NativeMemoryCalculator.allowedBytesForMl(BYTES_IN_64GB, 25, false),
+19:-             1
+20:-         ).build();
+21:-         assertThat(autoscalingCapacity.nodeSize().getBytes(), equalTo(ByteSizeValue.ofGb(1).getBytes() * 4L));
+22:-         assertThat(autoscalingCapacity.tierSize().getBytes(), equalTo(ByteSizeValue.ofGb(4).getBytes() * 4L));
+23:-     }
+25:-     {
+26:-         MlMemoryAutoscalingCapacity autoscalingCapacity = capacity.autoscalingCapacity(
+27:-             randomIntBetween(5, 90),
+28:-             true,
+29:-             AUTO_ML_MEMORY_FOR_64GB_NODE,
+30:-             1
+31:-         ).build();
+32:-         assertThat(autoscalingCapacity.nodeSize().getBytes(), equalTo(1335885824L));
+33:-         assertThat(autoscalingCapacity.tierSize().getBytes(), equalTo(4557111296L));
+34:-     }
+36:-     {
+37:-         capacity = new NativeMemoryCapacity(
+38:-             ByteSizeValue.ofGb(4).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes(),
+39:-             ByteSizeValue.ofGb(1).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes()
+40:-         );
+41:-         MlMemoryAutoscalingCapacity autoscalingCapacity = capacity.autoscalingCapacity(
+42:-             randomIntBetween(5, 90),
+43:-             true,
+44:-             AUTO_ML_MEMORY_FOR_64GB_NODE,
+45:-             1
+46:-         ).build();
+47:-         // 2134900736 bytes = 2036MB
+48:-         // 2036MB node => 812MB JVM heap (40% of 2036MB rounded down to a multiple of 4MB)
+49:-         // 2036MB - 812MB - 200MB = 1024MB which is what we need on a single node
+50:-         assertThat(autoscalingCapacity.nodeSize().getBytes(), equalTo(2134900736L));
+51:-         // 7503609856 bytes = 7156MB
+52:-         // 7156MB node => 2860MB JVM heap (40% of 7156MB rounded down to a multiple of 4MB)
+53:-         // 7156MB - 2860MB - 200MB = 4096MB which is what we asked for for the tier
+54:-         assertThat(autoscalingCapacity.tierSize().getBytes(), equalTo(7503609856L));
+55:-     }
+57:-     {
+58:-         capacity = new NativeMemoryCapacity(
+59:-             ByteSizeValue.ofGb(4).getBytes() - 2 * NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes(),
+60:-             ByteSizeValue.ofGb(1).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes()
+61:-         );
+62:-         MlMemoryAutoscalingCapacity autoscalingCapacity = capacity.autoscalingCapacity(
+63:-             randomIntBetween(5, 90),
+64:-             true,
+65:-             AUTO_ML_MEMORY_FOR_64GB_NODE,
+66:-             2
+67:-         ).build();
+68:-         // 2134900736 bytes = 2036MB
+69:-         // 2036MB node => 812MB JVM heap (40% of 2036MB rounded down to a multiple of 4MB)
+70:-         // 2036MB - 812MB - 200MB = 1024MB which is what we need on a single node
+71:-         assertThat(autoscalingCapacity.nodeSize().getBytes(), equalTo(2134900736L));
+72:-         // 7851737088 bytes = 7488MB
+73:-         // We expect to be given 2 nodes as there are 2 AZs, so each will be 3744MB
+74:-         // 3744MB node => 1496MB JVM heap (40% of 3744MB rounded down to a multiple of 4MB)
+75:-         // 3744MB - 1496MB - 200MB = 2048MB which is half of what we asked for for the tier
+76:-         // So with 2 nodes of this size we'll have the requested amount
+77:-         assertThat(autoscalingCapacity.tierSize().getBytes(), equalTo(7851737088L));
+78:-     }
+80:-     {
+81:-         capacity = new NativeMemoryCapacity(
+82:-             ByteSizeValue.ofGb(4).getBytes() - 3 * NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes(),
+83:-             ByteSizeValue.ofGb(1).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes()
+84:-         );
+85:-         MlMemoryAutoscalingCapacity autoscalingCapacity = capacity.autoscalingCapacity(
+86:-             randomIntBetween(5, 90),
+87:-             true,
+88:-             AUTO_ML_MEMORY_FOR_64GB_NODE,
+89:-             3
+90:-         ).build();
+91:-         // 2134900736 bytes = 2036MB
+92:-         // 2036MB node => 812MB JVM heap (40% of 2036MB rounded down to a multiple of 4MB)
+93:-         // 2036MB - 812MB - 200MB = 1024MB which is what we need on a single node
+94:-         assertThat(autoscalingCapacity.nodeSize().getBytes(), equalTo(2134900736L));
+95:-         // 8195670018 bytes = 7816MB + 2 bytes
+96:-         // We expect to be given 3 nodes as there are 3 AZs, so each will be 2605 1/3MB
+97:-         // 2605 1/3MB node => 1040MB JVM heap (40% of 2605 1/3MB rounded down to a multiple of 4MB)
+98:-         // 2605 1/3MB - 1040MB - 200MB = 1365 1/3MB which is one third of what we asked for for the tier
+99:-         // So with 3 nodes of this size we'll have the requested amount
+100:-         // (The 2 byte discrepancy comes from the fact there are 3 nodes and 3 didn't divide exactly into the amount
+101:-         // of memory we needed, so each node gets a fraction of a byte extra to take it up to a whole number size)
+102:-         assertThat(autoscalingCapacity.tierSize().getBytes(), equalTo(8195670018L));
+103:-     }
+105:-     {
+106:-         capacity = new NativeMemoryCapacity(
+107:-             ByteSizeValue.ofGb(4).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes(),
+108:-             ByteSizeValue.ofGb(3).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes()
+109:-         );
+110:-         MlMemoryAutoscalingCapacity autoscalingCapacity = capacity.autoscalingCapacity(
+111:-             randomIntBetween(5, 90),
+112:-             true,
+113:-             AUTO_ML_MEMORY_FOR_64GB_NODE,
+114:-             1
+115:-         ).build();
+116:-         // 5712642048 bytes = 5448MB
+117:-         // 5448MB node => 2176MB JVM heap (40% of 5448MB rounded down to a multiple of 4MB)
+118:-         // 5448MB - 2176MB - 200MB = 3072MB which is what we need on a single node
+119:-         assertThat(autoscalingCapacity.nodeSize().getBytes(), equalTo(5712642048L));
+120:-         // 7503609856 bytes = 7156MB
+121:-         // 7156MB node => 2860MB JVM heap (40% of 7156MB rounded down to a multiple of 4MB)
+122:-         // 7156MB - 2860MB - 200MB = 4096MB which is what we asked for for the tier
+123:-         assertThat(autoscalingCapacity.tierSize().getBytes(), equalTo(7503609856L));
+124:-     }
+126:-     {
+127:-         capacity = new NativeMemoryCapacity(
+128:-             ByteSizeValue.ofGb(4).getBytes() - 2 * NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes(),
+129:-             ByteSizeValue.ofGb(3).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes()
+130:-         );
+131:-         MlMemoryAutoscalingCapacity autoscalingCapacity = capacity.autoscalingCapacity(
+132:-             randomIntBetween(5, 90),
+133:-             true,
+134:-             AUTO_ML_MEMORY_FOR_64GB_NODE,
+135:-             2
+136:-         ).build();
+137:-         // 5712642048 bytes = 5448MB
+138:-         // 5448MB node => 2176MB JVM heap (40% of 5448MB rounded down to a multiple of 4MB)
+139:-         // 5448MB - 2176MB - 200MB = 3072MB which is what we need on a single node
+140:-         assertThat(autoscalingCapacity.nodeSize().getBytes(), equalTo(5712642048L));
+141:-         // 7851737088 bytes = 7488MB
+142:-         // We expect to be given 2 nodes as there are 2 AZs, so each will be 3744MB
+143:-         // 3744MB node => 1496MB JVM heap (40% of 3744MB rounded down to a multiple of 4MB)
+144:-         // 3744MB - 1496MB - 200MB = 2048MB which is half of what we asked for for the tier
+145:-         // So with 2 nodes of this size we'll have the requested amount
+146:-         assertThat(autoscalingCapacity.tierSize().getBytes(), equalTo(7851737088L));
+147:-     }
+149:-     {
+150:-         capacity = new NativeMemoryCapacity(
+151:-             ByteSizeValue.ofGb(4).getBytes() - 3 * NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes(),
+152:-             ByteSizeValue.ofGb(3).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes()
+153:-         );
+154:-         MlMemoryAutoscalingCapacity autoscalingCapacity = capacity.autoscalingCapacity(
+155:-             randomIntBetween(5, 90),
+156:-             true,
+157:-             AUTO_ML_MEMORY_FOR_64GB_NODE,
+158:-             3
+159:-         ).build();
+160:-         // 5712642048 bytes = 5448MB
+161:-         // 5448MB node => 2176MB JVM heap (40% of 5448MB rounded down to a multiple of 4MB)
+162:-         // 5448MB - 2176MB - 200MB = 3072MB which is what we need on a single node
+163:-         assertThat(autoscalingCapacity.nodeSize().getBytes(), equalTo(5712642048L));
+164:-         // 8195670018 bytes = 7816MB + 2 bytes
+165:-         // We expect to be given 3 nodes as there are 3 AZs, so each will be 2605 1/3MB
+166:-         // 2605 1/3MB node => 1040MB JVM heap (40% of 2605 1/3MB rounded down to a multiple of 4MB)
+167:-         // 2605 1/3MB - 1040MB - 200MB = 1365 1/3MB which is one third of what we asked for for the tier
+168:-         // So with 3 nodes of this size we'll have the requested amount
+169:-         // (The 2 byte discrepancy comes from the fact there are 3 nodes and 3 didn't divide exactly into the amount
+170:-         // of memory we needed, so each node gets a fraction of a byte extra to take it up to a whole number size)
+171:-         assertThat(autoscalingCapacity.tierSize().getBytes(), equalTo(8195670018L));
+172:-     }
+174:-     {
+175:-         capacity = new NativeMemoryCapacity(
+176:-             ByteSizeValue.ofGb(30).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes(),
+177:-             ByteSizeValue.ofGb(5).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes()
+178:-         );
+179:-         MlMemoryAutoscalingCapacity autoscalingCapacity = capacity.autoscalingCapacity(
+180:-             randomIntBetween(5, 90),
+181:-             true,
+182:-             AUTO_ML_MEMORY_FOR_64GB_NODE,
+183:-             1
+184:-         ).build();
+185:-         // 9294577664 bytes = 8864MB
+186:-         // 8864MB node => 3544MB JVM heap (40% of 8864MB rounded down to a multiple of 4MB)
+187:-         // 8864MB - 3544MB - 200MB = 5120MB which is what we need on a single node
+188:-         assertThat(autoscalingCapacity.nodeSize().getBytes(), equalTo(9294577664L));
+189:-         // 41750102016 bytes = 39816MB
+190:-         // 39816MB node => 8896MB JVM heap (40% of 16384MB + 10% of 23432MB rounded down to a multiple of 4MB)
+191:-         // 39816MB - 8896MB - 200MB = 30720MB which is what we asked for for the tier
+192:-         assertThat(autoscalingCapacity.tierSize().getBytes(), equalTo(41750102016L));
+193:-     }
+195:-     {
+196:-         capacity = new NativeMemoryCapacity(
+197:-             ByteSizeValue.ofGb(30).getBytes() - 2 * NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes(),
+198:-             ByteSizeValue.ofGb(5).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes()
+199:-         );
+200:-         MlMemoryAutoscalingCapacity autoscalingCapacity = capacity.autoscalingCapacity(
+201:-             randomIntBetween(5, 90),
+202:-             true,
+203:-             AUTO_ML_MEMORY_FOR_64GB_NODE,
+204:-             2
+205:-         ).build();
+206:-         // 9294577664 bytes = 8864MB
+207:-         // 8864MB node => 3544MB JVM heap (40% of 8864MB rounded down to a multiple of 4MB)
+208:-         // 8864MB - 3544MB - 200MB = 5120MB which is what we need on a single node
+209:-         assertThat(autoscalingCapacity.nodeSize().getBytes(), equalTo(9294577664L));
+210:-         // 47706013696 bytes = 45496MB
+211:-         // We expect to be given 2 nodes as there are 2 AZs, so each will be 22748MB
+212:-         // 22748MB node => 7188MB JVM heap (40% of 16384MB + 10% of 6364MB rounded down to a multiple of 4MB)
+213:-         // 22748MB - 7188MB - 200MB = 15360MB which is half of what we asked for for the tier
+214:-         // So with 2 nodes of this size we'll have the requested amount
+215:-         assertThat(autoscalingCapacity.tierSize().getBytes(), equalTo(47706013696L));
+216:-     }
+218:-     {
+219:-         capacity = new NativeMemoryCapacity(
+220:-             ByteSizeValue.ofGb(30).getBytes() - 3 * NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes(),
+221:-             ByteSizeValue.ofGb(5).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes()
+222:-         );
+223:-         MlMemoryAutoscalingCapacity autoscalingCapacity = capacity.autoscalingCapacity(
+224:-             randomIntBetween(5, 90),
+225:-             true,
+226:-             AUTO_ML_MEMORY_FOR_64GB_NODE,
+227:-             3
+228:-         ).build();
+229:-         // 9294577664 bytes = 8864MB
+230:-         // 8864MB node => 3544MB JVM heap (40% of 8864MB rounded down to a multiple of 4MB)
+231:-         // 8864MB - 3544MB - 200MB = 5120MB which is what we need on a single node
+232:-         assertThat(autoscalingCapacity.nodeSize().getBytes(), equalTo(9294577664L));
+233:-         // 53666119680 bytes = 51180MB
+234:-         // We expect to be given 3 nodes as there are 3 AZs, so each will be 17060MB
+235:-         // 17060MB node => 6620MB JVM heap (40% of 16384MB + 10% of 676MB rounded down to a multiple of 4MB)
+236:-         // 17060MB - 6620MB - 200MB = 10240MB which is one third of what we asked for for the tier
+237:-         // So with 3 nodes of this size we'll have the requested amount
+238:-         assertThat(autoscalingCapacity.tierSize().getBytes(), equalTo(53666119680L));
+239:-     }
+241:-     {
+242:-         capacity = new NativeMemoryCapacity(
+243:-             ByteSizeValue.ofGb(30).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes(),
+244:-             ByteSizeValue.ofGb(20).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes()
+245:-         );
+246:-         MlMemoryAutoscalingCapacity autoscalingCapacity = capacity.autoscalingCapacity(
+247:-             randomIntBetween(5, 90),
+248:-             true,
+249:-             AUTO_ML_MEMORY_FOR_64GB_NODE,
+250:-             1
+251:-         ).build();
+252:-         // 29817307136 bytes = 28436MB
+253:-         // 28436MB node => 7756MB JVM heap (40% of 16384MB + 10% of 12052MB rounded down to a multiple of 4MB)
+254:-         // 28436MB - 7756MB - 200MB = 20480MB which is what we need on a single node
+255:-         assertThat(autoscalingCapacity.nodeSize().getBytes(), equalTo(29817307136L));
+256:-         // 41750102016 bytes = 39816MB
+257:-         // 39816MB node => 8896MB JVM heap (40% of 16384MB + 10% of 23432MB rounded down to a multiple of 4MB)
+258:-         // 39816MB - 8896MB - 200MB = 30720MB which is what we asked for for the tier
+259:-         assertThat(autoscalingCapacity.tierSize().getBytes(), equalTo(41750102016L));
+260:-     }
+262:-     {
+263:-         capacity = new NativeMemoryCapacity(
+264:-             ByteSizeValue.ofGb(30).getBytes() - 2 * NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes(),
+265:-             ByteSizeValue.ofGb(20).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes()
+266:-         );
+267:-         MlMemoryAutoscalingCapacity autoscalingCapacity = capacity.autoscalingCapacity(
+268:-             randomIntBetween(5, 90),
+269:-             true,
+270:-             AUTO_ML_MEMORY_FOR_64GB_NODE,
+271:-             2
+272:-         ).build();
+273:-         // 29817307136 bytes = 28436MB
+274:-         // 28436MB node => 7756MB JVM heap (40% of 16384MB + 10% of 12052MB rounded down to a multiple of 4MB)
+275:-         // 28436MB - 7756MB - 200MB = 20480MB which is what we need on a single node
+276:-         assertThat(autoscalingCapacity.nodeSize().getBytes(), equalTo(29817307136L));
+277:-         // 47706013696 bytes = 45496MB
+278:-         // We expect to be given 2 nodes as there are 2 AZs, so each will be 22748MB
+279:-         // 22748MB node => 7188MB JVM heap (40% of 16384MB + 10% of 6364MB rounded down to a multiple of 4MB)
+280:-         // 22748MB - 7188MB - 200MB = 15360MB which is half of what we asked for for the tier
+281:-         // So with 2 nodes of this size we'll have the requested amount
+282:-         assertThat(autoscalingCapacity.tierSize().getBytes(), equalTo(47706013696L));
+283:-     }
+285:-     {
+286:-         capacity = new NativeMemoryCapacity(
+287:-             ByteSizeValue.ofGb(30).getBytes() - 3 * NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes(),
+288:-             ByteSizeValue.ofGb(20).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes()
+289:-         );
+290:-         MlMemoryAutoscalingCapacity autoscalingCapacity = capacity.autoscalingCapacity(
+291:-             randomIntBetween(5, 90),
+292:-             true,
+293:-             AUTO_ML_MEMORY_FOR_64GB_NODE,
+294:-             3
+295:-         ).build();
+296:-         // 29817307136 bytes = 28436MB
+297:-         // 28436MB node => 7756MB JVM heap (40% of 16384MB + 10% of 12052MB rounded down to a multiple of 4MB)
+298:-         // 28436MB - 7756MB - 200MB = 20480MB which is what we need on a single node
+299:-         assertThat(autoscalingCapacity.nodeSize().getBytes(), equalTo(29817307136L));
+300:-         // 53666119680 bytes = 51180MB
+301:-         // We expect to be given 3 nodes as there are 3 AZs, so each will be 17060MB
+302:-         // 17060MB node => 6620MB JVM heap (40% of 16384MB + 10% of 676MB rounded down to a multiple of 4MB)
+303:-         // 17060MB - 6620MB - 200MB = 10240MB which is one third of what we asked for for the tier
+304:-         // So with 3 nodes of this size we'll have the requested amount
+305:-         assertThat(autoscalingCapacity.tierSize().getBytes(), equalTo(53666119680L));
+306:-     }
+308:-     {
+309:-         capacity = new NativeMemoryCapacity(
+310:-             ByteSizeValue.ofGb(100).getBytes() - 2 * NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes(),
+311:-             ByteSizeValue.ofGb(5).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes()
+312:-         );
+313:-         MlMemoryAutoscalingCapacity autoscalingCapacity = capacity.autoscalingCapacity(
+314:-             randomIntBetween(5, 90),
+315:-             true,
+316:-             AUTO_ML_MEMORY_FOR_64GB_NODE,
+317:-             1
+318:-         ).build();
+319:-         // 9294577664 bytes = 8864MB
+320:-         // 8864MB node => 3544MB JVM heap (40% of 8864MB rounded down to a multiple of 4MB)
+321:-         // 8864MB - 3544MB - 200MB = 5120MB which is what we need on a single node
+322:-         assertThat(autoscalingCapacity.nodeSize().getBytes(), equalTo(9294577664L));
+323:-         // 131222994944 bytes = 125178MB
+324:-         // 125144MB requirement => 2 nodes needed, each 62572MB
+325:-         // 62572MB node => 11172MB JVM heap (40% of 16384MB + 10% of 46188MB rounded down to a multiple of 4MB)
+326:-         // 62572MB - 11172MB - 200MB = 51200MB which is half of what we asked for for the tier
+327:-         // So with 2 nodes of this size we'll have the requested amount
+328:-         assertThat(autoscalingCapacity.tierSize().getBytes(), equalTo(131222994944L));
+329:-     }
+331:-     {
+332:-         capacity = new NativeMemoryCapacity(
+333:-             ByteSizeValue.ofGb(100).getBytes() - 2 * NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes(),
+334:-             ByteSizeValue.ofGb(5).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes()
+335:-         );
+336:-         MlMemoryAutoscalingCapacity autoscalingCapacity = capacity.autoscalingCapacity(
+337:-             randomIntBetween(5, 90),
+338:-             true,
+339:-             AUTO_ML_MEMORY_FOR_64GB_NODE,
+340:-             2
+341:-         ).build();
+342:-         // 9294577664 bytes = 8864MB
+343:-         // 8864MB node => 3544MB JVM heap (40% of 8864MB rounded down to a multiple of 4MB)
+344:-         // 8864MB - 3544MB - 200MB = 5120MB which is what we need on a single node
+345:-         assertThat(autoscalingCapacity.nodeSize().getBytes(), equalTo(9294577664L));
+346:-         // 131222994944 bytes = 125178MB
+347:-         // We expect to be given 2 nodes as there are 2 AZs, so each will be 62572MB
+348:-         // 62572MB node => 11172MB JVM heap (40% of 16384MB + 10% of 46188MB rounded down to a multiple of 4MB)
+349:-         // 62572MB - 11172MB - 200MB = 51200MB which is half of what we asked for for the tier
+350:-         // So with 2 nodes of this size we'll have the requested amount
+351:-         assertThat(autoscalingCapacity.tierSize().getBytes(), equalTo(131222994944L));
+352:-     }
+354:-     {
+355:-         capacity = new NativeMemoryCapacity(
+356:-             ByteSizeValue.ofGb(100).getBytes() - 3 * NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes(),
+357:-             ByteSizeValue.ofGb(5).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes()
+358:-         );
+359:-         MlMemoryAutoscalingCapacity autoscalingCapacity = capacity.autoscalingCapacity(
+360:-             randomIntBetween(5, 90),
+361:-             true,
+362:-             AUTO_ML_MEMORY_FOR_64GB_NODE,
+363:-             3
+364:-         ).build();
+365:-         // 9294577664 bytes = 8864MB
+366:-         // 8864MB node => 3544MB JVM heap (40% of 8864MB rounded down to a multiple of 4MB)
+367:-         // 8864MB - 3544MB - 200MB = 5120MB which is what we need on a single node
+368:-         assertThat(autoscalingCapacity.nodeSize().getBytes(), equalTo(9294577664L));
+369:-         // 137170518018 bytes = 130816MB + 2 bytes
+370:-         // We expect to be given 3 nodes as there are 3 AZs, so each will be 43605 1/3MB
+371:-         // 43605 1/3MB node => 9272MB JVM heap (40% of 16384MB + 10% of 27221 1/3MB rounded down to a multiple of 4MB)
+372:-         // 43605 1/3MB - 9272MB - 200MB = 34133 1/3MB which is one third of what we asked for for the tier
+373:-         // So with 3 nodes of this size we'll have the requested amount
+374:-         // (The 2 byte discrepancy comes from the fact there are 3 nodes and 3 didn't divide exactly into the amount
+375:-         // of memory we needed, so each node gets a fraction of a byte extra to take it up to a whole number size)
+376:-         assertThat(autoscalingCapacity.tierSize().getBytes(), equalTo(137170518018L));
+377:-     }
+379:-     {
+380:-         capacity = new NativeMemoryCapacity(
+381:-             ByteSizeValue.ofGb(155).getBytes() - 3 * NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes(),
+382:-             ByteSizeValue.ofGb(50).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes()
+383:-         );
+384:-         MlMemoryAutoscalingCapacity autoscalingCapacity = capacity.autoscalingCapacity(
+385:-             randomIntBetween(5, 90),
+386:-             true,
+387:-             AUTO_ML_MEMORY_FOR_64GB_NODE,
+388:-             1
+389:-         ).build();
+390:-         // 65611497472 bytes = 62572MB
+391:-         // 62572MB node => 11172MB JVM heap (40% of 16384MB + 10% of 46188MB rounded down to a multiple of 4MB)
+392:-         // 62572MB - 11172MB - 200MB = 51200MB which is what we need on a single node
+393:-         assertThat(autoscalingCapacity.nodeSize().getBytes(), equalTo(65611497472L));
+394:-         // 202794598401 bytes = 193400MB + 1 byte
+395:-         // 193406MB requirement => 3 nodes needed, each 64466 2/3MB
+396:-         // 64466 2/3MB node => 11360MB JVM heap (40% of 16384MB + 10% of 48082 2/3MB rounded down to a multiple of 4MB)
+397:-         // 64466 2/3MB - 11360MB - 200MB = 52906 2/3MB which is one third of what we asked for for the tier
+398:-         // So with 3 nodes of this size we'll have the requested amount
+399:-         // (The 1 byte discrepancy comes from the fact there are 3 nodes and 3 didn't divide exactly into the amount
+400:-         // of memory we needed, so each node gets a fraction of a byte extra to take it up to a whole number size)
+401:-         assertThat(autoscalingCapacity.tierSize().getBytes(), equalTo(202794598401L));
+402:-     }
+404:-     {
+405:-         capacity = new NativeMemoryCapacity(
+406:-             ByteSizeValue.ofGb(155).getBytes() - 4 * NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes(),
+407:-             ByteSizeValue.ofGb(50).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes()
+408:-         );
+409:-         MlMemoryAutoscalingCapacity autoscalingCapacity = capacity.autoscalingCapacity(
+410:-             randomIntBetween(5, 90),
+411:-             true,
+412:-             AUTO_ML_MEMORY_FOR_64GB_NODE,
+413:-             2
+414:-         ).build();
+415:-         // 65611497472 bytes = 62572MB
+416:-         // 62572MB node => 11172MB JVM heap (40% of 16384MB + 10% of 46188MB rounded down to a multiple of 4MB)
+417:-         // 62572MB - 11172MB - 200MB = 51200MB which is what we need on a single node
+418:-         assertThat(autoscalingCapacity.nodeSize().getBytes(), equalTo(65611497472L));
+419:-         // 208758898688 bytes = 199088MB
+420:-         // We expect to be given a multiple of 2 nodes as there are 2 AZs
+421:-         // 199088MB requirement => 4 nodes needed, each 49772MB
+422:-         // 49772MB node => 9892MB JVM heap (40% of 16384MB + 10% of 33388MB rounded down to a multiple of 4MB)
+423:-         // 49772MB - 9892MB - 200MB = 39680MB which is one quarter of what we asked for for the tier
+424:-         // So with 4 nodes of this size we'll have the requested amount
+425:-         assertThat(autoscalingCapacity.tierSize().getBytes(), equalTo(208758898688L));
+426:-     }
+428:-     {
+429:-         capacity = new NativeMemoryCapacity(
+430:-             ByteSizeValue.ofGb(155).getBytes() - 3 * NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes(),
+431:-             ByteSizeValue.ofGb(50).getBytes() - NATIVE_EXECUTABLE_CODE_OVERHEAD.getBytes()
+432:-         );
+433:-         MlMemoryAutoscalingCapacity autoscalingCapacity = capacity.autoscalingCapacity(
+434:-             randomIntBetween(5, 90),
+435:-             true,
+436:-             AUTO_ML_MEMORY_FOR_64GB_NODE,
+437:-             3
+438:-         ).build();
+439:-         // 65611497472 bytes = 62572MB
+440:-         // 62572MB node => 11172MB JVM heap (40% of 16384MB + 10% of 46188MB rounded down to a multiple of 4MB)
+441:-         // 62572MB - 11172MB - 200MB = 51200MB which is what we need on a single node
+442:-         assertThat(autoscalingCapacity.nodeSize().getBytes(), equalTo(65611497472L));
+443:-         // 202794598401 bytes = 193400MB + 1 byte
+444:-         // We expect to be given 3 nodes as there are 3 AZs, so each will be 64466 2/3MB
+445:-         // 64466 2/3MB node => 11360MB JVM heap (40% of 16384MB + 10% of 48082 2/3MB rounded down to a multiple of 4MB)
+446:-         // 64466 2/3MB - 11360MB - 200MB = 52906 2/3MB which is one third of what we asked for for the tier
+447:-         // So with 3 nodes of this size we'll have the requested amount
+448:-         // (The 1 byte discrepancy comes from the fact there are 3 nodes and 3 didn't divide exactly into the amount
+449:-         // of memory we needed, so each node gets a fraction of a byte extra to take it up to a whole number size)
+450:-         assertThat(autoscalingCapacity.tierSize().getBytes(), equalTo(202794598401L));
+451:-     }
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 9
+Testing time : 2023-12-07 19:51:16
+gecs recommendation result of method testStopAtCheckpoint [2, 233]: 
+Recommending extracting code lines: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232
+4:-         randomAlphaOfLength(10),
+5:-         randomSourceConfig(),
+6:-         randomDestConfig(),
+7:-         null,
+8:-         new TimeSyncConfig("timestamp", TimeValue.timeValueSeconds(1)),
+9:-         null,
+10:-         randomPivotConfig(),
+11:-         null,
+12:-         randomBoolean() ? null : randomAlphaOfLengthBetween(1, 1000),
+13:-         null,
+14:-         null,
+15:-         null,
+16:-         null,
+17:-         null
+18:-     );
+20:-     for (IndexerState state : IndexerState.values()) {
+21:-         // skip indexing case, tested below
+22:-         if (IndexerState.INDEXING.equals(state)) {
+23:-             continue;
+24:-         }
+25:-         AtomicReference<IndexerState> stateRef = new AtomicReference<>(state);
+26:-         TransformContext context = new TransformContext(TransformTaskState.STARTED, "", 0, mock(TransformContext.Listener.class));
+27:-         final MockedTransformIndexer indexer = createMockIndexer(
+28:-             config,
+29:-             stateRef,
+30:-             null,
+31:-             threadPool,
+32:-             auditor,
+33:-             new TransformIndexerPosition(Collections.singletonMap("afterkey", "value"), Collections.emptyMap()),
+34:-             new TransformIndexerStats(),
+35:-             context
+36:-         );
+37:-         assertResponse(listener -> setStopAtCheckpoint(indexer, true, listener));
+38:-         assertEquals(0, indexer.getSaveStateListenerCallCount());
+39:-         if (IndexerState.STARTED.equals(state)) {
+40:-             assertTrue(context.shouldStopAtCheckpoint());
+41:-             assertTrue(indexer.getPersistedState().shouldStopAtNextCheckpoint());
+42:-         } else {
+43:-             // shouldStopAtCheckpoint should not be set, because the indexer is already stopped, stopping or aborting
+44:-             assertFalse(context.shouldStopAtCheckpoint());
+45:-             assertFalse(indexer.getPersistedState().shouldStopAtNextCheckpoint());
+46:-         }
+47:-     }
+50:-     {
+51:-         AtomicReference<IndexerState> stateRef = new AtomicReference<>(IndexerState.STARTED);
+52:-         TransformContext context = new TransformContext(TransformTaskState.STARTED, "", 0, mock(TransformContext.Listener.class));
+53:-         final MockedTransformIndexer indexer = createMockIndexer(
+54:-             config,
+55:-             stateRef,
+56:-             null,
+57:-             threadPool,
+58:-             auditor,
+59:-             null,
+60:-             new TransformIndexerStats(),
+61:-             context
+62:-         );
+63:-         assertResponse(listener -> setStopAtCheckpoint(indexer, true, listener));
+64:-         assertEquals(0, indexer.getSaveStateListenerCallCount());
+65:-         // shouldStopAtCheckpoint should not be set, the indexer was started, however at a checkpoint
+66:-         assertFalse(context.shouldStopAtCheckpoint());
+67:-         assertFalse(indexer.getPersistedState().shouldStopAtNextCheckpoint());
+68:-     }
+71:-     AtomicReference<IndexerState> state = new AtomicReference<>(IndexerState.STARTED);
+72:-     {
+73:-         TransformContext context = new TransformContext(TransformTaskState.STARTED, "", 0, mock(TransformContext.Listener.class));
+74:-         final MockedTransformIndexer indexer = createMockIndexer(
+75:-             config,
+76:-             state,
+77:-             null,
+78:-             threadPool,
+79:-             auditor,
+80:-             null,
+81:-             new TransformIndexerStats(),
+82:-             context
+83:-         );
+84:-         indexer.start();
+85:-         assertTrue(indexer.maybeTriggerAsyncJob(System.currentTimeMillis()));
+86:-         assertEquals(indexer.getState(), IndexerState.INDEXING);
+87:- 
+88:-         assertResponse(listener -> setStopAtCheckpoint(indexer, true, listener));
+89:- 
+90:-         indexer.stop();
+91:-         assertBusy(() -> assertThat(indexer.getState(), equalTo(IndexerState.STOPPED)), 5, TimeUnit.SECONDS);
+92:- 
+93:-         // listener must have been called by the indexing thread
+94:-         assertEquals(1, indexer.getSaveStateListenerCallCount());
+95:- 
+96:-         // as the state is stopped it should go back to directly
+97:-         assertResponse(listener -> setStopAtCheckpoint(indexer, true, listener));
+98:-         assertEquals(1, indexer.getSaveStateListenerCallCount());
+99:-     }
+102:-     {
+103:-         TransformContext context = new TransformContext(TransformTaskState.STARTED, "", 0, mock(TransformContext.Listener.class));
+104:-         final MockedTransformIndexer indexer = createMockIndexer(
+105:-             config,
+106:-             state,
+107:-             null,
+108:-             threadPool,
+109:-             auditor,
+110:-             null,
+111:-             new TransformIndexerStats(),
+112:-             context
+113:-         );
+114:- 
+115:-         indexer.start();
+116:-         assertTrue(indexer.maybeTriggerAsyncJob(System.currentTimeMillis()));
+117:-         assertEquals(indexer.getState(), IndexerState.INDEXING);
+118:- 
+119:-         // this time call it 3 times
+120:-         assertResponse(listener -> setStopAtCheckpoint(indexer, true, listener));
+121:-         assertResponse(listener -> setStopAtCheckpoint(indexer, true, listener));
+122:-         assertResponse(listener -> setStopAtCheckpoint(indexer, true, listener));
+123:- 
+124:-         indexer.stop();
+125:-         assertBusy(() -> assertThat(indexer.getState(), equalTo(IndexerState.STOPPED)), 5, TimeUnit.SECONDS);
+126:- 
+127:-         // listener must have been called by the indexing thread between 1 and 3 times
+128:-         assertThat(indexer.getSaveStateListenerCallCount(), greaterThanOrEqualTo(1));
+129:-         assertThat(indexer.getSaveStateListenerCallCount(), lessThanOrEqualTo(3));
+130:-     }
+133:-     {
+134:-         TransformContext context = new TransformContext(TransformTaskState.STARTED, "", 0, mock(TransformContext.Listener.class));
+135:-         final MockedTransformIndexer indexer = createMockIndexer(
+136:-             config,
+137:-             state,
+138:-             null,
+139:-             threadPool,
+140:-             auditor,
+141:-             null,
+142:-             new TransformIndexerStats(),
+143:-             context
+144:-         );
+145:-         indexer.start();
+146:-         assertTrue(indexer.maybeTriggerAsyncJob(System.currentTimeMillis()));
+147:-         assertEquals(indexer.getState(), IndexerState.INDEXING);
+148:- 
+149:-         // slow down the indexer
+150:-         CountDownLatch searchLatch = indexer.createAwaitForSearchLatch(1);
+151:- 
+152:-         // this time call 5 times and change stopAtCheckpoint every time
+153:-         List<CountDownLatch> responseLatches = new ArrayList<>();
+154:-         for (int i = 0; i < 5; ++i) {
+155:-             CountDownLatch latch = new CountDownLatch(1);
+156:-             boolean stopAtCheckpoint = i % 2 == 0;
+157:-             countResponse(listener -> setStopAtCheckpoint(indexer, stopAtCheckpoint, listener), latch);
+158:-             responseLatches.add(latch);
+159:-         }
+160:- 
+161:-         // now let the indexer run again
+162:-         searchLatch.countDown();
+163:- 
+164:-         indexer.stop();
+165:-         assertBusy(() -> assertThat(indexer.getState(), equalTo(IndexerState.STOPPED)), 5, TimeUnit.SECONDS);
+166:- 
+167:-         // wait for all listeners
+168:-         for (CountDownLatch l : responseLatches) {
+169:-             assertTrue("timed out after 5s", l.await(5, TimeUnit.SECONDS));
+170:-         }
+171:- 
+172:-         // listener must have been called 5 times, because the value changed every time and we slowed down the indexer
+173:-         assertThat(indexer.getSaveStateListenerCallCount(), equalTo(5));
+174:-     }
+177:-     {
+178:-         TransformContext context = new TransformContext(TransformTaskState.STARTED, "", 0, mock(TransformContext.Listener.class));
+179:-         final MockedTransformIndexer indexer = createMockIndexer(
+180:-             config,
+181:-             state,
+182:-             null,
+183:-             threadPool,
+184:-             auditor,
+185:-             null,
+186:-             new TransformIndexerStats(),
+187:-             context
+188:-         );
+189:-         indexer.start();
+190:-         assertTrue(indexer.maybeTriggerAsyncJob(System.currentTimeMillis()));
+191:-         assertEquals(indexer.getState(), IndexerState.INDEXING);
+192:- 
+193:-         // slow down the indexer
+194:-         CountDownLatch searchLatch = indexer.createAwaitForSearchLatch(1);
+195:- 
+196:-         List<CountDownLatch> responseLatches = new ArrayList<>();
+197:-         // default stopAtCheckpoint is false
+198:-         boolean previousStopAtCheckpoint = false;
+199:- 
+200:-         for (int i = 0; i < 3; ++i) {
+201:-             CountDownLatch latch = new CountDownLatch(1);
+202:-             boolean stopAtCheckpoint = randomBoolean();
+203:-             previousStopAtCheckpoint = stopAtCheckpoint;
+204:-             countResponse(listener -> setStopAtCheckpoint(indexer, stopAtCheckpoint, listener), latch);
+205:-             responseLatches.add(latch);
+206:-         }
+207:- 
+208:-         // now let the indexer run again
+209:-         searchLatch.countDown();
+210:- 
+211:-         // call it 3 times again
+212:-         for (int i = 0; i < 3; ++i) {
+213:-             boolean stopAtCheckpoint = randomBoolean();
+214:-             previousStopAtCheckpoint = stopAtCheckpoint;
+215:-             assertResponse(listener -> setStopAtCheckpoint(indexer, stopAtCheckpoint, listener));
+216:-         }
+217:- 
+218:-         indexer.stop();
+219:-         assertBusy(() -> assertThat(indexer.getState(), equalTo(IndexerState.STOPPED)), 5, TimeUnit.SECONDS);
+220:- 
+221:-         // wait for all listeners
+222:-         for (CountDownLatch l : responseLatches) {
+223:-             assertTrue("timed out after 5s", l.await(5, TimeUnit.SECONDS));
+224:-         }
+225:- 
+226:-         // there should be no listeners waiting
+227:-         assertEquals(0, indexer.getSaveStateListenerCount());
+228:- 
+229:-         // listener must have been called by the indexing thread between timesStopAtCheckpointChanged and 6 times
+230:-         // this is not exact, because we do not know _when_ the other thread persisted the flag
+231:-         assertThat(indexer.getSaveStateListenerCallCount(), lessThanOrEqualTo(6));
+232:-     }
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 10
+Testing time : 2023-12-07 19:51:35
+gecs recommendation result of method parse [2, 149]: 
+Recommending extracting code lines: 4, 6, 7, 8, 9, 10, 11, 12, 16, 17, 18, 19, 20, 21, 22, 23, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 126, 129, 130, 131, 134, 135, 136, 138, 139, 140, 141, 142, 143, 144, 146
+4:-     XContentParser.Token token;
+6:-     DoSection doSection = new DoSection(parser.getTokenLocation());
+7:-     ApiCallSection apiCallSection = null;
+8:-     NodeSelector nodeSelector = NodeSelector.ANY;
+9:-     Map<String, String> headers = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
+10:-     List<String> expectedWarnings = new ArrayList<>();
+11:-     List<Pattern> expectedWarningsRegex = new ArrayList<>();
+12:-     List<String> allowedWarnings = new ArrayList<>();
+16:-         throw new IllegalArgumentException(
+17:-             "expected ["
+18:-                 + XContentParser.Token.START_OBJECT
+19:-                 + "], "
+20:-                 + "found ["
+21:-                 + parser.currentToken()
+22:-                 + "], the do section is not properly indented"
+23:-         );
+26:-     while ((token = parser.nextToken()) != XContentParser.Token.END_OBJECT) {
+27:-         if (token == XContentParser.Token.FIELD_NAME) {
+28:-             currentFieldName = parser.currentName();
+29:-         } else if (token.isValue()) {
+30:-             if ("catch".equals(currentFieldName)) {
+31:-                 doSection.setCatch(parser.text());
+32:-             } else {
+33:-                 throw new ParsingException(parser.getTokenLocation(), "unsupported field [" + currentFieldName + "]");
+34:-             }
+35:-         } else if (token == XContentParser.Token.START_ARRAY) {
+36:-             if ("warnings".equals(currentFieldName)) {
+37:-                 while ((token = parser.nextToken()) == XContentParser.Token.VALUE_STRING) {
+38:-                     expectedWarnings.add(parser.text());
+39:-                 }
+40:-                 if (token != XContentParser.Token.END_ARRAY) {
+41:-                     throw new ParsingException(parser.getTokenLocation(), "[warnings] must be a string array but saw [" + token + "]");
+42:-                 }
+43:-             } else if ("warnings_regex".equals(currentFieldName)) {
+44:-                 while ((token = parser.nextToken()) == XContentParser.Token.VALUE_STRING) {
+45:-                     expectedWarningsRegex.add(Pattern.compile(parser.text()));
+46:-                 }
+47:-                 if (token != XContentParser.Token.END_ARRAY) {
+48:-                     throw new ParsingException(
+49:-                         parser.getTokenLocation(),
+50:-                         "[warnings_regex] must be a string array but saw [" + token + "]"
+51:-                     );
+52:-                 }
+53:-             } else if ("allowed_warnings".equals(currentFieldName)) {
+54:-                 while ((token = parser.nextToken()) == XContentParser.Token.VALUE_STRING) {
+55:-                     allowedWarnings.add(parser.text());
+56:-                 }
+57:-                 if (token != XContentParser.Token.END_ARRAY) {
+58:-                     throw new ParsingException(
+59:-                         parser.getTokenLocation(),
+60:-                         "[allowed_warnings] must be a string array but saw [" + token + "]"
+61:-                     );
+62:-                 }
+63:-             } else if ("allowed_warnings_regex".equals(currentFieldName)) {
+64:-                 while ((token = parser.nextToken()) == XContentParser.Token.VALUE_STRING) {
+65:-                     allowedWarningsRegex.add(Pattern.compile(parser.text()));
+66:-                 }
+67:-                 if (token != XContentParser.Token.END_ARRAY) {
+68:-                     throw new ParsingException(
+69:-                         parser.getTokenLocation(),
+70:-                         "[allowed_warnings_regex] must be a string array but saw [" + token + "]"
+71:-                     );
+72:-                 }
+73:-             } else {
+74:-                 throw new ParsingException(parser.getTokenLocation(), "unknown array [" + currentFieldName + "]");
+75:-             }
+76:-         } else if (token == XContentParser.Token.START_OBJECT) {
+77:-             if ("headers".equals(currentFieldName)) {
+78:-                 String headerName = null;
+79:-                 while ((token = parser.nextToken()) != XContentParser.Token.END_OBJECT) {
+80:-                     if (token == XContentParser.Token.FIELD_NAME) {
+81:-                         headerName = parser.currentName();
+82:-                     } else if (token.isValue()) {
+83:-                         headers.put(headerName, parser.text());
+84:-                     }
+85:-                 }
+86:-             } else if ("node_selector".equals(currentFieldName)) {
+87:-                 String selectorName = null;
+88:-                 while ((token = parser.nextToken()) != XContentParser.Token.END_OBJECT) {
+89:-                     if (token == XContentParser.Token.FIELD_NAME) {
+90:-                         selectorName = parser.currentName();
+91:-                     } else {
+92:-                         NodeSelector newSelector = buildNodeSelector(selectorName, parser);
+93:-                         nodeSelector = nodeSelector == NodeSelector.ANY
+94:-                             ? newSelector
+95:-                             : new ComposeNodeSelector(nodeSelector, newSelector);
+96:-                     }
+97:-                 }
+98:-             } else if (currentFieldName != null) { // must be part of API call then
+99:-                 apiCallSection = new ApiCallSection(currentFieldName);
+100:-                 String paramName = null;
+101:-                 while ((token = parser.nextToken()) != XContentParser.Token.END_OBJECT) {
+102:-                     if (token == XContentParser.Token.FIELD_NAME) {
+103:-                         paramName = parser.currentName();
+104:-                     } else if (token.isValue()) {
+105:-                         if ("body".equals(paramName)) {
+106:-                             String body = parser.text();
+107:-                             XContentParser bodyParser = JsonXContent.jsonXContent.createParser(XContentParserConfiguration.EMPTY, body);
+108:-                             // multiple bodies are supported e.g. in case of bulk provided as a whole string
+109:-                             while (bodyParser.nextToken() != null) {
+110:-                                 apiCallSection.addBody(bodyParser.mapOrdered());
+111:-                             }
+112:-                         } else {
+113:-                             apiCallSection.addParam(paramName, parser.text());
+114:-                         }
+115:-                     } else if (token == XContentParser.Token.START_OBJECT) {
+116:-                         if ("body".equals(paramName)) {
+117:-                             apiCallSection.addBody(parser.mapOrdered());
+118:-                         }
+119:-                     }
+120:-                 }
+121:-             }
+122:-         }
+123:-     }
+126:-             throw new IllegalArgumentException("client call section is mandatory within a do section");
+129:-             if (allowedWarnings.contains(w)) {
+130:-                 throw new IllegalArgumentException("the warning [" + w + "] was both allowed and expected");
+131:-             }
+134:-             if (allowedWarningsRegex.contains(p)) {
+135:-                 throw new IllegalArgumentException("the warning pattern [" + p + "] was both allowed and expected");
+136:-             }
+138:-         apiCallSection.addHeaders(headers);
+139:-         apiCallSection.setNodeSelector(nodeSelector);
+140:-         doSection.setApiCallSection(apiCallSection);
+141:-         doSection.setExpectedWarningHeaders(unmodifiableList(expectedWarnings));
+142:-         doSection.setExpectedWarningHeadersRegex(unmodifiableList(expectedWarningsRegex));
+143:-         doSection.setAllowedWarningHeaders(unmodifiableList(allowedWarnings));
+144:-         doSection.setAllowedWarningHeadersRegex(unmodifiableList(allowedWarningsRegex));
+146:-         parser.nextToken();
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 11
+Testing time : 2023-12-07 19:52:07
+gecs recommendation result of method testSortMVField [2, 335]: 
+Recommending extracting code lines: 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 82, 83, 84, 85, 86, 88, 89, 91, 92, 94, 95, 97, 98, 100, 102, 103, 105, 106, 108, 109, 111, 112, 114, 115, 116, 117, 118, 120, 121, 123, 124, 126, 127, 129, 130, 132, 133, 134, 135, 136, 138, 139, 141, 142, 144, 145, 147, 148, 150, 151, 152, 153, 154, 156, 157, 159, 160, 162, 163, 165, 166, 168, 170, 171, 173, 174, 176, 177, 179, 180, 182, 184, 185, 187, 188, 190, 191, 193, 194, 196, 198, 199, 201, 202, 204, 205, 207, 208, 210, 212, 213, 215, 216, 218, 219, 221, 222, 224, 226, 227, 229, 230, 232, 233, 235, 236, 238, 240, 241, 243, 244, 246, 247, 249, 250, 252, 254, 255, 257, 258, 260, 261, 263, 264, 266, 268, 269, 271, 272, 274, 275, 277, 278, 280, 282, 283, 285, 286, 288, 289, 291, 292, 294, 296, 297, 299, 300, 302, 303, 305, 306, 308, 310, 311, 313, 314, 316, 317, 319, 320, 322, 324, 325, 327, 328, 330, 331, 333, 334
+3:-     assertAcked(
+4:-         prepareCreate("test").setMapping(
+5:-             XContentFactory.jsonBuilder()
+6:-                 .startObject()
+7:-                 .startObject("_doc")
+8:-                 .startObject("properties")
+9:-                 .startObject("long_values")
+10:-                 .field("type", "long")
+11:-                 .endObject()
+12:-                 .startObject("int_values")
+13:-                 .field("type", "integer")
+14:-                 .endObject()
+15:-                 .startObject("short_values")
+16:-                 .field("type", "short")
+17:-                 .endObject()
+18:-                 .startObject("byte_values")
+19:-                 .field("type", "byte")
+20:-                 .endObject()
+21:-                 .startObject("float_values")
+22:-                 .field("type", "float")
+23:-                 .endObject()
+24:-                 .startObject("double_values")
+25:-                 .field("type", "double")
+26:-                 .endObject()
+27:-                 .startObject("string_values")
+28:-                 .field("type", "keyword")
+29:-                 .endObject()
+30:-                 .endObject()
+31:-                 .endObject()
+32:-                 .endObject()
+33:-         )
+34:-     );
+35:-     ensureGreen();
+37:-     client().prepareIndex("test")
+38:-         .setId(Integer.toString(1))
+39:-         .setSource(
+40:-             jsonBuilder().startObject()
+41:-                 .array("long_values", 1L, 5L, 10L, 8L)
+42:-                 .array("int_values", 1, 5, 10, 8)
+43:-                 .array("short_values", 1, 5, 10, 8)
+44:-                 .array("byte_values", 1, 5, 10, 8)
+45:-                 .array("float_values", 1f, 5f, 10f, 8f)
+46:-                 .array("double_values", 1d, 5d, 10d, 8d)
+47:-                 .array("string_values", "01", "05", "10", "08")
+48:-                 .endObject()
+49:-         )
+50:-         .get();
+51:-     client().prepareIndex("test")
+52:-         .setId(Integer.toString(2))
+53:-         .setSource(
+54:-             jsonBuilder().startObject()
+55:-                 .array("long_values", 11L, 15L, 20L, 7L)
+56:-                 .array("int_values", 11, 15, 20, 7)
+57:-                 .array("short_values", 11, 15, 20, 7)
+58:-                 .array("byte_values", 11, 15, 20, 7)
+59:-                 .array("float_values", 11f, 15f, 20f, 7f)
+60:-                 .array("double_values", 11d, 15d, 20d, 7d)
+61:-                 .array("string_values", "11", "15", "20", "07")
+62:-                 .endObject()
+63:-         )
+64:-         .get();
+65:-     client().prepareIndex("test")
+66:-         .setId(Integer.toString(3))
+67:-         .setSource(
+68:-             jsonBuilder().startObject()
+69:-                 .array("long_values", 2L, 1L, 3L, -4L)
+70:-                 .array("int_values", 2, 1, 3, -4)
+71:-                 .array("short_values", 2, 1, 3, -4)
+72:-                 .array("byte_values", 2, 1, 3, -4)
+73:-                 .array("float_values", 2f, 1f, 3f, -4f)
+74:-                 .array("double_values", 2d, 1d, 3d, -4d)
+75:-                 .array("string_values", "02", "01", "03", "!4")
+76:-                 .endObject()
+77:-         )
+78:-         .get();
+82:-     SearchResponse searchResponse = client().prepareSearch()
+83:-         .setQuery(matchAllQuery())
+84:-         .setSize(10)
+85:-         .addSort("long_values", SortOrder.ASC)
+86:-         .get();
+88:-     assertThat(searchResponse.getHits().getTotalHits().value, equalTo(3L));
+89:-     assertThat(searchResponse.getHits().getHits().length, equalTo(3));
+91:-     assertThat(searchResponse.getHits().getAt(0).getId(), equalTo(Integer.toString(3)));
+92:-     assertThat(((Number) searchResponse.getHits().getAt(0).getSortValues()[0]).longValue(), equalTo(-4L));
+94:-     assertThat(searchResponse.getHits().getAt(1).getId(), equalTo(Integer.toString(1)));
+95:-     assertThat(((Number) searchResponse.getHits().getAt(1).getSortValues()[0]).longValue(), equalTo(1L));
+97:-     assertThat(searchResponse.getHits().getAt(2).getId(), equalTo(Integer.toString(2)));
+98:-     assertThat(((Number) searchResponse.getHits().getAt(2).getSortValues()[0]).longValue(), equalTo(7L));
+100:-     searchResponse = client().prepareSearch().setQuery(matchAllQuery()).setSize(10).addSort("long_values", SortOrder.DESC).get();
+102:-     assertThat(searchResponse.getHits().getTotalHits().value, equalTo(3L));
+103:-     assertThat(searchResponse.getHits().getHits().length, equalTo(3));
+105:-     assertThat(searchResponse.getHits().getAt(0).getId(), equalTo(Integer.toString(2)));
+106:-     assertThat(((Number) searchResponse.getHits().getAt(0).getSortValues()[0]).longValue(), equalTo(20L));
+108:-     assertThat(searchResponse.getHits().getAt(1).getId(), equalTo(Integer.toString(1)));
+109:-     assertThat(((Number) searchResponse.getHits().getAt(1).getSortValues()[0]).longValue(), equalTo(10L));
+111:-     assertThat(searchResponse.getHits().getAt(2).getId(), equalTo(Integer.toString(3)));
+112:-     assertThat(((Number) searchResponse.getHits().getAt(2).getSortValues()[0]).longValue(), equalTo(3L));
+114:-     searchResponse = client().prepareSearch()
+115:-         .setQuery(matchAllQuery())
+116:-         .setSize(10)
+117:-         .addSort(SortBuilders.fieldSort("long_values").order(SortOrder.DESC).sortMode(SortMode.SUM))
+118:-         .get();
+120:-     assertThat(searchResponse.getHits().getTotalHits().value, equalTo(3L));
+121:-     assertThat(searchResponse.getHits().getHits().length, equalTo(3));
+123:-     assertThat(searchResponse.getHits().getAt(0).getId(), equalTo(Integer.toString(2)));
+124:-     assertThat(((Number) searchResponse.getHits().getAt(0).getSortValues()[0]).longValue(), equalTo(53L));
+126:-     assertThat(searchResponse.getHits().getAt(1).getId(), equalTo(Integer.toString(1)));
+127:-     assertThat(((Number) searchResponse.getHits().getAt(1).getSortValues()[0]).longValue(), equalTo(24L));
+129:-     assertThat(searchResponse.getHits().getAt(2).getId(), equalTo(Integer.toString(3)));
+130:-     assertThat(((Number) searchResponse.getHits().getAt(2).getSortValues()[0]).longValue(), equalTo(2L));
+132:-     searchResponse = client().prepareSearch()
+133:-         .setQuery(matchAllQuery())
+134:-         .setSize(10)
+135:-         .addSort(SortBuilders.fieldSort("long_values").order(SortOrder.DESC).sortMode(SortMode.AVG))
+136:-         .get();
+138:-     assertThat(searchResponse.getHits().getTotalHits().value, equalTo(3L));
+139:-     assertThat(searchResponse.getHits().getHits().length, equalTo(3));
+141:-     assertThat(searchResponse.getHits().getAt(0).getId(), equalTo(Integer.toString(2)));
+142:-     assertThat(((Number) searchResponse.getHits().getAt(0).getSortValues()[0]).longValue(), equalTo(13L));
+144:-     assertThat(searchResponse.getHits().getAt(1).getId(), equalTo(Integer.toString(1)));
+145:-     assertThat(((Number) searchResponse.getHits().getAt(1).getSortValues()[0]).longValue(), equalTo(6L));
+147:-     assertThat(searchResponse.getHits().getAt(2).getId(), equalTo(Integer.toString(3)));
+148:-     assertThat(((Number) searchResponse.getHits().getAt(2).getSortValues()[0]).longValue(), equalTo(1L));
+150:-     searchResponse = client().prepareSearch()
+151:-         .setQuery(matchAllQuery())
+152:-         .setSize(10)
+153:-         .addSort(SortBuilders.fieldSort("long_values").order(SortOrder.DESC).sortMode(SortMode.MEDIAN))
+154:-         .get();
+156:-     assertThat(searchResponse.getHits().getTotalHits().value, equalTo(3L));
+157:-     assertThat(searchResponse.getHits().getHits().length, equalTo(3));
+159:-     assertThat(searchResponse.getHits().getAt(0).getId(), equalTo(Integer.toString(2)));
+160:-     assertThat(((Number) searchResponse.getHits().getAt(0).getSortValues()[0]).longValue(), equalTo(13L));
+162:-     assertThat(searchResponse.getHits().getAt(1).getId(), equalTo(Integer.toString(1)));
+163:-     assertThat(((Number) searchResponse.getHits().getAt(1).getSortValues()[0]).longValue(), equalTo(7L));
+165:-     assertThat(searchResponse.getHits().getAt(2).getId(), equalTo(Integer.toString(3)));
+166:-     assertThat(((Number) searchResponse.getHits().getAt(2).getSortValues()[0]).longValue(), equalTo(2L));
+168:-     searchResponse = client().prepareSearch().setQuery(matchAllQuery()).setSize(10).addSort("int_values", SortOrder.ASC).get();
+170:-     assertThat(searchResponse.getHits().getTotalHits().value, equalTo(3L));
+171:-     assertThat(searchResponse.getHits().getHits().length, equalTo(3));
+173:-     assertThat(searchResponse.getHits().getAt(0).getId(), equalTo(Integer.toString(3)));
+174:-     assertThat(((Number) searchResponse.getHits().getAt(0).getSortValues()[0]).intValue(), equalTo(-4));
+176:-     assertThat(searchResponse.getHits().getAt(1).getId(), equalTo(Integer.toString(1)));
+177:-     assertThat(((Number) searchResponse.getHits().getAt(1).getSortValues()[0]).intValue(), equalTo(1));
+179:-     assertThat(searchResponse.getHits().getAt(2).getId(), equalTo(Integer.toString(2)));
+180:-     assertThat(((Number) searchResponse.getHits().getAt(2).getSortValues()[0]).intValue(), equalTo(7));
+182:-     searchResponse = client().prepareSearch().setQuery(matchAllQuery()).setSize(10).addSort("int_values", SortOrder.DESC).get();
+184:-     assertThat(searchResponse.getHits().getTotalHits().value, equalTo(3L));
+185:-     assertThat(searchResponse.getHits().getHits().length, equalTo(3));
+187:-     assertThat(searchResponse.getHits().getAt(0).getId(), equalTo(Integer.toString(2)));
+188:-     assertThat(((Number) searchResponse.getHits().getAt(0).getSortValues()[0]).intValue(), equalTo(20));
+190:-     assertThat(searchResponse.getHits().getAt(1).getId(), equalTo(Integer.toString(1)));
+191:-     assertThat(((Number) searchResponse.getHits().getAt(1).getSortValues()[0]).intValue(), equalTo(10));
+193:-     assertThat(searchResponse.getHits().getAt(2).getId(), equalTo(Integer.toString(3)));
+194:-     assertThat(((Number) searchResponse.getHits().getAt(2).getSortValues()[0]).intValue(), equalTo(3));
+196:-     searchResponse = client().prepareSearch().setQuery(matchAllQuery()).setSize(10).addSort("short_values", SortOrder.ASC).get();
+198:-     assertThat(searchResponse.getHits().getTotalHits().value, equalTo(3L));
+199:-     assertThat(searchResponse.getHits().getHits().length, equalTo(3));
+201:-     assertThat(searchResponse.getHits().getAt(0).getId(), equalTo(Integer.toString(3)));
+202:-     assertThat(((Number) searchResponse.getHits().getAt(0).getSortValues()[0]).intValue(), equalTo(-4));
+204:-     assertThat(searchResponse.getHits().getAt(1).getId(), equalTo(Integer.toString(1)));
+205:-     assertThat(((Number) searchResponse.getHits().getAt(1).getSortValues()[0]).intValue(), equalTo(1));
+207:-     assertThat(searchResponse.getHits().getAt(2).getId(), equalTo(Integer.toString(2)));
+208:-     assertThat(((Number) searchResponse.getHits().getAt(2).getSortValues()[0]).intValue(), equalTo(7));
+210:-     searchResponse = client().prepareSearch().setQuery(matchAllQuery()).setSize(10).addSort("short_values", SortOrder.DESC).get();
+212:-     assertThat(searchResponse.getHits().getTotalHits().value, equalTo(3L));
+213:-     assertThat(searchResponse.getHits().getHits().length, equalTo(3));
+215:-     assertThat(searchResponse.getHits().getAt(0).getId(), equalTo(Integer.toString(2)));
+216:-     assertThat(((Number) searchResponse.getHits().getAt(0).getSortValues()[0]).intValue(), equalTo(20));
+218:-     assertThat(searchResponse.getHits().getAt(1).getId(), equalTo(Integer.toString(1)));
+219:-     assertThat(((Number) searchResponse.getHits().getAt(1).getSortValues()[0]).intValue(), equalTo(10));
+221:-     assertThat(searchResponse.getHits().getAt(2).getId(), equalTo(Integer.toString(3)));
+222:-     assertThat(((Number) searchResponse.getHits().getAt(2).getSortValues()[0]).intValue(), equalTo(3));
+224:-     searchResponse = client().prepareSearch().setQuery(matchAllQuery()).setSize(10).addSort("byte_values", SortOrder.ASC).get();
+226:-     assertThat(searchResponse.getHits().getTotalHits().value, equalTo(3L));
+227:-     assertThat(searchResponse.getHits().getHits().length, equalTo(3));
+229:-     assertThat(searchResponse.getHits().getAt(0).getId(), equalTo(Integer.toString(3)));
+230:-     assertThat(((Number) searchResponse.getHits().getAt(0).getSortValues()[0]).intValue(), equalTo(-4));
+232:-     assertThat(searchResponse.getHits().getAt(1).getId(), equalTo(Integer.toString(1)));
+233:-     assertThat(((Number) searchResponse.getHits().getAt(1).getSortValues()[0]).intValue(), equalTo(1));
+235:-     assertThat(searchResponse.getHits().getAt(2).getId(), equalTo(Integer.toString(2)));
+236:-     assertThat(((Number) searchResponse.getHits().getAt(2).getSortValues()[0]).intValue(), equalTo(7));
+238:-     searchResponse = client().prepareSearch().setQuery(matchAllQuery()).setSize(10).addSort("byte_values", SortOrder.DESC).get();
+240:-     assertThat(searchResponse.getHits().getTotalHits().value, equalTo(3L));
+241:-     assertThat(searchResponse.getHits().getHits().length, equalTo(3));
+243:-     assertThat(searchResponse.getHits().getAt(0).getId(), equalTo(Integer.toString(2)));
+244:-     assertThat(((Number) searchResponse.getHits().getAt(0).getSortValues()[0]).intValue(), equalTo(20));
+246:-     assertThat(searchResponse.getHits().getAt(1).getId(), equalTo(Integer.toString(1)));
+247:-     assertThat(((Number) searchResponse.getHits().getAt(1).getSortValues()[0]).intValue(), equalTo(10));
+249:-     assertThat(searchResponse.getHits().getAt(2).getId(), equalTo(Integer.toString(3)));
+250:-     assertThat(((Number) searchResponse.getHits().getAt(2).getSortValues()[0]).intValue(), equalTo(3));
+252:-     searchResponse = client().prepareSearch().setQuery(matchAllQuery()).setSize(10).addSort("float_values", SortOrder.ASC).get();
+254:-     assertThat(searchResponse.getHits().getTotalHits().value, equalTo(3L));
+255:-     assertThat(searchResponse.getHits().getHits().length, equalTo(3));
+257:-     assertThat(searchResponse.getHits().getAt(0).getId(), equalTo(Integer.toString(3)));
+258:-     assertThat(((Number) searchResponse.getHits().getAt(0).getSortValues()[0]).floatValue(), equalTo(-4f));
+260:-     assertThat(searchResponse.getHits().getAt(1).getId(), equalTo(Integer.toString(1)));
+261:-     assertThat(((Number) searchResponse.getHits().getAt(1).getSortValues()[0]).floatValue(), equalTo(1f));
+263:-     assertThat(searchResponse.getHits().getAt(2).getId(), equalTo(Integer.toString(2)));
+264:-     assertThat(((Number) searchResponse.getHits().getAt(2).getSortValues()[0]).floatValue(), equalTo(7f));
+266:-     searchResponse = client().prepareSearch().setQuery(matchAllQuery()).setSize(10).addSort("float_values", SortOrder.DESC).get();
+268:-     assertThat(searchResponse.getHits().getTotalHits().value, equalTo(3L));
+269:-     assertThat(searchResponse.getHits().getHits().length, equalTo(3));
+271:-     assertThat(searchResponse.getHits().getAt(0).getId(), equalTo(Integer.toString(2)));
+272:-     assertThat(((Number) searchResponse.getHits().getAt(0).getSortValues()[0]).floatValue(), equalTo(20f));
+274:-     assertThat(searchResponse.getHits().getAt(1).getId(), equalTo(Integer.toString(1)));
+275:-     assertThat(((Number) searchResponse.getHits().getAt(1).getSortValues()[0]).floatValue(), equalTo(10f));
+277:-     assertThat(searchResponse.getHits().getAt(2).getId(), equalTo(Integer.toString(3)));
+278:-     assertThat(((Number) searchResponse.getHits().getAt(2).getSortValues()[0]).floatValue(), equalTo(3f));
+280:-     searchResponse = client().prepareSearch().setQuery(matchAllQuery()).setSize(10).addSort("double_values", SortOrder.ASC).get();
+282:-     assertThat(searchResponse.getHits().getTotalHits().value, equalTo(3L));
+283:-     assertThat(searchResponse.getHits().getHits().length, equalTo(3));
+285:-     assertThat(searchResponse.getHits().getAt(0).getId(), equalTo(Integer.toString(3)));
+286:-     assertThat(((Number) searchResponse.getHits().getAt(0).getSortValues()[0]).doubleValue(), equalTo(-4d));
+288:-     assertThat(searchResponse.getHits().getAt(1).getId(), equalTo(Integer.toString(1)));
+289:-     assertThat(((Number) searchResponse.getHits().getAt(1).getSortValues()[0]).doubleValue(), equalTo(1d));
+291:-     assertThat(searchResponse.getHits().getAt(2).getId(), equalTo(Integer.toString(2)));
+292:-     assertThat(((Number) searchResponse.getHits().getAt(2).getSortValues()[0]).doubleValue(), equalTo(7d));
+294:-     searchResponse = client().prepareSearch().setQuery(matchAllQuery()).setSize(10).addSort("double_values", SortOrder.DESC).get();
+296:-     assertThat(searchResponse.getHits().getTotalHits().value, equalTo(3L));
+297:-     assertThat(searchResponse.getHits().getHits().length, equalTo(3));
+299:-     assertThat(searchResponse.getHits().getAt(0).getId(), equalTo(Integer.toString(2)));
+300:-     assertThat(((Number) searchResponse.getHits().getAt(0).getSortValues()[0]).doubleValue(), equalTo(20d));
+302:-     assertThat(searchResponse.getHits().getAt(1).getId(), equalTo(Integer.toString(1)));
+303:-     assertThat(((Number) searchResponse.getHits().getAt(1).getSortValues()[0]).doubleValue(), equalTo(10d));
+305:-     assertThat(searchResponse.getHits().getAt(2).getId(), equalTo(Integer.toString(3)));
+306:-     assertThat(((Number) searchResponse.getHits().getAt(2).getSortValues()[0]).doubleValue(), equalTo(3d));
+308:-     searchResponse = client().prepareSearch().setQuery(matchAllQuery()).setSize(10).addSort("string_values", SortOrder.ASC).get();
+310:-     assertThat(searchResponse.getHits().getTotalHits().value, equalTo(3L));
+311:-     assertThat(searchResponse.getHits().getHits().length, equalTo(3));
+313:-     assertThat(searchResponse.getHits().getAt(0).getId(), equalTo(Integer.toString(3)));
+314:-     assertThat(searchResponse.getHits().getAt(0).getSortValues()[0], equalTo("!4"));
+316:-     assertThat(searchResponse.getHits().getAt(1).getId(), equalTo(Integer.toString(1)));
+317:-     assertThat(searchResponse.getHits().getAt(1).getSortValues()[0], equalTo("01"));
+319:-     assertThat(searchResponse.getHits().getAt(2).getId(), equalTo(Integer.toString(2)));
+320:-     assertThat(searchResponse.getHits().getAt(2).getSortValues()[0], equalTo("07"));
+322:-     searchResponse = client().prepareSearch().setQuery(matchAllQuery()).setSize(10).addSort("string_values", SortOrder.DESC).get();
+324:-     assertThat(searchResponse.getHits().getTotalHits().value, equalTo(3L));
+325:-     assertThat(searchResponse.getHits().getHits().length, equalTo(3));
+327:-     assertThat(searchResponse.getHits().getAt(0).getId(), equalTo(Integer.toString(2)));
+328:-     assertThat(searchResponse.getHits().getAt(0).getSortValues()[0], equalTo("20"));
+330:-     assertThat(searchResponse.getHits().getAt(1).getId(), equalTo(Integer.toString(1)));
+331:-     assertThat(searchResponse.getHits().getAt(1).getSortValues()[0], equalTo("10"));
+333:-     assertThat(searchResponse.getHits().getAt(2).getId(), equalTo(Integer.toString(3)));
+334:-     assertThat(searchResponse.getHits().getAt(2).getSortValues()[0], equalTo("03"));
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 12
+Testing time : 2023-12-07 19:52:44
+gecs recommendation result of method getLegalCast [2, 378]: 
+Recommending extracting code lines: 3, 4, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 360, 361, 362, 363, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376
+3:-     Objects.requireNonNull(actual);
+4:-     Objects.requireNonNull(expected);
+10:-     if (actual == def.class) {
+11:-         if (expected == boolean.class) {
+12:-             return PainlessCast.originalTypetoTargetType(def.class, boolean.class, explicit);
+13:-         } else if (expected == byte.class) {
+14:-             return PainlessCast.originalTypetoTargetType(def.class, byte.class, explicit);
+15:-         } else if (expected == short.class) {
+16:-             return PainlessCast.originalTypetoTargetType(def.class, short.class, explicit);
+17:-         } else if (expected == char.class) {
+18:-             return PainlessCast.originalTypetoTargetType(def.class, char.class, explicit);
+19:-         } else if (expected == int.class) {
+20:-             return PainlessCast.originalTypetoTargetType(def.class, int.class, explicit);
+21:-         } else if (expected == long.class) {
+22:-             return PainlessCast.originalTypetoTargetType(def.class, long.class, explicit);
+23:-         } else if (expected == float.class) {
+24:-             return PainlessCast.originalTypetoTargetType(def.class, float.class, explicit);
+25:-         } else if (expected == double.class) {
+26:-             return PainlessCast.originalTypetoTargetType(def.class, double.class, explicit);
+27:-         } else if (expected == Boolean.class) {
+28:-             return PainlessCast.originalTypetoTargetType(def.class, Boolean.class, explicit);
+29:-         } else if (expected == Byte.class) {
+30:-             return PainlessCast.originalTypetoTargetType(def.class, Byte.class, explicit);
+31:-         } else if (expected == Short.class) {
+32:-             return PainlessCast.originalTypetoTargetType(def.class, Short.class, explicit);
+33:-         } else if (expected == Character.class) {
+34:-             return PainlessCast.originalTypetoTargetType(def.class, Character.class, explicit);
+35:-         } else if (expected == Integer.class) {
+36:-             return PainlessCast.originalTypetoTargetType(def.class, Integer.class, explicit);
+37:-         } else if (expected == Long.class) {
+38:-             return PainlessCast.originalTypetoTargetType(def.class, Long.class, explicit);
+39:-         } else if (expected == Float.class) {
+40:-             return PainlessCast.originalTypetoTargetType(def.class, Float.class, explicit);
+41:-         } else if (expected == Double.class) {
+42:-             return PainlessCast.originalTypetoTargetType(def.class, Double.class, explicit);
+43:-         }
+44:-     } else if (actual == String.class) {
+45:-         if (expected == char.class && explicit) {
+46:-             return PainlessCast.originalTypetoTargetType(String.class, char.class, true);
+47:-         }
+48:-     } else if (actual == boolean.class) {
+49:-         if (expected == def.class) {
+50:-             return PainlessCast.boxOriginalType(Boolean.class, def.class, explicit, boolean.class);
+51:-         } else if (expected == Object.class && internal) {
+52:-             return PainlessCast.boxOriginalType(Boolean.class, Object.class, explicit, boolean.class);
+53:-         } else if (expected == Boolean.class && internal) {
+54:-             return PainlessCast.boxTargetType(boolean.class, boolean.class, explicit, boolean.class);
+55:-         }
+56:-     } else if (actual == byte.class) {
+57:-         if (expected == def.class) {
+58:-             return PainlessCast.boxOriginalType(Byte.class, def.class, explicit, byte.class);
+59:-         } else if (expected == Object.class && internal) {
+60:-             return PainlessCast.boxOriginalType(Byte.class, Object.class, explicit, byte.class);
+61:-         } else if (expected == Number.class && internal) {
+62:-             return PainlessCast.boxOriginalType(Byte.class, Number.class, explicit, byte.class);
+63:-         } else if (expected == short.class) {
+64:-             return PainlessCast.originalTypetoTargetType(byte.class, short.class, explicit);
+65:-         } else if (expected == char.class && explicit) {
+66:-             return PainlessCast.originalTypetoTargetType(byte.class, char.class, true);
+67:-         } else if (expected == int.class) {
+68:-             return PainlessCast.originalTypetoTargetType(byte.class, int.class, explicit);
+69:-         } else if (expected == long.class) {
+70:-             return PainlessCast.originalTypetoTargetType(byte.class, long.class, explicit);
+71:-         } else if (expected == float.class) {
+72:-             return PainlessCast.originalTypetoTargetType(byte.class, float.class, explicit);
+73:-         } else if (expected == double.class) {
+74:-             return PainlessCast.originalTypetoTargetType(byte.class, double.class, explicit);
+75:-         } else if (expected == Byte.class && internal) {
+76:-             return PainlessCast.boxTargetType(byte.class, byte.class, explicit, byte.class);
+77:-         } else if (expected == Short.class && internal) {
+78:-             return PainlessCast.boxTargetType(byte.class, short.class, explicit, short.class);
+79:-         } else if (expected == Integer.class && internal) {
+80:-             return PainlessCast.boxTargetType(byte.class, int.class, explicit, int.class);
+81:-         } else if (expected == Long.class && internal) {
+82:-             return PainlessCast.boxTargetType(byte.class, long.class, explicit, long.class);
+83:-         } else if (expected == Float.class && internal) {
+84:-             return PainlessCast.boxTargetType(byte.class, float.class, explicit, float.class);
+85:-         } else if (expected == Double.class && internal) {
+86:-             return PainlessCast.boxTargetType(byte.class, double.class, explicit, double.class);
+87:-         }
+88:-     } else if (actual == short.class) {
+89:-         if (expected == def.class) {
+90:-             return PainlessCast.boxOriginalType(Short.class, def.class, explicit, short.class);
+91:-         } else if (expected == Object.class && internal) {
+92:-             return PainlessCast.boxOriginalType(Short.class, Object.class, explicit, short.class);
+93:-         } else if (expected == Number.class && internal) {
+94:-             return PainlessCast.boxOriginalType(Short.class, Number.class, explicit, short.class);
+95:-         } else if (expected == byte.class && explicit) {
+96:-             return PainlessCast.originalTypetoTargetType(short.class, byte.class, true);
+97:-         } else if (expected == char.class && explicit) {
+98:-             return PainlessCast.originalTypetoTargetType(short.class, char.class, true);
+99:-         } else if (expected == int.class) {
+100:-             return PainlessCast.originalTypetoTargetType(short.class, int.class, explicit);
+101:-         } else if (expected == long.class) {
+102:-             return PainlessCast.originalTypetoTargetType(short.class, long.class, explicit);
+103:-         } else if (expected == float.class) {
+104:-             return PainlessCast.originalTypetoTargetType(short.class, float.class, explicit);
+105:-         } else if (expected == double.class) {
+106:-             return PainlessCast.originalTypetoTargetType(short.class, double.class, explicit);
+107:-         } else if (expected == Short.class && internal) {
+108:-             return PainlessCast.boxTargetType(short.class, short.class, explicit, short.class);
+109:-         } else if (expected == Integer.class && internal) {
+110:-             return PainlessCast.boxTargetType(short.class, int.class, explicit, int.class);
+111:-         } else if (expected == Long.class && internal) {
+112:-             return PainlessCast.boxTargetType(short.class, long.class, explicit, long.class);
+113:-         } else if (expected == Float.class && internal) {
+114:-             return PainlessCast.boxTargetType(short.class, float.class, explicit, float.class);
+115:-         } else if (expected == Double.class && internal) {
+116:-             return PainlessCast.boxTargetType(short.class, double.class, explicit, double.class);
+117:-         }
+118:-     } else if (actual == char.class) {
+119:-         if (expected == def.class) {
+120:-             return PainlessCast.boxOriginalType(Character.class, def.class, explicit, char.class);
+121:-         } else if (expected == Object.class && internal) {
+122:-             return PainlessCast.boxOriginalType(Character.class, Object.class, explicit, char.class);
+123:-         } else if (expected == Number.class && internal) {
+124:-             return PainlessCast.boxOriginalType(Character.class, Number.class, explicit, char.class);
+125:-         } else if (expected == String.class && explicit) {
+126:-             return PainlessCast.originalTypetoTargetType(char.class, String.class, true);
+127:-         } else if (expected == byte.class && explicit) {
+128:-             return PainlessCast.originalTypetoTargetType(char.class, byte.class, true);
+129:-         } else if (expected == short.class && explicit) {
+130:-             return PainlessCast.originalTypetoTargetType(char.class, short.class, true);
+131:-         } else if (expected == int.class) {
+132:-             return PainlessCast.originalTypetoTargetType(char.class, int.class, explicit);
+133:-         } else if (expected == long.class) {
+134:-             return PainlessCast.originalTypetoTargetType(char.class, long.class, explicit);
+135:-         } else if (expected == float.class) {
+136:-             return PainlessCast.originalTypetoTargetType(char.class, float.class, explicit);
+137:-         } else if (expected == double.class) {
+138:-             return PainlessCast.originalTypetoTargetType(char.class, double.class, explicit);
+139:-         } else if (expected == Character.class && internal) {
+140:-             return PainlessCast.boxTargetType(char.class, char.class, true, char.class);
+141:-         } else if (expected == Integer.class && internal) {
+142:-             return PainlessCast.boxTargetType(char.class, int.class, explicit, int.class);
+143:-         } else if (expected == Long.class && internal) {
+144:-             return PainlessCast.boxTargetType(char.class, long.class, explicit, long.class);
+145:-         } else if (expected == Float.class && internal) {
+146:-             return PainlessCast.boxTargetType(char.class, float.class, explicit, float.class);
+147:-         } else if (expected == Double.class && internal) {
+148:-             return PainlessCast.boxTargetType(char.class, double.class, explicit, double.class);
+149:-         }
+150:-     } else if (actual == int.class) {
+151:-         if (expected == def.class) {
+152:-             return PainlessCast.boxOriginalType(Integer.class, def.class, explicit, int.class);
+153:-         } else if (expected == Object.class && internal) {
+154:-             return PainlessCast.boxOriginalType(Integer.class, Object.class, explicit, int.class);
+155:-         } else if (expected == Number.class && internal) {
+156:-             return PainlessCast.boxOriginalType(Integer.class, Number.class, explicit, int.class);
+157:-         } else if (expected == byte.class && explicit) {
+158:-             return PainlessCast.originalTypetoTargetType(int.class, byte.class, true);
+159:-         } else if (expected == char.class && explicit) {
+160:-             return PainlessCast.originalTypetoTargetType(int.class, char.class, true);
+161:-         } else if (expected == short.class && explicit) {
+162:-             return PainlessCast.originalTypetoTargetType(int.class, short.class, true);
+163:-         } else if (expected == long.class) {
+164:-             return PainlessCast.originalTypetoTargetType(int.class, long.class, explicit);
+165:-         } else if (expected == float.class) {
+166:-             return PainlessCast.originalTypetoTargetType(int.class, float.class, explicit);
+167:-         } else if (expected == double.class) {
+168:-             return PainlessCast.originalTypetoTargetType(int.class, double.class, explicit);
+169:-         } else if (expected == Integer.class && internal) {
+170:-             return PainlessCast.boxTargetType(int.class, int.class, explicit, int.class);
+171:-         } else if (expected == Long.class && internal) {
+172:-             return PainlessCast.boxTargetType(int.class, long.class, explicit, long.class);
+173:-         } else if (expected == Float.class && internal) {
+174:-             return PainlessCast.boxTargetType(int.class, float.class, explicit, float.class);
+175:-         } else if (expected == Double.class && internal) {
+176:-             return PainlessCast.boxTargetType(int.class, double.class, explicit, double.class);
+177:-         }
+178:-     } else if (actual == long.class) {
+179:-         if (expected == def.class) {
+180:-             return PainlessCast.boxOriginalType(Long.class, def.class, explicit, long.class);
+181:-         } else if (expected == Object.class && internal) {
+182:-             return PainlessCast.boxOriginalType(Long.class, Object.class, explicit, long.class);
+183:-         } else if (expected == Number.class && internal) {
+184:-             return PainlessCast.boxOriginalType(Long.class, Number.class, explicit, long.class);
+185:-         } else if (expected == byte.class && explicit) {
+186:-             return PainlessCast.originalTypetoTargetType(long.class, byte.class, true);
+187:-         } else if (expected == char.class && explicit) {
+188:-             return PainlessCast.originalTypetoTargetType(long.class, char.class, true);
+189:-         } else if (expected == short.class && explicit) {
+190:-             return PainlessCast.originalTypetoTargetType(long.class, short.class, true);
+191:-         } else if (expected == int.class && explicit) {
+192:-             return PainlessCast.originalTypetoTargetType(long.class, int.class, true);
+193:-         } else if (expected == float.class) {
+194:-             return PainlessCast.originalTypetoTargetType(long.class, float.class, explicit);
+195:-         } else if (expected == double.class) {
+196:-             return PainlessCast.originalTypetoTargetType(long.class, double.class, explicit);
+197:-         } else if (expected == Long.class && internal) {
+198:-             return PainlessCast.boxTargetType(long.class, long.class, explicit, long.class);
+199:-         } else if (expected == Float.class && internal) {
+200:-             return PainlessCast.boxTargetType(long.class, float.class, explicit, float.class);
+201:-         } else if (expected == Double.class && internal) {
+202:-             return PainlessCast.boxTargetType(long.class, double.class, explicit, double.class);
+203:-         }
+204:-     } else if (actual == float.class) {
+205:-         if (expected == def.class) {
+206:-             return PainlessCast.boxOriginalType(Float.class, def.class, explicit, float.class);
+207:-         } else if (expected == Object.class && internal) {
+208:-             return PainlessCast.boxOriginalType(Float.class, Object.class, explicit, float.class);
+209:-         } else if (expected == Number.class && internal) {
+210:-             return PainlessCast.boxOriginalType(Float.class, Number.class, explicit, float.class);
+211:-         } else if (expected == byte.class && explicit) {
+212:-             return PainlessCast.originalTypetoTargetType(float.class, byte.class, true);
+213:-         } else if (expected == char.class && explicit) {
+214:-             return PainlessCast.originalTypetoTargetType(float.class, char.class, true);
+215:-         } else if (expected == short.class && explicit) {
+216:-             return PainlessCast.originalTypetoTargetType(float.class, short.class, true);
+217:-         } else if (expected == int.class && explicit) {
+218:-             return PainlessCast.originalTypetoTargetType(float.class, int.class, true);
+219:-         } else if (expected == long.class && explicit) {
+220:-             return PainlessCast.originalTypetoTargetType(float.class, long.class, true);
+221:-         } else if (expected == double.class) {
+222:-             return PainlessCast.originalTypetoTargetType(float.class, double.class, explicit);
+223:-         } else if (expected == Float.class && internal) {
+224:-             return PainlessCast.boxTargetType(float.class, float.class, explicit, float.class);
+225:-         } else if (expected == Double.class && internal) {
+226:-             return PainlessCast.boxTargetType(float.class, double.class, explicit, double.class);
+227:-         }
+228:-     } else if (actual == double.class) {
+229:-         if (expected == def.class) {
+230:-             return PainlessCast.boxOriginalType(Double.class, def.class, explicit, double.class);
+231:-         } else if (expected == Object.class && internal) {
+232:-             return PainlessCast.boxOriginalType(Double.class, Object.class, explicit, double.class);
+233:-         } else if (expected == Number.class && internal) {
+234:-             return PainlessCast.boxOriginalType(Double.class, Number.class, explicit, double.class);
+235:-         } else if (expected == byte.class && explicit) {
+236:-             return PainlessCast.originalTypetoTargetType(double.class, byte.class, true);
+237:-         } else if (expected == char.class && explicit) {
+238:-             return PainlessCast.originalTypetoTargetType(double.class, char.class, true);
+239:-         } else if (expected == short.class && explicit) {
+240:-             return PainlessCast.originalTypetoTargetType(double.class, short.class, true);
+241:-         } else if (expected == int.class && explicit) {
+242:-             return PainlessCast.originalTypetoTargetType(double.class, int.class, true);
+243:-         } else if (expected == long.class && explicit) {
+244:-             return PainlessCast.originalTypetoTargetType(double.class, long.class, true);
+245:-         } else if (expected == float.class && explicit) {
+246:-             return PainlessCast.originalTypetoTargetType(double.class, float.class, true);
+247:-         } else if (expected == Double.class && internal) {
+248:-             return PainlessCast.boxTargetType(double.class, double.class, explicit, double.class);
+249:-         }
+250:-     } else if (actual == Boolean.class) {
+251:-         if (expected == boolean.class && internal) {
+252:-             return PainlessCast.unboxOriginalType(boolean.class, boolean.class, explicit, boolean.class);
+253:-         }
+254:-     } else if (actual == Byte.class) {
+255:-         if (expected == byte.class && internal) {
+256:-             return PainlessCast.unboxOriginalType(byte.class, byte.class, explicit, byte.class);
+257:-         } else if (expected == short.class && internal) {
+258:-             return PainlessCast.unboxOriginalType(byte.class, short.class, explicit, byte.class);
+259:-         } else if (expected == int.class && internal) {
+260:-             return PainlessCast.unboxOriginalType(byte.class, int.class, explicit, byte.class);
+261:-         } else if (expected == long.class && internal) {
+262:-             return PainlessCast.unboxOriginalType(byte.class, long.class, explicit, byte.class);
+263:-         } else if (expected == float.class && internal) {
+264:-             return PainlessCast.unboxOriginalType(byte.class, float.class, explicit, byte.class);
+265:-         } else if (expected == double.class && internal) {
+266:-             return PainlessCast.unboxOriginalType(byte.class, double.class, explicit, byte.class);
+267:-         } else if (expected == Short.class && internal) {
+268:-             return PainlessCast.unboxOriginalTypeToBoxTargetType(explicit, byte.class, short.class);
+269:-         } else if (expected == Integer.class && internal) {
+270:-             return PainlessCast.unboxOriginalTypeToBoxTargetType(explicit, byte.class, int.class);
+271:-         } else if (expected == Long.class && internal) {
+272:-             return PainlessCast.unboxOriginalTypeToBoxTargetType(explicit, byte.class, long.class);
+273:-         } else if (expected == Float.class && internal) {
+274:-             return PainlessCast.unboxOriginalTypeToBoxTargetType(explicit, byte.class, float.class);
+275:-         } else if (expected == Double.class && internal) {
+276:-             return PainlessCast.unboxOriginalTypeToBoxTargetType(explicit, byte.class, double.class);
+277:-         }
+278:-     } else if (actual == Short.class) {
+279:-         if (expected == short.class && internal) {
+280:-             return PainlessCast.unboxOriginalType(short.class, short.class, explicit, short.class);
+281:-         } else if (expected == int.class && internal) {
+282:-             return PainlessCast.unboxOriginalType(short.class, int.class, explicit, short.class);
+283:-         } else if (expected == long.class && internal) {
+284:-             return PainlessCast.unboxOriginalType(short.class, long.class, explicit, short.class);
+285:-         } else if (expected == float.class && internal) {
+286:-             return PainlessCast.unboxOriginalType(short.class, float.class, explicit, short.class);
+287:-         } else if (expected == double.class && internal) {
+288:-             return PainlessCast.unboxOriginalType(short.class, double.class, explicit, short.class);
+289:-         } else if (expected == Integer.class && internal) {
+290:-             return PainlessCast.unboxOriginalTypeToBoxTargetType(explicit, short.class, int.class);
+291:-         } else if (expected == Long.class && internal) {
+292:-             return PainlessCast.unboxOriginalTypeToBoxTargetType(explicit, short.class, long.class);
+293:-         } else if (expected == Float.class && internal) {
+294:-             return PainlessCast.unboxOriginalTypeToBoxTargetType(explicit, short.class, float.class);
+295:-         } else if (expected == Double.class && internal) {
+296:-             return PainlessCast.unboxOriginalTypeToBoxTargetType(explicit, short.class, double.class);
+297:-         }
+298:-     } else if (actual == Character.class) {
+299:-         if (expected == char.class && internal) {
+300:-             return PainlessCast.unboxOriginalType(char.class, char.class, explicit, char.class);
+301:-         } else if (expected == int.class && internal) {
+302:-             return PainlessCast.unboxOriginalType(char.class, int.class, explicit, char.class);
+303:-         } else if (expected == long.class && internal) {
+304:-             return PainlessCast.unboxOriginalType(char.class, long.class, explicit, char.class);
+305:-         } else if (expected == float.class && internal) {
+306:-             return PainlessCast.unboxOriginalType(char.class, float.class, explicit, char.class);
+307:-         } else if (expected == double.class && internal) {
+308:-             return PainlessCast.unboxOriginalType(char.class, double.class, explicit, char.class);
+309:-         } else if (expected == Integer.class && internal) {
+310:-             return PainlessCast.unboxOriginalTypeToBoxTargetType(explicit, char.class, int.class);
+311:-         } else if (expected == Long.class && internal) {
+312:-             return PainlessCast.unboxOriginalTypeToBoxTargetType(explicit, char.class, long.class);
+313:-         } else if (expected == Float.class && internal) {
+314:-             return PainlessCast.unboxOriginalTypeToBoxTargetType(explicit, char.class, float.class);
+315:-         } else if (expected == Double.class && internal) {
+316:-             return PainlessCast.unboxOriginalTypeToBoxTargetType(explicit, char.class, double.class);
+317:-         }
+318:-     } else if (actual == Integer.class) {
+319:-         if (expected == int.class && internal) {
+320:-             return PainlessCast.unboxOriginalType(int.class, int.class, explicit, int.class);
+321:-         } else if (expected == long.class && internal) {
+322:-             return PainlessCast.unboxOriginalType(int.class, long.class, explicit, int.class);
+323:-         } else if (expected == float.class && internal) {
+324:-             return PainlessCast.unboxOriginalType(int.class, float.class, explicit, int.class);
+325:-         } else if (expected == double.class && internal) {
+326:-             return PainlessCast.unboxOriginalType(int.class, double.class, explicit, int.class);
+327:-         } else if (expected == Long.class && internal) {
+328:-             return PainlessCast.unboxOriginalTypeToBoxTargetType(explicit, int.class, long.class);
+329:-         } else if (expected == Float.class && internal) {
+330:-             return PainlessCast.unboxOriginalTypeToBoxTargetType(explicit, int.class, float.class);
+331:-         } else if (expected == Double.class && internal) {
+332:-             return PainlessCast.unboxOriginalTypeToBoxTargetType(explicit, int.class, double.class);
+333:-         }
+334:-     } else if (actual == Long.class) {
+335:-         if (expected == long.class && internal) {
+336:-             return PainlessCast.unboxOriginalType(long.class, long.class, explicit, long.class);
+337:-         } else if (expected == float.class && internal) {
+338:-             return PainlessCast.unboxOriginalType(long.class, float.class, explicit, long.class);
+339:-         } else if (expected == double.class && internal) {
+340:-             return PainlessCast.unboxOriginalType(long.class, double.class, explicit, long.class);
+341:-         } else if (expected == Float.class && internal) {
+342:-             return PainlessCast.unboxOriginalTypeToBoxTargetType(explicit, long.class, float.class);
+343:-         } else if (expected == Double.class && internal) {
+344:-             return PainlessCast.unboxOriginalTypeToBoxTargetType(explicit, long.class, double.class);
+345:-         }
+346:-     } else if (actual == Float.class) {
+347:-         if (expected == float.class && internal) {
+348:-             return PainlessCast.unboxOriginalType(float.class, float.class, explicit, float.class);
+349:-         } else if (expected == double.class && internal) {
+350:-             return PainlessCast.unboxOriginalType(float.class, double.class, explicit, float.class);
+351:-         } else if (expected == Double.class && internal) {
+352:-             return PainlessCast.unboxOriginalTypeToBoxTargetType(explicit, float.class, double.class);
+353:-         }
+354:-     } else if (actual == Double.class) {
+355:-         if (expected == double.class && internal) {
+356:-             return PainlessCast.unboxOriginalType(double.class, double.class, explicit, double.class);
+357:-         }
+358:-     }
+360:-     if ((actual == def.class && expected != void.class)
+361:-         || (actual != void.class && expected == def.class)
+362:-         || expected.isAssignableFrom(actual)
+363:-         || (actual.isAssignableFrom(expected) && explicit)) {
+365:-     } else {
+366:-         throw location.createError(
+367:-             new ClassCastException(
+368:-                 "Cannot cast from "
+369:-                     + "["
+370:-                     + PainlessLookupUtility.typeToCanonicalTypeName(actual)
+371:-                     + "] to "
+372:-                     + "["
+373:-                     + PainlessLookupUtility.typeToCanonicalTypeName(expected)
+374:-                     + "]."
+375:-             )
+376:-         );
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 13
+Testing time : 2023-12-07 19:53:07
+gecs recommendation result of method getTypeForFactoryMethod [2, 110]: 
+Recommending extracting code lines: 18, 19, 38, 39, 40, 43, 44, 50, 55, 58, 61, 62, 64, 67, 72, 89
+18:- 				throw new BeanDefinitionStoreException(mbd.getResourceDescription(), beanName,
+19:- 						"factory-bean reference points back to the same bean definition");
+38:- 				(mbd.hasConstructorArgumentValues() ? mbd.getConstructorArgumentValues().getArgumentCount() : 0);
+39:- 		Method[] candidates = this.factoryMethodCandidateCache.computeIfAbsent(factoryClass,
+40:- 				clazz -> ReflectionUtils.getUniqueDeclaredMethods(clazz, ReflectionUtils.USER_DECLARED_METHODS));
+43:- 			if (Modifier.isStatic(candidate.getModifiers()) == isStatic && mbd.isFactoryMethod(candidate) &&
+44:- 					candidate.getParameterCount() >= minNrOfArgs) {
+50:- 						Class<?>[] paramTypes = candidate.getParameterTypes();
+55:- 								paramNames = pnd.getParameterNames(candidate);
+58:- 						Set<ConstructorArgumentValues.ValueHolder> usedValueHolders = new HashSet<>(paramTypes.length);
+61:- 							ConstructorArgumentValues.ValueHolder valueHolder = cav.getArgumentValue(
+62:- 									i, paramTypes[i], (paramNames != null ? paramNames[i] : null), usedValueHolders);
+64:- 								valueHolder = cav.getGenericArgumentValue(null, null, usedValueHolders);
+67:- 								args[i] = valueHolder.getValue();
+72:- 								candidate, args, getBeanClassLoader());
+89:- 					commonType = ClassUtils.determineCommonAncestor(candidate.getReturnType(), commonType);
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 14
+Testing time : 2023-12-07 19:53:37
+gecs recommendation result of method parse [2, 92]: 
+Recommending extracting code lines: 5, 6, 8, 12, 22, 39, 57, 62, 63, 64, 65, 66, 69, 70, 71, 76, 77, 79, 80, 83, 84, 86, 87
+5:- 	this.pathPatternData = pathPattern.toCharArray();
+6:- 	this.pathPatternLength = this.pathPatternData.length;
+8:- 	this.currentPE = null;
+12:- 	resetPathElementState();
+22:- 				pushPathElement(new WildcardTheRestPathElement(this.pos, separator));
+39:- 							PatternMessage.ILLEGAL_NESTED_CAPTURE);
+57:- 							PatternMessage.NO_MORE_DATA_EXPECTED_AFTER_CAPTURE_THE_REST);
+62:- 				if (this.insideVariableCapture && !this.isCaptureTheRestVariable) {
+63:- 					skipCaptureRegex();
+64:- 					this.insideVariableCapture = false;
+65:- 					this.variableCaptureCount++;
+66:- 				}
+69:- 				if (this.insideVariableCapture && this.variableCaptureStart == this.pos - 1) {
+70:- 					this.isCaptureTheRestVariable = true;
+71:- 				}
+76:- 				if ((this.variableCaptureStart + 1 + (this.isCaptureTheRestVariable ? 1 : 0)) == this.pos &&
+77:- 						!Character.isJavaIdentifierStart(ch)) {
+79:- 							PatternMessage.ILLEGAL_CHARACTER_AT_START_OF_CAPTURE_DESCRIPTOR,
+80:- 							Character.toString(ch));
+83:- 				else if ((this.pos > (this.variableCaptureStart + 1 + (this.isCaptureTheRestVariable ? 1 : 0)) &&
+84:- 						!Character.isJavaIdentifierPart(ch) && ch != '-')) {
+86:- 							PatternMessage.ILLEGAL_CHARACTER_IN_CAPTURE_DESCRIPTOR,
+87:- 							Character.toString(ch));
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 15
+Testing time : 2023-12-07 19:53:51
+gecs recommendation result of method testOpenEntityManagerInViewFilterAsyncScenario [2, 87]: 
+Recommending extracting code lines: 14, 15, 17, 19, 20, 30, 31, 32, 33, 34, 38, 39, 40, 41, 42, 50, 83, 84
+14:- 	wac.getDefaultListableBeanFactory().registerSingleton("entityManagerFactory", factory);
+15:- 	wac.getDefaultListableBeanFactory().registerSingleton("myEntityManagerFactory", factory2);
+17:- 	sc.setAttribute(WebApplicationContext.ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE, wac);
+19:- 	MockFilterConfig filterConfig = new MockFilterConfig(wac.getServletContext(), "filter");
+20:- 	MockFilterConfig filterConfig2 = new MockFilterConfig(wac.getServletContext(), "filter2");
+30:- 	final FilterChain filterChain = (servletRequest, servletResponse) -> {
+31:- 		assertThat(TransactionSynchronizationManager.hasResource(factory)).isTrue();
+32:- 		servletRequest.setAttribute("invoked", Boolean.TRUE);
+33:- 		count.incrementAndGet();
+34:- 	};
+38:- 	final FilterChain filterChain2 = (servletRequest, servletResponse) -> {
+39:- 		assertThat(TransactionSynchronizationManager.hasResource(factory2)).isTrue();
+40:- 		filter.doFilter(servletRequest, servletResponse, filterChain);
+41:- 		count2.incrementAndGet();
+42:- 	};
+50:- 	asyncManager.setTaskExecutor(this.taskExecutor);
+83:- 	verify(this.manager).close();
+84:- 	verify(manager2).close();
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 16
+Testing time : 2023-12-07 19:54:06
+gecs recommendation result of method compilingMathematicalExpressionsWithDifferentOperandTypes [2, 83]: 
+Recommending extracting code lines: 8, 13, 18, 24, 28, 33, 38, 47, 48, 53, 58, 64, 68, 73, 78
+8:- 	long stime = System.currentTimeMillis();
+13:- 	stime = System.currentTimeMillis();
+18:- 	stime = System.currentTimeMillis();
+24:- 	System.out.println("Now compiled:");
+28:- 	stime = System.currentTimeMillis();
+33:- 	stime = System.currentTimeMillis();
+38:- 	stime = System.currentTimeMillis();
+47:- 	System.out.println("Performance check for SpEL expression: 'payload/18D'");
+48:- 	stime = System.currentTimeMillis();
+53:- 	stime = System.currentTimeMillis();
+58:- 	stime = System.currentTimeMillis();
+64:- 	System.out.println("Now compiled:");
+68:- 	stime = System.currentTimeMillis();
+73:- 	stime = System.currentTimeMillis();
+78:- 	stime = System.currentTimeMillis();
+-----------------------------------------------------------------------------------------------

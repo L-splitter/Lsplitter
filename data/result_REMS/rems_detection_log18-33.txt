@@ -1,0 +1,1938 @@
+-----------------------------------------------------------------------------------------------
+Testing data : 18
+Testing time : 2023-12-07 19:55:12
+gecs recommendation result of method handleRequest [2, 117]: 
+Recommending extracting code lines: 
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 19
+Testing time : 2023-12-07 19:55:32
+gecs recommendation result of method registerSockJsService [2, 102]: 
+Recommending extracting code lines: 5, 8, 14, 15, 16, 17, 19, 21, 23, 25, 30, 34, 40, 44, 45, 48, 49, 53, 57, 61, 63, 65, 67, 71, 75, 77, 79, 93, 95, 97
+5:- 	Element sockJsElement = DomUtils.getChildElementByTagName(element, "sockjs");
+8:- 		Element handshakeHandler = DomUtils.getChildElementByTagName(element, "handshake-handler");
+14:- 		String customTaskSchedulerName = sockJsElement.getAttribute("scheduler");
+15:- 		if (!customTaskSchedulerName.isEmpty()) {
+16:- 			scheduler = new RuntimeBeanReference(customTaskSchedulerName);
+17:- 		}
+19:- 			scheduler = registerScheduler(schedulerName, context, source);
+21:- 		sockJsServiceDef.getConstructorArgumentValues().addIndexedArgumentValue(0, scheduler);
+23:- 		Element transportHandlersElement = DomUtils.getChildElementByTagName(sockJsElement, "transport-handlers");
+25:- 			String registerDefaults = transportHandlersElement.getAttribute("register-defaults");
+30:- 			sockJsServiceDef.getConstructorArgumentValues().addIndexedArgumentValue(1, transportHandlers);
+34:- 			RootBeanDefinition transportHandler = new RootBeanDefinition(WebSocketTransportHandler.class);
+40:- 		Element interceptElem = DomUtils.getChildElementByTagName(element, "handshake-interceptors");
+44:- 		List<String> origins = Arrays.asList(StringUtils.tokenizeToStringArray(allowedOrigins, ","));
+45:- 		sockJsServiceDef.getPropertyValues().add("allowedOrigins", origins);
+48:- 		List<String> originPatterns = Arrays.asList(StringUtils.tokenizeToStringArray(allowedOriginPatterns, ","));
+49:- 		sockJsServiceDef.getPropertyValues().add("allowedOriginPatterns", originPatterns);
+53:- 		originHandshakeInterceptor.getPropertyValues().add("allowedOriginPatterns", originPatterns);
+57:- 		String attrValue = sockJsElement.getAttribute("name");
+61:- 		attrValue = sockJsElement.getAttribute("websocket-enabled");
+63:- 			sockJsServiceDef.getPropertyValues().add("webSocketEnabled", Boolean.valueOf(attrValue));
+65:- 		attrValue = sockJsElement.getAttribute("session-cookie-needed");
+67:- 			sockJsServiceDef.getPropertyValues().add("sessionCookieNeeded", Boolean.valueOf(attrValue));
+71:- 			sockJsServiceDef.getPropertyValues().add("streamBytesLimit", Integer.valueOf(attrValue));
+75:- 			sockJsServiceDef.getPropertyValues().add("disconnectDelay", Long.valueOf(attrValue));
+77:- 		attrValue = sockJsElement.getAttribute("message-cache-size");
+79:- 			sockJsServiceDef.getPropertyValues().add("httpMessageCacheSize", Integer.valueOf(attrValue));
+93:- 		attrValue = sockJsElement.getAttribute("suppress-cors");
+95:- 			sockJsServiceDef.getPropertyValues().add("suppressCors", Boolean.valueOf(attrValue));
+97:- 		sockJsServiceDef.setRole(BeanDefinition.ROLE_INFRASTRUCTURE);
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 20
+Testing time : 2023-12-07 19:55:51
+gecs recommendation result of method nullsafeMethodChaining_SPR16489 [2, 101]: 
+Recommending extracting code lines: 4, 8, 11, 16, 19, 23, 28, 31, 35, 40, 43, 47, 52, 55, 59, 64, 67, 71, 76, 79, 83, 88, 91, 95, 100
+4:- 	StandardEvaluationContext context = new StandardEvaluationContext();
+8:- 	SpelExpression expression = (SpelExpression) parser.parseExpression("getFoo()?.getObject()");
+11:- 	assertThat(expression.getValue(context)).isNull();
+16:- 	assertThat(expression.getValue(context)).isNull();
+19:- 	expression = (SpelExpression) parser.parseExpression("#var?.methoda()");
+23:- 	assertThat(expression.getValue(context)).isNull();
+28:- 	assertThat(expression.getValue(context)).isNull();
+31:- 	expression = (SpelExpression) parser.parseExpression("#var?.intValue()");
+35:- 	assertThat(expression.getValue(context)).isNull();
+40:- 	assertThat(expression.getValue(context)).isNull();
+43:- 	expression = (SpelExpression) parser.parseExpression("#var?.booleanValue()");
+47:- 	assertThat(expression.getValue(context)).isNull();
+52:- 	assertThat(expression.getValue(context)).isNull();
+55:- 	expression = (SpelExpression) parser.parseExpression("#var?.booleanValue()");
+59:- 	assertThat(expression.getValue(context)).isNull();
+64:- 	assertThat(expression.getValue(context)).isNull();
+67:- 	expression = (SpelExpression) parser.parseExpression("#var?.longValue()");
+71:- 	assertThat(expression.getValue(context)).isNull();
+76:- 	assertThat(expression.getValue(context)).isNull();
+79:- 	expression = (SpelExpression) parser.parseExpression("#var?.floatValue()");
+83:- 	assertThat(expression.getValue(context)).isNull();
+88:- 	assertThat(expression.getValue(context)).isNull();
+91:- 	expression = (SpelExpression) parser.parseExpression("#var?.shortValue()");
+95:- 	assertThat(expression.getValue(context)).isNull();
+100:- 	assertThat(expression.getValue(context)).isNull();
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 21
+Testing time : 2023-12-07 19:56:08
+gecs recommendation result of method reconcileParameters [2, 152]: 
+Recommending extracting code lines: 12, 13, 14, 15, 16, 24, 27, 46, 47, 48, 49, 50, 54, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149
+12:- 	for (CallParameterMetaData meta : provider.getCallParameterMetaData()) {
+13:- 		if (!meta.isReturnParameter()) {
+14:- 			metaDataParamNames.add(lowerCase(meta.getParameterName()));
+15:- 		}
+16:- 	}
+24:- 			String paramName = param.getName();
+27:- 						"please specify a name for the parameter of SQL type " + param.getSqlType());
+46:- 	List<SqlParameter> workParams = new ArrayList<>(declaredReturnParams);
+47:- 	if (!provider.isProcedureColumnMetaDataUsed()) {
+48:- 		workParams.addAll(declaredParams.values());
+49:- 		return workParams;
+50:- 	}
+54:- 		limitedInParamNamesMap.put(lowerCase(provider.parameterNameToUse(limitedParamName)), limitedParamName);
+57:- 	for (CallParameterMetaData meta : provider.getCallParameterMetaData()) {
+58:- 		String paramName = meta.getParameterName();
+59:- 		String paramNameToCheck = null;
+60:- 		if (paramName != null) {
+61:- 			paramNameToCheck = lowerCase(provider.parameterNameToUse(paramName));
+62:- 		}
+63:- 		String paramNameToUse = provider.parameterNameToUse(paramName);
+64:- 		if (declaredParams.containsKey(paramNameToCheck) || (meta.isReturnParameter() && returnDeclared)) {
+65:- 			SqlParameter param;
+66:- 			if (meta.isReturnParameter()) {
+67:- 				param = declaredParams.get(getFunctionReturnName());
+68:- 				if (param == null && !getOutParameterNames().isEmpty()) {
+69:- 					param = declaredParams.get(getOutParameterNames().get(0).toLowerCase());
+70:- 				}
+71:- 				if (param == null) {
+72:- 					throw new InvalidDataAccessApiUsageException(
+73:- 							"Unable to locate declared parameter for function return value - " +
+74:- 							" add an SqlOutParameter with name '" + getFunctionReturnName() + "'");
+75:- 				}
+76:- 				else {
+77:- 					this.actualFunctionReturnName = param.getName();
+78:- 				}
+79:- 			}
+80:- 			else {
+81:- 				param = declaredParams.get(paramNameToCheck);
+82:- 			}
+83:- 			if (param != null) {
+84:- 				workParams.add(param);
+85:- 				if (logger.isDebugEnabled()) {
+86:- 					logger.debug("Using declared parameter for '" +
+87:- 							(paramNameToUse != null ? paramNameToUse : getFunctionReturnName()) + "'");
+88:- 				}
+89:- 			}
+90:- 		}
+91:- 		else {
+92:- 			if (meta.isReturnParameter()) {
+93:- 				// DatabaseMetaData.procedureColumnReturn or possibly procedureColumnResult
+94:- 				if (!isFunction() && !isReturnValueRequired() && paramName != null &&
+95:- 						provider.byPassReturnParameter(paramName)) {
+96:- 					if (logger.isDebugEnabled()) {
+97:- 						logger.debug("Bypassing meta-data return parameter for '" + paramName + "'");
+98:- 					}
+99:- 				}
+100:- 				else {
+101:- 					String returnNameToUse =
+102:- 							(StringUtils.hasLength(paramNameToUse) ? paramNameToUse : getFunctionReturnName());
+103:- 					workParams.add(provider.createDefaultOutParameter(returnNameToUse, meta));
+104:- 					if (isFunction()) {
+105:- 						this.actualFunctionReturnName = returnNameToUse;
+106:- 						outParamNames.add(returnNameToUse);
+107:- 					}
+108:- 					if (logger.isDebugEnabled()) {
+109:- 						logger.debug("Added meta-data return parameter for '" + returnNameToUse + "'");
+110:- 					}
+111:- 				}
+112:- 			}
+113:- 			else {
+114:- 				if (paramNameToUse == null) {
+115:- 					paramNameToUse = "";
+116:- 				}
+117:- 				if (meta.getParameterType() == DatabaseMetaData.procedureColumnOut) {
+118:- 					workParams.add(provider.createDefaultOutParameter(paramNameToUse, meta));
+119:- 					outParamNames.add(paramNameToUse);
+120:- 					if (logger.isDebugEnabled()) {
+121:- 						logger.debug("Added meta-data out parameter for '" + paramNameToUse + "'");
+122:- 					}
+123:- 				}
+124:- 				else if (meta.getParameterType() == DatabaseMetaData.procedureColumnInOut) {
+125:- 					workParams.add(provider.createDefaultInOutParameter(paramNameToUse, meta));
+126:- 					outParamNames.add(paramNameToUse);
+127:- 					if (logger.isDebugEnabled()) {
+128:- 						logger.debug("Added meta-data in-out parameter for '" + paramNameToUse + "'");
+129:- 					}
+130:- 				}
+131:- 				else {
+132:- 					// DatabaseMetaData.procedureColumnIn or possibly procedureColumnUnknown
+133:- 					if (this.limitedInParameterNames.isEmpty() ||
+134:- 							limitedInParamNamesMap.containsKey(lowerCase(paramNameToUse))) {
+135:- 						workParams.add(provider.createDefaultInParameter(paramNameToUse, meta));
+136:- 						if (logger.isDebugEnabled()) {
+137:- 							logger.debug("Added meta-data in parameter for '" + paramNameToUse + "'");
+138:- 						}
+139:- 					}
+140:- 					else {
+141:- 						if (logger.isDebugEnabled()) {
+142:- 							logger.debug("Limited set of parameters " + limitedInParamNamesMap.keySet() +
+143:- 									" skipped parameter for '" + paramNameToUse + "'");
+144:- 						}
+145:- 					}
+146:- 				}
+147:- 			}
+148:- 		}
+149:- 	}
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 22
+Testing time : 2023-12-07 19:56:28
+gecs recommendation result of method readElementValue [2, 169]: 
+Recommending extracting code lines: 3, 4, 5, 6, 7, 10, 11, 12, 13, 14, 15, 21, 22, 23, 26, 27, 28, 31, 32, 33, 34, 35, 36, 39, 40, 41, 45, 46, 47, 48, 49, 50, 53, 54, 57, 58, 59, 60, 61, 64, 65, 68, 69, 70, 71, 72, 73, 74, 76, 77, 83, 84, 91, 94, 95, 96, 98, 99, 102, 104, 106, 107, 110, 112, 115, 118, 120, 123, 126, 128, 130, 131, 134, 136, 140, 141, 144, 146, 150, 151, 154, 155, 156, 157, 158, 159, 160, 161, 162, 166
+3:-     final AnnotationVisitor annotationVisitor,
+4:-     final int elementValueOffset,
+5:-     final String elementName,
+6:-     final char[] charBuffer) {
+7:-   int currentOffset = elementValueOffset;
+10:-       case 'e': // enum_const_value
+11:-         return currentOffset + 5;
+12:-       case '@': // annotation_value
+13:-         return readElementValues(null, currentOffset + 3, /* named = */ true, charBuffer);
+14:-       case '[': // array_value
+15:-         return readElementValues(null, currentOffset + 1, /* named = */ false, charBuffer);
+21:-     case 'B': // const_value_index, CONSTANT_Integer
+22:-       annotationVisitor.visit(
+23:-           elementName, (byte) readInt(cpInfoOffsets[readUnsignedShort(currentOffset)]));
+26:-     case 'C': // const_value_index, CONSTANT_Integer
+27:-       annotationVisitor.visit(
+28:-           elementName, (char) readInt(cpInfoOffsets[readUnsignedShort(currentOffset)]));
+31:-     case 'D': // const_value_index, CONSTANT_Double
+32:-     case 'F': // const_value_index, CONSTANT_Float
+33:-     case 'I': // const_value_index, CONSTANT_Integer
+34:-     case 'J': // const_value_index, CONSTANT_Long
+35:-       annotationVisitor.visit(
+36:-           elementName, readConst(readUnsignedShort(currentOffset), charBuffer));
+39:-     case 'S': // const_value_index, CONSTANT_Integer
+40:-       annotationVisitor.visit(
+41:-           elementName, (short) readInt(cpInfoOffsets[readUnsignedShort(currentOffset)]));
+45:-     case 'Z': // const_value_index, CONSTANT_Integer
+46:-       annotationVisitor.visit(
+47:-           elementName,
+48:-           readInt(cpInfoOffsets[readUnsignedShort(currentOffset)]) == 0
+49:-               ? Boolean.FALSE
+50:-               : Boolean.TRUE);
+53:-     case 's': // const_value_index, CONSTANT_Utf8
+54:-       annotationVisitor.visit(elementName, readUTF8(currentOffset, charBuffer));
+57:-     case 'e': // enum_const_value
+58:-       annotationVisitor.visitEnum(
+59:-           elementName,
+60:-           readUTF8(currentOffset, charBuffer),
+61:-           readUTF8(currentOffset + 2, charBuffer));
+64:-     case 'c': // class_info
+65:-       annotationVisitor.visit(elementName, Type.getType(readUTF8(currentOffset, charBuffer)));
+68:-     case '@': // annotation_value
+69:-       currentOffset =
+70:-           readElementValues(
+71:-               annotationVisitor.visitAnnotation(elementName, readUTF8(currentOffset, charBuffer)),
+72:-               currentOffset + 2,
+73:-               true,
+74:-               charBuffer);
+76:-     case '[': // array_value
+77:-       int numValues = readUnsignedShort(currentOffset);
+83:-             /* named = */ false,
+84:-             charBuffer);
+91:-             currentOffset += 3;
+94:-           break;
+95:-         case 'Z':
+96:-           boolean[] booleanValues = new boolean[numValues];
+98:-             booleanValues[i] = readInt(cpInfoOffsets[readUnsignedShort(currentOffset + 1)]) != 0;
+99:-             currentOffset += 3;
+102:-           break;
+104:-           short[] shortValues = new short[numValues];
+106:-             shortValues[i] = (short) readInt(cpInfoOffsets[readUnsignedShort(currentOffset + 1)]);
+107:-             currentOffset += 3;
+110:-           break;
+112:-           char[] charValues = new char[numValues];
+115:-             currentOffset += 3;
+118:-           break;
+120:-           int[] intValues = new int[numValues];
+123:-             currentOffset += 3;
+126:-           break;
+128:-           long[] longValues = new long[numValues];
+130:-             longValues[i] = readLong(cpInfoOffsets[readUnsignedShort(currentOffset + 1)]);
+131:-             currentOffset += 3;
+134:-           break;
+136:-           float[] floatValues = new float[numValues];
+140:-                     readInt(cpInfoOffsets[readUnsignedShort(currentOffset + 1)]));
+141:-             currentOffset += 3;
+144:-           break;
+146:-           double[] doubleValues = new double[numValues];
+150:-                     readLong(cpInfoOffsets[readUnsignedShort(currentOffset + 1)]));
+151:-             currentOffset += 3;
+154:-           break;
+155:-         default:
+156:-           currentOffset =
+157:-               readElementValues(
+158:-                   annotationVisitor.visitArray(elementName),
+159:-                   currentOffset - 2,
+160:-                   /* named = */ false,
+161:-                   charBuffer);
+162:-           break;
+166:-       throw new IllegalArgumentException();
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 23
+Testing time : 2023-12-07 19:56:46
+gecs recommendation result of method process [2, 190]: 
+Recommending extracting code lines: 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188
+3:- 	while (this.pos < this.max) {
+4:- 		char ch = this.charsToProcess[this.pos];
+5:- 		if (isAlphabetic(ch)) {
+6:- 			lexIdentifier();
+7:- 		}
+8:- 		else {
+9:- 			switch (ch) {
+10:- 				case '+':
+11:- 					if (isTwoCharToken(TokenKind.INC)) {
+12:- 						pushPairToken(TokenKind.INC);
+13:- 					}
+14:- 					else {
+15:- 						pushCharToken(TokenKind.PLUS);
+16:- 					}
+17:- 					break;
+18:- 				case '_': // the other way to start an identifier
+19:- 					lexIdentifier();
+20:- 					break;
+21:- 				case '-':
+22:- 					if (isTwoCharToken(TokenKind.DEC)) {
+23:- 						pushPairToken(TokenKind.DEC);
+24:- 					}
+25:- 					else {
+26:- 						pushCharToken(TokenKind.MINUS);
+27:- 					}
+28:- 					break;
+29:- 				case ':':
+30:- 					pushCharToken(TokenKind.COLON);
+31:- 					break;
+32:- 				case '.':
+33:- 					pushCharToken(TokenKind.DOT);
+34:- 					break;
+35:- 				case ',':
+36:- 					pushCharToken(TokenKind.COMMA);
+37:- 					break;
+38:- 				case '*':
+39:- 					pushCharToken(TokenKind.STAR);
+40:- 					break;
+41:- 				case '/':
+42:- 					pushCharToken(TokenKind.DIV);
+43:- 					break;
+44:- 				case '%':
+45:- 					pushCharToken(TokenKind.MOD);
+46:- 					break;
+47:- 				case '(':
+48:- 					pushCharToken(TokenKind.LPAREN);
+49:- 					break;
+50:- 				case ')':
+51:- 					pushCharToken(TokenKind.RPAREN);
+52:- 					break;
+53:- 				case '[':
+54:- 					pushCharToken(TokenKind.LSQUARE);
+55:- 					break;
+56:- 				case '#':
+57:- 					pushCharToken(TokenKind.HASH);
+58:- 					break;
+59:- 				case ']':
+60:- 					pushCharToken(TokenKind.RSQUARE);
+61:- 					break;
+62:- 				case '{':
+63:- 					pushCharToken(TokenKind.LCURLY);
+64:- 					break;
+65:- 				case '}':
+66:- 					pushCharToken(TokenKind.RCURLY);
+67:- 					break;
+68:- 				case '@':
+69:- 					pushCharToken(TokenKind.BEAN_REF);
+70:- 					break;
+71:- 				case '^':
+72:- 					if (isTwoCharToken(TokenKind.SELECT_FIRST)) {
+73:- 						pushPairToken(TokenKind.SELECT_FIRST);
+74:- 					}
+75:- 					else {
+76:- 						pushCharToken(TokenKind.POWER);
+77:- 					}
+78:- 					break;
+79:- 				case '!':
+80:- 					if (isTwoCharToken(TokenKind.NE)) {
+81:- 						pushPairToken(TokenKind.NE);
+82:- 					}
+83:- 					else if (isTwoCharToken(TokenKind.PROJECT)) {
+84:- 						pushPairToken(TokenKind.PROJECT);
+85:- 					}
+86:- 					else {
+87:- 						pushCharToken(TokenKind.NOT);
+88:- 					}
+89:- 					break;
+90:- 				case '=':
+91:- 					if (isTwoCharToken(TokenKind.EQ)) {
+92:- 						pushPairToken(TokenKind.EQ);
+93:- 					}
+94:- 					else {
+95:- 						pushCharToken(TokenKind.ASSIGN);
+96:- 					}
+97:- 					break;
+98:- 				case '&':
+99:- 					if (isTwoCharToken(TokenKind.SYMBOLIC_AND)) {
+100:- 						pushPairToken(TokenKind.SYMBOLIC_AND);
+101:- 					}
+102:- 					else {
+103:- 						pushCharToken(TokenKind.FACTORY_BEAN_REF);
+104:- 					}
+105:- 					break;
+106:- 				case '|':
+107:- 					if (!isTwoCharToken(TokenKind.SYMBOLIC_OR)) {
+108:- 						raiseParseException(this.pos, SpelMessage.MISSING_CHARACTER, "|");
+109:- 					}
+110:- 					pushPairToken(TokenKind.SYMBOLIC_OR);
+111:- 					break;
+112:- 				case '?':
+113:- 					if (isTwoCharToken(TokenKind.SELECT)) {
+114:- 						pushPairToken(TokenKind.SELECT);
+115:- 					}
+116:- 					else if (isTwoCharToken(TokenKind.ELVIS)) {
+117:- 						pushPairToken(TokenKind.ELVIS);
+118:- 					}
+119:- 					else if (isTwoCharToken(TokenKind.SAFE_NAVI)) {
+120:- 						pushPairToken(TokenKind.SAFE_NAVI);
+121:- 					}
+122:- 					else {
+123:- 						pushCharToken(TokenKind.QMARK);
+124:- 					}
+125:- 					break;
+126:- 				case '$':
+127:- 					if (isTwoCharToken(TokenKind.SELECT_LAST)) {
+128:- 						pushPairToken(TokenKind.SELECT_LAST);
+129:- 					}
+130:- 					else {
+131:- 						lexIdentifier();
+132:- 					}
+133:- 					break;
+134:- 				case '>':
+135:- 					if (isTwoCharToken(TokenKind.GE)) {
+136:- 						pushPairToken(TokenKind.GE);
+137:- 					}
+138:- 					else {
+139:- 						pushCharToken(TokenKind.GT);
+140:- 					}
+141:- 					break;
+142:- 				case '<':
+143:- 					if (isTwoCharToken(TokenKind.LE)) {
+144:- 						pushPairToken(TokenKind.LE);
+145:- 					}
+146:- 					else {
+147:- 						pushCharToken(TokenKind.LT);
+148:- 					}
+149:- 					break;
+150:- 				case '0':
+151:- 				case '1':
+152:- 				case '2':
+153:- 				case '3':
+154:- 				case '4':
+155:- 				case '5':
+156:- 				case '6':
+157:- 				case '7':
+158:- 				case '8':
+159:- 				case '9':
+160:- 					lexNumericLiteral(ch == '0');
+161:- 					break;
+162:- 				case ' ':
+163:- 				case '\t':
+164:- 				case '\r':
+165:- 				case '\n':
+166:- 					// drift over white space
+167:- 					this.pos++;
+168:- 					break;
+169:- 				case '\'':
+170:- 					lexQuotedStringLiteral();
+171:- 					break;
+172:- 				case '"':
+173:- 					lexDoubleQuotedStringLiteral();
+174:- 					break;
+175:- 				case 0:
+176:- 					// hit sentinel at end of value
+177:- 					this.pos++;  // will take us to the end
+178:- 					break;
+179:- 				case '\\':
+180:- 					raiseParseException(this.pos, SpelMessage.UNEXPECTED_ESCAPE_CHAR);
+181:- 					break;
+182:- 				default:
+183:- 					throw new IllegalStateException(
+184:- 							"Unsupported character '%s' (%d) encountered at position %d in expression."
+185:- 									.formatted(ch, (int) ch, (this.pos + 1)));
+186:- 			}
+187:- 		}
+188:- 	}
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 24
+Testing time : 2023-12-07 19:58:12
+gecs recommendation result of method readCode [2, 1134]: 
+Recommending extracting code lines: 6, 7, 9, 10, 11, 13, 17, 18, 22, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 215, 216, 217, 218, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 243, 244, 245, 248, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 302, 303, 304, 306, 307, 310, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 337, 350, 352, 353, 357, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 402, 403, 404, 407, 408, 409, 410, 421, 422, 423, 424, 425, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 509, 514, 515, 525, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 552, 554, 555, 556, 557, 558, 559, 565, 566, 567, 568, 572, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 754, 755, 756, 757, 758, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 794, 795, 796, 797, 798, 801, 807, 809, 810, 811, 812, 816, 819, 820, 825, 826, 830, 831, 832, 833, 839, 841, 842, 845, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 880, 881, 885, 888, 889, 892, 893, 894, 900, 901, 902, 903, 904, 905, 906, 908, 912, 913, 914, 915, 916, 919, 920, 921, 923, 925, 926, 927, 932, 933, 935, 936, 938, 939, 940, 942, 943, 945, 947, 948, 949, 950, 951, 954, 955, 956, 959, 960, 961, 965, 983, 984, 985, 986, 987, 988, 989, 1011, 1012, 1013, 1014, 1015, 1016, 1017, 1025, 1029, 1030, 1031, 1032, 1033, 1034, 1035, 1036, 1037, 1038, 1039, 1040, 1041, 1042, 1043, 1044, 1045, 1046, 1047, 1048, 1049, 1050, 1051, 1052, 1053, 1054, 1055, 1056, 1057, 1058, 1059, 1060, 1061, 1062, 1063, 1064, 1065, 1071, 1072, 1081, 1082, 1083, 1084, 1085, 1086, 1087, 1088, 1089, 1090, 1099, 1100, 1109, 1110, 1111, 1112, 1113, 1114, 1115, 1116, 1117, 1118, 1124, 1125, 1126, 1127, 1128, 1129, 1130, 1133
+6:-   final byte[] classBuffer = classFileBuffer;
+7:-   final char[] charBuffer = context.charBuffer;
+9:-   final int maxLocals = readUnsignedShort(currentOffset + 2);
+10:-   final int codeLength = readInt(currentOffset + 4);
+11:-   currentOffset += 8;
+13:-     throw new IllegalArgumentException();
+17:-   final int bytecodeStartOffset = currentOffset;
+18:-   final int bytecodeEndOffset = currentOffset + codeLength;
+22:-     final int opcode = classBuffer[currentOffset] & 0xFF;
+25:-       case Opcodes.ACONST_NULL:
+26:-       case Opcodes.ICONST_M1:
+27:-       case Opcodes.ICONST_0:
+28:-       case Opcodes.ICONST_1:
+29:-       case Opcodes.ICONST_2:
+30:-       case Opcodes.ICONST_3:
+31:-       case Opcodes.ICONST_4:
+32:-       case Opcodes.ICONST_5:
+33:-       case Opcodes.LCONST_0:
+34:-       case Opcodes.LCONST_1:
+35:-       case Opcodes.FCONST_0:
+36:-       case Opcodes.FCONST_1:
+37:-       case Opcodes.FCONST_2:
+38:-       case Opcodes.DCONST_0:
+39:-       case Opcodes.DCONST_1:
+40:-       case Opcodes.IALOAD:
+41:-       case Opcodes.LALOAD:
+42:-       case Opcodes.FALOAD:
+43:-       case Opcodes.DALOAD:
+44:-       case Opcodes.AALOAD:
+45:-       case Opcodes.BALOAD:
+46:-       case Opcodes.CALOAD:
+47:-       case Opcodes.SALOAD:
+48:-       case Opcodes.IASTORE:
+49:-       case Opcodes.LASTORE:
+50:-       case Opcodes.FASTORE:
+51:-       case Opcodes.DASTORE:
+52:-       case Opcodes.AASTORE:
+53:-       case Opcodes.BASTORE:
+54:-       case Opcodes.CASTORE:
+55:-       case Opcodes.SASTORE:
+56:-       case Opcodes.POP:
+57:-       case Opcodes.POP2:
+58:-       case Opcodes.DUP:
+59:-       case Opcodes.DUP_X1:
+60:-       case Opcodes.DUP_X2:
+61:-       case Opcodes.DUP2:
+62:-       case Opcodes.DUP2_X1:
+63:-       case Opcodes.DUP2_X2:
+64:-       case Opcodes.SWAP:
+65:-       case Opcodes.IADD:
+66:-       case Opcodes.LADD:
+67:-       case Opcodes.FADD:
+68:-       case Opcodes.DADD:
+69:-       case Opcodes.ISUB:
+70:-       case Opcodes.LSUB:
+71:-       case Opcodes.FSUB:
+72:-       case Opcodes.DSUB:
+73:-       case Opcodes.IMUL:
+74:-       case Opcodes.LMUL:
+75:-       case Opcodes.FMUL:
+76:-       case Opcodes.DMUL:
+77:-       case Opcodes.IDIV:
+78:-       case Opcodes.LDIV:
+79:-       case Opcodes.FDIV:
+80:-       case Opcodes.DDIV:
+81:-       case Opcodes.IREM:
+82:-       case Opcodes.LREM:
+83:-       case Opcodes.FREM:
+84:-       case Opcodes.DREM:
+85:-       case Opcodes.INEG:
+86:-       case Opcodes.LNEG:
+87:-       case Opcodes.FNEG:
+88:-       case Opcodes.DNEG:
+89:-       case Opcodes.ISHL:
+90:-       case Opcodes.LSHL:
+91:-       case Opcodes.ISHR:
+92:-       case Opcodes.LSHR:
+93:-       case Opcodes.IUSHR:
+94:-       case Opcodes.LUSHR:
+95:-       case Opcodes.IAND:
+96:-       case Opcodes.LAND:
+97:-       case Opcodes.IOR:
+98:-       case Opcodes.LOR:
+99:-       case Opcodes.IXOR:
+100:-       case Opcodes.LXOR:
+101:-       case Opcodes.I2L:
+102:-       case Opcodes.I2F:
+103:-       case Opcodes.I2D:
+104:-       case Opcodes.L2I:
+105:-       case Opcodes.L2F:
+106:-       case Opcodes.L2D:
+107:-       case Opcodes.F2I:
+108:-       case Opcodes.F2L:
+109:-       case Opcodes.F2D:
+110:-       case Opcodes.D2I:
+111:-       case Opcodes.D2L:
+112:-       case Opcodes.D2F:
+113:-       case Opcodes.I2B:
+114:-       case Opcodes.I2C:
+115:-       case Opcodes.I2S:
+116:-       case Opcodes.LCMP:
+117:-       case Opcodes.FCMPL:
+118:-       case Opcodes.FCMPG:
+119:-       case Opcodes.DCMPL:
+120:-       case Opcodes.DCMPG:
+121:-       case Opcodes.IRETURN:
+122:-       case Opcodes.LRETURN:
+123:-       case Opcodes.FRETURN:
+124:-       case Opcodes.DRETURN:
+125:-       case Opcodes.ARETURN:
+126:-       case Opcodes.RETURN:
+127:-       case Opcodes.ARRAYLENGTH:
+128:-       case Opcodes.ATHROW:
+129:-       case Opcodes.MONITORENTER:
+130:-       case Opcodes.MONITOREXIT:
+131:-       case Constants.ILOAD_0:
+132:-       case Constants.ILOAD_1:
+133:-       case Constants.ILOAD_2:
+134:-       case Constants.ILOAD_3:
+135:-       case Constants.LLOAD_0:
+136:-       case Constants.LLOAD_1:
+137:-       case Constants.LLOAD_2:
+138:-       case Constants.LLOAD_3:
+139:-       case Constants.FLOAD_0:
+140:-       case Constants.FLOAD_1:
+141:-       case Constants.FLOAD_2:
+142:-       case Constants.FLOAD_3:
+143:-       case Constants.DLOAD_0:
+144:-       case Constants.DLOAD_1:
+145:-       case Constants.DLOAD_2:
+146:-       case Constants.DLOAD_3:
+147:-       case Constants.ALOAD_0:
+148:-       case Constants.ALOAD_1:
+149:-       case Constants.ALOAD_2:
+150:-       case Constants.ALOAD_3:
+151:-       case Constants.ISTORE_0:
+152:-       case Constants.ISTORE_1:
+153:-       case Constants.ISTORE_2:
+154:-       case Constants.ISTORE_3:
+155:-       case Constants.LSTORE_0:
+156:-       case Constants.LSTORE_1:
+157:-       case Constants.LSTORE_2:
+158:-       case Constants.LSTORE_3:
+159:-       case Constants.FSTORE_0:
+160:-       case Constants.FSTORE_1:
+161:-       case Constants.FSTORE_2:
+162:-       case Constants.FSTORE_3:
+163:-       case Constants.DSTORE_0:
+164:-       case Constants.DSTORE_1:
+165:-       case Constants.DSTORE_2:
+166:-       case Constants.DSTORE_3:
+167:-       case Constants.ASTORE_0:
+168:-       case Constants.ASTORE_1:
+169:-       case Constants.ASTORE_2:
+170:-       case Constants.ASTORE_3:
+171:-         currentOffset += 1;
+173:-       case Opcodes.IFEQ:
+174:-       case Opcodes.IFNE:
+175:-       case Opcodes.IFLT:
+176:-       case Opcodes.IFGE:
+177:-       case Opcodes.IFGT:
+178:-       case Opcodes.IFLE:
+179:-       case Opcodes.IF_ICMPEQ:
+180:-       case Opcodes.IF_ICMPNE:
+181:-       case Opcodes.IF_ICMPLT:
+182:-       case Opcodes.IF_ICMPGE:
+183:-       case Opcodes.IF_ICMPGT:
+184:-       case Opcodes.IF_ICMPLE:
+185:-       case Opcodes.IF_ACMPEQ:
+186:-       case Opcodes.IF_ACMPNE:
+187:-       case Opcodes.GOTO:
+188:-       case Opcodes.JSR:
+189:-       case Opcodes.IFNULL:
+190:-       case Opcodes.IFNONNULL:
+191:-         createLabel(bytecodeOffset + readShort(currentOffset + 1), labels);
+194:-       case Constants.ASM_IFEQ:
+195:-       case Constants.ASM_IFNE:
+196:-       case Constants.ASM_IFLT:
+197:-       case Constants.ASM_IFGE:
+198:-       case Constants.ASM_IFGT:
+199:-       case Constants.ASM_IFLE:
+200:-       case Constants.ASM_IF_ICMPEQ:
+201:-       case Constants.ASM_IF_ICMPNE:
+202:-       case Constants.ASM_IF_ICMPLT:
+203:-       case Constants.ASM_IF_ICMPGE:
+204:-       case Constants.ASM_IF_ICMPGT:
+205:-       case Constants.ASM_IF_ICMPLE:
+206:-       case Constants.ASM_IF_ACMPEQ:
+207:-       case Constants.ASM_IF_ACMPNE:
+208:-       case Constants.ASM_GOTO:
+209:-       case Constants.ASM_JSR:
+210:-       case Constants.ASM_IFNULL:
+211:-       case Constants.ASM_IFNONNULL:
+212:-         createLabel(bytecodeOffset + readUnsignedShort(currentOffset + 1), labels);
+215:-       case Constants.GOTO_W:
+216:-       case Constants.JSR_W:
+217:-       case Constants.ASM_GOTO_W:
+218:-         createLabel(bytecodeOffset + readInt(currentOffset + 1), labels);
+221:-       case Constants.WIDE:
+222:-         switch (classBuffer[currentOffset + 1] & 0xFF) {
+223:-           case Opcodes.ILOAD:
+224:-           case Opcodes.FLOAD:
+225:-           case Opcodes.ALOAD:
+226:-           case Opcodes.LLOAD:
+227:-           case Opcodes.DLOAD:
+228:-           case Opcodes.ISTORE:
+229:-           case Opcodes.FSTORE:
+230:-           case Opcodes.ASTORE:
+231:-           case Opcodes.LSTORE:
+232:-           case Opcodes.DSTORE:
+233:-           case Opcodes.RET:
+234:-             currentOffset += 4;
+235:-             break;
+236:-           case Opcodes.IINC:
+237:-             currentOffset += 6;
+238:-             break;
+239:-           default:
+240:-             throw new IllegalArgumentException();
+243:-       case Opcodes.TABLESWITCH:
+244:-         // Skip 0 to 3 padding bytes.
+245:-         currentOffset += 4 - (bytecodeOffset & 3);
+248:-         int numTableEntries = readInt(currentOffset + 8) - readInt(currentOffset + 4) + 1;
+269:-       case Opcodes.ILOAD:
+270:-       case Opcodes.LLOAD:
+271:-       case Opcodes.FLOAD:
+272:-       case Opcodes.DLOAD:
+273:-       case Opcodes.ALOAD:
+274:-       case Opcodes.ISTORE:
+275:-       case Opcodes.LSTORE:
+276:-       case Opcodes.FSTORE:
+277:-       case Opcodes.DSTORE:
+278:-       case Opcodes.ASTORE:
+279:-       case Opcodes.RET:
+280:-       case Opcodes.BIPUSH:
+281:-       case Opcodes.NEWARRAY:
+282:-       case Opcodes.LDC:
+283:-         currentOffset += 2;
+286:-       case Constants.LDC_W:
+287:-       case Constants.LDC2_W:
+288:-       case Opcodes.GETSTATIC:
+289:-       case Opcodes.PUTSTATIC:
+290:-       case Opcodes.GETFIELD:
+291:-       case Opcodes.PUTFIELD:
+292:-       case Opcodes.INVOKEVIRTUAL:
+293:-       case Opcodes.INVOKESPECIAL:
+294:-       case Opcodes.INVOKESTATIC:
+295:-       case Opcodes.NEW:
+296:-       case Opcodes.ANEWARRAY:
+297:-       case Opcodes.CHECKCAST:
+298:-       case Opcodes.INSTANCEOF:
+299:-       case Opcodes.IINC:
+300:-         currentOffset += 3;
+302:-       case Opcodes.INVOKEINTERFACE:
+303:-       case Opcodes.INVOKEDYNAMIC:
+304:-         currentOffset += 5;
+306:-       case Opcodes.MULTIANEWARRAY:
+307:-         currentOffset += 4;
+310:-         throw new IllegalArgumentException();
+316:-   int exceptionTableLength = readUnsignedShort(currentOffset);
+317:-   currentOffset += 2;
+318:-   while (exceptionTableLength-- > 0) {
+319:-     Label start = createLabel(readUnsignedShort(currentOffset), labels);
+320:-     Label end = createLabel(readUnsignedShort(currentOffset + 2), labels);
+321:-     Label handler = createLabel(readUnsignedShort(currentOffset + 4), labels);
+322:-     String catchType = readUTF8(cpInfoOffsets[readUnsignedShort(currentOffset + 6)], charBuffer);
+323:-     currentOffset += 8;
+324:-     methodVisitor.visitTryCatchBlock(start, end, handler, catchType);
+325:-   }
+337:-   boolean compressedFrames = true;
+350:-   Attribute attributes = null;
+352:-   int attributesCount = readUnsignedShort(currentOffset);
+353:-   currentOffset += 2;
+357:-     int attributeLength = readInt(currentOffset + 2);
+360:-       if ((context.parsingOptions & SKIP_DEBUG) == 0) {
+361:-         localVariableTableOffset = currentOffset;
+362:-         // Parse the attribute to find the corresponding (debug only) labels.
+363:-         int currentLocalVariableTableOffset = currentOffset;
+364:-         int localVariableTableLength = readUnsignedShort(currentLocalVariableTableOffset);
+365:-         currentLocalVariableTableOffset += 2;
+366:-         while (localVariableTableLength-- > 0) {
+367:-           int startPc = readUnsignedShort(currentLocalVariableTableOffset);
+368:-           createDebugLabel(startPc, labels);
+369:-           int length = readUnsignedShort(currentLocalVariableTableOffset + 2);
+370:-           createDebugLabel(startPc + length, labels);
+371:-           // Skip the name_index, descriptor_index and index fields (2 bytes each).
+372:-           currentLocalVariableTableOffset += 10;
+373:-         }
+374:-       }
+375:-     } else if (Constants.LOCAL_VARIABLE_TYPE_TABLE.equals(attributeName)) {
+376:-       localVariableTypeTableOffset = currentOffset;
+380:-       if ((context.parsingOptions & SKIP_DEBUG) == 0) {
+381:-         // Parse the attribute to find the corresponding (debug only) labels.
+382:-         int currentLineNumberTableOffset = currentOffset;
+383:-         int lineNumberTableLength = readUnsignedShort(currentLineNumberTableOffset);
+384:-         currentLineNumberTableOffset += 2;
+385:-         while (lineNumberTableLength-- > 0) {
+386:-           int startPc = readUnsignedShort(currentLineNumberTableOffset);
+387:-           int lineNumber = readUnsignedShort(currentLineNumberTableOffset + 2);
+388:-           currentLineNumberTableOffset += 4;
+389:-           createDebugLabel(startPc, labels);
+390:-           labels[startPc].addLineNumber(lineNumber);
+391:-         }
+392:-       }
+402:-     } else if (Constants.RUNTIME_INVISIBLE_TYPE_ANNOTATIONS.equals(attributeName)) {
+403:-       invisibleTypeAnnotationOffsets =
+404:-           readTypeAnnotations(methodVisitor, context, currentOffset, /* visible = */ false);
+407:-       if ((context.parsingOptions & SKIP_FRAMES) == 0) {
+408:-         stackMapFrameOffset = currentOffset + 2;
+409:-         stackMapTableEndOffset = currentOffset + attributeLength;
+410:-       }
+421:-       if ((context.parsingOptions & SKIP_FRAMES) == 0) {
+422:-         stackMapFrameOffset = currentOffset + 2;
+423:-         stackMapTableEndOffset = currentOffset + attributeLength;
+424:-         compressedFrames = false;
+425:-       }
+430:-     } else {
+431:-       Attribute attribute =
+432:-           readAttribute(
+433:-               context.attributePrototypes,
+434:-               attributeName,
+435:-               currentOffset,
+436:-               attributeLength,
+437:-               charBuffer,
+438:-               codeOffset,
+439:-               labels);
+440:-       attribute.nextAttribute = attributes;
+441:-       attributes = attribute;
+448:-   final boolean expandFrames = (context.parsingOptions & EXPAND_FRAMES) != 0;
+449:-   if (stackMapFrameOffset != 0) {
+450:-     // The bytecode offset of the first explicit frame is not offset_delta + 1 but only
+451:-     // offset_delta. Setting the implicit frame offset to -1 allows us to use of the
+452:-     // "offset_delta + 1" rule in all cases.
+453:-     context.currentFrameOffset = -1;
+454:-     context.currentFrameType = 0;
+455:-     context.currentFrameLocalCount = 0;
+456:-     context.currentFrameLocalCountDelta = 0;
+457:-     context.currentFrameLocalTypes = new Object[maxLocals];
+458:-     context.currentFrameStackCount = 0;
+459:-     context.currentFrameStackTypes = new Object[maxStack];
+460:-     if (expandFrames) {
+461:-       computeImplicitFrame(context);
+462:-     }
+463:-     // Find the labels for UNINITIALIZED frame types. Instead of decoding each element of the
+464:-     // stack map table, we look for 3 consecutive bytes that "look like" an UNINITIALIZED type
+465:-     // (tag ITEM_Uninitialized, offset within bytecode bounds, NEW instruction at this offset).
+466:-     // We may find false positives (i.e. not real UNINITIALIZED types), but this should be rare,
+467:-     // and the only consequence will be the creation of an unneeded label. This is better than
+468:-     // creating a label for each NEW instruction, and faster than fully decoding the whole stack
+469:-     // map table.
+470:-     for (int offset = stackMapFrameOffset; offset < stackMapTableEndOffset - 2; ++offset) {
+471:-       if (classBuffer[offset] == Frame.ITEM_UNINITIALIZED) {
+472:-         int potentialBytecodeOffset = readUnsignedShort(offset + 1);
+473:-         if (potentialBytecodeOffset >= 0
+474:-             && potentialBytecodeOffset < codeLength
+475:-             && (classBuffer[bytecodeStartOffset + potentialBytecodeOffset] & 0xFF)
+476:-                 == Opcodes.NEW) {
+477:-           createLabel(potentialBytecodeOffset, labels);
+478:-         }
+479:-       }
+480:-     }
+481:-   }
+482:-   if (expandFrames && (context.parsingOptions & EXPAND_ASM_INSNS) != 0) {
+483:-     // Expanding the ASM specific instructions can introduce F_INSERT frames, even if the method
+484:-     // does not currently have any frame. These inserted frames must be computed by simulating the
+485:-     // effect of the bytecode instructions, one by one, starting from the implicit first frame.
+486:-     // For this, MethodWriter needs to know maxLocals before the first instruction is visited. To
+487:-     // ensure this, we visit the implicit first frame here (passing only maxLocals - the rest is
+488:-     // computed in MethodWriter).
+489:-     methodVisitor.visitFrame(Opcodes.F_NEW, maxLocals, null, 0, null);
+490:-   }
+509:-   boolean insertFrame = false;
+514:-   final int wideJumpOpcodeDelta =
+515:-       (context.parsingOptions & EXPAND_ASM_INSNS) == 0 ? Constants.WIDE_JUMP_OPCODE_DELTA : 0;
+525:-       currentLabel.accept(methodVisitor, (context.parsingOptions & SKIP_DEBUG) == 0);
+535:-         if (!compressedFrames || expandFrames) {
+536:-           methodVisitor.visitFrame(
+537:-               Opcodes.F_NEW,
+538:-               context.currentFrameLocalCount,
+539:-               context.currentFrameLocalTypes,
+540:-               context.currentFrameStackCount,
+541:-               context.currentFrameStackTypes);
+542:-         } else {
+543:-           methodVisitor.visitFrame(
+544:-               context.currentFrameType,
+545:-               context.currentFrameLocalCountDelta,
+546:-               context.currentFrameLocalTypes,
+547:-               context.currentFrameStackCount,
+548:-               context.currentFrameStackTypes);
+549:-         }
+552:-         insertFrame = false;
+554:-       if (stackMapFrameOffset < stackMapTableEndOffset) {
+555:-         stackMapFrameOffset =
+556:-             readStackMapFrame(stackMapFrameOffset, compressedFrames, expandFrames, context);
+557:-       } else {
+558:-         stackMapFrameOffset = 0;
+559:-       }
+565:-       if ((context.parsingOptions & EXPAND_FRAMES) != 0) {
+566:-         methodVisitor.visitFrame(Constants.F_INSERT, 0, null, 0, null);
+567:-       }
+568:-       insertFrame = false;
+572:-     int opcode = classBuffer[currentOffset] & 0xFF;
+575:-       case Opcodes.ACONST_NULL:
+576:-       case Opcodes.ICONST_M1:
+577:-       case Opcodes.ICONST_0:
+578:-       case Opcodes.ICONST_1:
+579:-       case Opcodes.ICONST_2:
+580:-       case Opcodes.ICONST_3:
+581:-       case Opcodes.ICONST_4:
+582:-       case Opcodes.ICONST_5:
+583:-       case Opcodes.LCONST_0:
+584:-       case Opcodes.LCONST_1:
+585:-       case Opcodes.FCONST_0:
+586:-       case Opcodes.FCONST_1:
+587:-       case Opcodes.FCONST_2:
+588:-       case Opcodes.DCONST_0:
+589:-       case Opcodes.DCONST_1:
+590:-       case Opcodes.IALOAD:
+591:-       case Opcodes.LALOAD:
+592:-       case Opcodes.FALOAD:
+593:-       case Opcodes.DALOAD:
+594:-       case Opcodes.AALOAD:
+595:-       case Opcodes.BALOAD:
+596:-       case Opcodes.CALOAD:
+597:-       case Opcodes.SALOAD:
+598:-       case Opcodes.IASTORE:
+599:-       case Opcodes.LASTORE:
+600:-       case Opcodes.FASTORE:
+601:-       case Opcodes.DASTORE:
+602:-       case Opcodes.AASTORE:
+603:-       case Opcodes.BASTORE:
+604:-       case Opcodes.CASTORE:
+605:-       case Opcodes.SASTORE:
+606:-       case Opcodes.POP:
+607:-       case Opcodes.POP2:
+608:-       case Opcodes.DUP:
+609:-       case Opcodes.DUP_X1:
+610:-       case Opcodes.DUP_X2:
+611:-       case Opcodes.DUP2:
+612:-       case Opcodes.DUP2_X1:
+613:-       case Opcodes.DUP2_X2:
+614:-       case Opcodes.SWAP:
+615:-       case Opcodes.IADD:
+616:-       case Opcodes.LADD:
+617:-       case Opcodes.FADD:
+618:-       case Opcodes.DADD:
+619:-       case Opcodes.ISUB:
+620:-       case Opcodes.LSUB:
+621:-       case Opcodes.FSUB:
+622:-       case Opcodes.DSUB:
+623:-       case Opcodes.IMUL:
+624:-       case Opcodes.LMUL:
+625:-       case Opcodes.FMUL:
+626:-       case Opcodes.DMUL:
+627:-       case Opcodes.IDIV:
+628:-       case Opcodes.LDIV:
+629:-       case Opcodes.FDIV:
+630:-       case Opcodes.DDIV:
+631:-       case Opcodes.IREM:
+632:-       case Opcodes.LREM:
+633:-       case Opcodes.FREM:
+634:-       case Opcodes.DREM:
+635:-       case Opcodes.INEG:
+636:-       case Opcodes.LNEG:
+637:-       case Opcodes.FNEG:
+638:-       case Opcodes.DNEG:
+639:-       case Opcodes.ISHL:
+640:-       case Opcodes.LSHL:
+641:-       case Opcodes.ISHR:
+642:-       case Opcodes.LSHR:
+643:-       case Opcodes.IUSHR:
+644:-       case Opcodes.LUSHR:
+645:-       case Opcodes.IAND:
+646:-       case Opcodes.LAND:
+647:-       case Opcodes.IOR:
+648:-       case Opcodes.LOR:
+649:-       case Opcodes.IXOR:
+650:-       case Opcodes.LXOR:
+651:-       case Opcodes.I2L:
+652:-       case Opcodes.I2F:
+653:-       case Opcodes.I2D:
+654:-       case Opcodes.L2I:
+655:-       case Opcodes.L2F:
+656:-       case Opcodes.L2D:
+657:-       case Opcodes.F2I:
+658:-       case Opcodes.F2L:
+659:-       case Opcodes.F2D:
+660:-       case Opcodes.D2I:
+661:-       case Opcodes.D2L:
+662:-       case Opcodes.D2F:
+663:-       case Opcodes.I2B:
+664:-       case Opcodes.I2C:
+665:-       case Opcodes.I2S:
+666:-       case Opcodes.LCMP:
+667:-       case Opcodes.FCMPL:
+668:-       case Opcodes.FCMPG:
+669:-       case Opcodes.DCMPL:
+670:-       case Opcodes.DCMPG:
+671:-       case Opcodes.IRETURN:
+672:-       case Opcodes.LRETURN:
+673:-       case Opcodes.FRETURN:
+674:-       case Opcodes.DRETURN:
+675:-       case Opcodes.ARETURN:
+676:-       case Opcodes.RETURN:
+677:-       case Opcodes.ARRAYLENGTH:
+678:-       case Opcodes.ATHROW:
+679:-       case Opcodes.MONITORENTER:
+680:-       case Opcodes.MONITOREXIT:
+681:-         methodVisitor.visitInsn(opcode);
+684:-       case Constants.ILOAD_0:
+685:-       case Constants.ILOAD_1:
+686:-       case Constants.ILOAD_2:
+687:-       case Constants.ILOAD_3:
+688:-       case Constants.LLOAD_0:
+689:-       case Constants.LLOAD_1:
+690:-       case Constants.LLOAD_2:
+691:-       case Constants.LLOAD_3:
+692:-       case Constants.FLOAD_0:
+693:-       case Constants.FLOAD_1:
+694:-       case Constants.FLOAD_2:
+695:-       case Constants.FLOAD_3:
+696:-       case Constants.DLOAD_0:
+697:-       case Constants.DLOAD_1:
+698:-       case Constants.DLOAD_2:
+699:-       case Constants.DLOAD_3:
+700:-       case Constants.ALOAD_0:
+701:-       case Constants.ALOAD_1:
+702:-       case Constants.ALOAD_2:
+703:-       case Constants.ALOAD_3:
+704:-         opcode -= Constants.ILOAD_0;
+708:-       case Constants.ISTORE_0:
+709:-       case Constants.ISTORE_1:
+710:-       case Constants.ISTORE_2:
+711:-       case Constants.ISTORE_3:
+712:-       case Constants.LSTORE_0:
+713:-       case Constants.LSTORE_1:
+714:-       case Constants.LSTORE_2:
+715:-       case Constants.LSTORE_3:
+716:-       case Constants.FSTORE_0:
+717:-       case Constants.FSTORE_1:
+718:-       case Constants.FSTORE_2:
+719:-       case Constants.FSTORE_3:
+720:-       case Constants.DSTORE_0:
+721:-       case Constants.DSTORE_1:
+722:-       case Constants.DSTORE_2:
+723:-       case Constants.DSTORE_3:
+724:-       case Constants.ASTORE_0:
+725:-       case Constants.ASTORE_1:
+726:-       case Constants.ASTORE_2:
+727:-       case Constants.ASTORE_3:
+728:-         opcode -= Constants.ISTORE_0;
+732:-       case Opcodes.IFEQ:
+733:-       case Opcodes.IFNE:
+734:-       case Opcodes.IFLT:
+735:-       case Opcodes.IFGE:
+736:-       case Opcodes.IFGT:
+737:-       case Opcodes.IFLE:
+738:-       case Opcodes.IF_ICMPEQ:
+739:-       case Opcodes.IF_ICMPNE:
+740:-       case Opcodes.IF_ICMPLT:
+741:-       case Opcodes.IF_ICMPGE:
+742:-       case Opcodes.IF_ICMPGT:
+743:-       case Opcodes.IF_ICMPLE:
+744:-       case Opcodes.IF_ACMPEQ:
+745:-       case Opcodes.IF_ACMPNE:
+746:-       case Opcodes.GOTO:
+747:-       case Opcodes.JSR:
+748:-       case Opcodes.IFNULL:
+749:-       case Opcodes.IFNONNULL:
+750:-         methodVisitor.visitJumpInsn(
+751:-             opcode, labels[currentBytecodeOffset + readShort(currentOffset + 1)]);
+754:-       case Constants.GOTO_W:
+755:-       case Constants.JSR_W:
+756:-         methodVisitor.visitJumpInsn(
+757:-             opcode - wideJumpOpcodeDelta,
+758:-             labels[currentBytecodeOffset + readInt(currentOffset + 1)]);
+761:-       case Constants.ASM_IFEQ:
+762:-       case Constants.ASM_IFNE:
+763:-       case Constants.ASM_IFLT:
+764:-       case Constants.ASM_IFGE:
+765:-       case Constants.ASM_IFGT:
+766:-       case Constants.ASM_IFLE:
+767:-       case Constants.ASM_IF_ICMPEQ:
+768:-       case Constants.ASM_IF_ICMPNE:
+769:-       case Constants.ASM_IF_ICMPLT:
+770:-       case Constants.ASM_IF_ICMPGE:
+771:-       case Constants.ASM_IF_ICMPGT:
+772:-       case Constants.ASM_IF_ICMPLE:
+773:-       case Constants.ASM_IF_ACMPEQ:
+774:-       case Constants.ASM_IF_ACMPNE:
+775:-       case Constants.ASM_GOTO:
+776:-       case Constants.ASM_JSR:
+777:-       case Constants.ASM_IFNULL:
+778:-       case Constants.ASM_IFNONNULL:
+779:-         {
+780:-           // A forward jump with an offset > 32767. In this case we automatically replace ASM_GOTO
+781:-           // with GOTO_W, ASM_JSR with JSR_W and ASM_IFxxx <l> with IFNOTxxx <L> GOTO_W <l> L:...,
+782:-           // where IFNOTxxx is the "opposite" opcode of ASMS_IFxxx (e.g. IFNE for ASM_IFEQ) and
+783:-           // where <L> designates the instruction just after the GOTO_W.
+784:-           // First, change the ASM specific opcodes ASM_IFEQ ... ASM_JSR, ASM_IFNULL and
+785:-           // ASM_IFNONNULL to IFEQ ... JSR, IFNULL and IFNONNULL.
+786:-           opcode =
+787:-               opcode < Constants.ASM_IFNULL
+788:-                   ? opcode - Constants.ASM_OPCODE_DELTA
+789:-                   : opcode - Constants.ASM_IFNULL_OPCODE_DELTA;
+794:-           } else {
+795:-             // Compute the "opposite" of opcode. This can be done by flipping the least
+796:-             // significant bit for IFNULL and IFNONNULL, and similarly for IFEQ ... IF_ACMPEQ
+797:-             // (with a pre and post offset by 1).
+798:-             opcode = opcode < Opcodes.GOTO ? ((opcode + 1) ^ 1) - 1 : opcode ^ 1;
+801:-             methodVisitor.visitJumpInsn(Constants.GOTO_W, target);
+807:-           break;
+809:-       case Constants.ASM_GOTO_W:
+810:-         // Replace ASM_GOTO_W with GOTO_W.
+811:-         methodVisitor.visitJumpInsn(
+812:-             Constants.GOTO_W, labels[currentBytecodeOffset + readInt(currentOffset + 1)]);
+816:-         insertFrame = true;
+819:-       case Constants.WIDE:
+820:-         opcode = classBuffer[currentOffset + 1] & 0xFF;
+825:-         } else {
+826:-           methodVisitor.visitVarInsn(opcode, readUnsignedShort(currentOffset + 2));
+830:-       case Opcodes.TABLESWITCH:
+831:-         {
+832:-           // Skip 0 to 3 padding bytes.
+833:-           currentOffset += 4 - (currentBytecodeOffset & 3);
+839:-           Label[] table = new Label[high - low + 1];
+841:-             table[i] = labels[currentBytecodeOffset + readInt(currentOffset)];
+842:-             currentOffset += 4;
+845:-           break;
+848:-         {
+849:-           // Skip 0 to 3 padding bytes.
+850:-           currentOffset += 4 - (currentBytecodeOffset & 3);
+851:-           // Read the instruction.
+852:-           Label defaultLabel = labels[currentBytecodeOffset + readInt(currentOffset)];
+853:-           int numPairs = readInt(currentOffset + 4);
+854:-           currentOffset += 8;
+855:-           int[] keys = new int[numPairs];
+856:-           Label[] values = new Label[numPairs];
+857:-           for (int i = 0; i < numPairs; ++i) {
+858:-             keys[i] = readInt(currentOffset);
+859:-             values[i] = labels[currentBytecodeOffset + readInt(currentOffset + 4)];
+860:-             currentOffset += 8;
+861:-           }
+862:-           methodVisitor.visitLookupSwitchInsn(defaultLabel, keys, values);
+863:-           break;
+864:-         }
+865:-       case Opcodes.ILOAD:
+866:-       case Opcodes.LLOAD:
+867:-       case Opcodes.FLOAD:
+868:-       case Opcodes.DLOAD:
+869:-       case Opcodes.ALOAD:
+870:-       case Opcodes.ISTORE:
+871:-       case Opcodes.LSTORE:
+872:-       case Opcodes.FSTORE:
+873:-       case Opcodes.DSTORE:
+874:-       case Opcodes.ASTORE:
+875:-       case Opcodes.RET:
+876:-         methodVisitor.visitVarInsn(opcode, classBuffer[currentOffset + 1] & 0xFF);
+880:-       case Opcodes.NEWARRAY:
+881:-         methodVisitor.visitIntInsn(opcode, classBuffer[currentOffset + 1]);
+885:-         methodVisitor.visitIntInsn(opcode, readShort(currentOffset + 1));
+888:-       case Opcodes.LDC:
+889:-         methodVisitor.visitLdcInsn(readConst(classBuffer[currentOffset + 1] & 0xFF, charBuffer));
+892:-       case Constants.LDC_W:
+893:-       case Constants.LDC2_W:
+894:-         methodVisitor.visitLdcInsn(readConst(readUnsignedShort(currentOffset + 1), charBuffer));
+900:-       case Opcodes.PUTFIELD:
+901:-       case Opcodes.INVOKEVIRTUAL:
+902:-       case Opcodes.INVOKESPECIAL:
+903:-       case Opcodes.INVOKESTATIC:
+904:-       case Opcodes.INVOKEINTERFACE:
+905:-         {
+906:-           int cpInfoOffset = cpInfoOffsets[readUnsignedShort(currentOffset + 1)];
+908:-           String owner = readClass(cpInfoOffset, charBuffer);
+912:-             methodVisitor.visitFieldInsn(opcode, owner, name, descriptor);
+913:-           } else {
+914:-             boolean isInterface =
+915:-                 classBuffer[cpInfoOffset - 1] == Symbol.CONSTANT_INTERFACE_METHODREF_TAG;
+916:-             methodVisitor.visitMethodInsn(opcode, owner, name, descriptor, isInterface);
+919:-             currentOffset += 5;
+920:-           } else {
+921:-             currentOffset += 3;
+923:-           break;
+925:-       case Opcodes.INVOKEDYNAMIC:
+926:-         {
+927:-           int cpInfoOffset = cpInfoOffsets[readUnsignedShort(currentOffset + 1)];
+932:-           Handle handle =
+933:-               (Handle) readConst(readUnsignedShort(bootstrapMethodOffset), charBuffer);
+935:-               new Object[readUnsignedShort(bootstrapMethodOffset + 2)];
+936:-           bootstrapMethodOffset += 4;
+938:-             bootstrapMethodArguments[i] =
+939:-                 readConst(readUnsignedShort(bootstrapMethodOffset), charBuffer);
+940:-             bootstrapMethodOffset += 2;
+942:-           methodVisitor.visitInvokeDynamicInsn(
+943:-               name, descriptor, handle, bootstrapMethodArguments);
+945:-           break;
+947:-       case Opcodes.NEW:
+948:-       case Opcodes.ANEWARRAY:
+949:-       case Opcodes.CHECKCAST:
+950:-       case Opcodes.INSTANCEOF:
+951:-         methodVisitor.visitTypeInsn(opcode, readClass(currentOffset + 1, charBuffer));
+954:-       case Opcodes.IINC:
+955:-         methodVisitor.visitIincInsn(
+956:-             classBuffer[currentOffset + 1] & 0xFF, classBuffer[currentOffset + 2]);
+959:-       case Opcodes.MULTIANEWARRAY:
+960:-         methodVisitor.visitMultiANewArrayInsn(
+961:-             readClass(currentOffset + 1, charBuffer), classBuffer[currentOffset + 3] & 0xFF);
+965:-         throw new AssertionError();
+983:-                 context.currentTypeAnnotationTarget,
+984:-                 context.currentTypeAnnotationTargetPath,
+985:-                 annotationDescriptor,
+986:-                 /* visible = */ true),
+987:-             currentAnnotationOffset,
+988:-             /* named = */ true,
+989:-             charBuffer);
+1011:-                 context.currentTypeAnnotationTarget,
+1012:-                 context.currentTypeAnnotationTargetPath,
+1013:-                 annotationDescriptor,
+1014:-                 /* visible = */ false),
+1015:-             currentAnnotationOffset,
+1016:-             /* named = */ true,
+1017:-             charBuffer);
+1025:-     methodVisitor.visitLabel(labels[codeLength]);
+1029:-   if (localVariableTableOffset != 0 && (context.parsingOptions & SKIP_DEBUG) == 0) {
+1030:-     // The (start_pc, index, signature_index) fields of each entry of the LocalVariableTypeTable.
+1031:-     int[] typeTable = null;
+1032:-     if (localVariableTypeTableOffset != 0) {
+1033:-       typeTable = new int[readUnsignedShort(localVariableTypeTableOffset) * 3];
+1034:-       currentOffset = localVariableTypeTableOffset + 2;
+1035:-       int typeTableIndex = typeTable.length;
+1036:-       while (typeTableIndex > 0) {
+1037:-         // Store the offset of 'signature_index', and the value of 'index' and 'start_pc'.
+1038:-         typeTable[--typeTableIndex] = currentOffset + 6;
+1039:-         typeTable[--typeTableIndex] = readUnsignedShort(currentOffset + 8);
+1040:-         typeTable[--typeTableIndex] = readUnsignedShort(currentOffset);
+1041:-         currentOffset += 10;
+1042:-       }
+1043:-     }
+1044:-     int localVariableTableLength = readUnsignedShort(localVariableTableOffset);
+1045:-     currentOffset = localVariableTableOffset + 2;
+1046:-     while (localVariableTableLength-- > 0) {
+1047:-       int startPc = readUnsignedShort(currentOffset);
+1048:-       int length = readUnsignedShort(currentOffset + 2);
+1049:-       String name = readUTF8(currentOffset + 4, charBuffer);
+1050:-       String descriptor = readUTF8(currentOffset + 6, charBuffer);
+1051:-       int index = readUnsignedShort(currentOffset + 8);
+1052:-       currentOffset += 10;
+1053:-       String signature = null;
+1054:-       if (typeTable != null) {
+1055:-         for (int i = 0; i < typeTable.length; i += 3) {
+1056:-           if (typeTable[i] == startPc && typeTable[i + 1] == index) {
+1057:-             signature = readUTF8(typeTable[i + 2], charBuffer);
+1058:-             break;
+1059:-           }
+1060:-         }
+1061:-       }
+1062:-       methodVisitor.visitLocalVariable(
+1063:-           name, descriptor, signature, labels[startPc], labels[startPc + length], index);
+1064:-     }
+1065:-   }
+1071:-       if (targetType == TypeReference.LOCAL_VARIABLE
+1072:-           || targetType == TypeReference.RESOURCE_VARIABLE) {
+1081:-                 context.currentTypeAnnotationTarget,
+1082:-                 context.currentTypeAnnotationTargetPath,
+1083:-                 context.currentLocalVariableAnnotationRangeStarts,
+1084:-                 context.currentLocalVariableAnnotationRangeEnds,
+1085:-                 context.currentLocalVariableAnnotationRangeIndices,
+1086:-                 annotationDescriptor,
+1087:-                 /* visible = */ true),
+1088:-             currentOffset,
+1089:-             /* named = */ true,
+1090:-             charBuffer);
+1099:-       if (targetType == TypeReference.LOCAL_VARIABLE
+1100:-           || targetType == TypeReference.RESOURCE_VARIABLE) {
+1109:-                 context.currentTypeAnnotationTarget,
+1110:-                 context.currentTypeAnnotationTargetPath,
+1111:-                 context.currentLocalVariableAnnotationRangeStarts,
+1112:-                 context.currentLocalVariableAnnotationRangeEnds,
+1113:-                 context.currentLocalVariableAnnotationRangeIndices,
+1114:-                 annotationDescriptor,
+1115:-                 /* visible = */ false),
+1116:-             currentOffset,
+1117:-             /* named = */ true,
+1118:-             charBuffer);
+1124:-   while (attributes != null) {
+1125:-     // Copy and reset the nextAttribute field so that it can also be used in MethodWriter.
+1126:-     Attribute nextAttribute = attributes.nextAttribute;
+1127:-     attributes.nextAttribute = null;
+1128:-     methodVisitor.visitAttribute(attributes);
+1129:-     attributes = nextAttribute;
+1130:-   }
+1133:-   methodVisitor.visitMaxs(maxStack, maxLocals);
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 25
+Testing time : 2023-12-07 19:58:36
+gecs recommendation result of method testSegmentStoreComputedValue [2, 77]: 
+Recommending extracting code lines: 3, 4, 5, 6, 8, 9, 10, 11, 13, 14, 19, 20, 22, 24, 25, 29, 30, 32, 33, 34, 35, 39, 40, 41, 43, 45, 46, 50, 51, 55, 56, 58, 59, 60, 61, 62, 68, 69, 70, 72, 73, 74, 75, 76
+3:-     QueuingRemovalListener<Object, Object> listener = queuingRemovalListener();
+4:-     LocalCache<Object, Object> map =
+5:-         makeLocalCache(createCacheBuilder().concurrencyLevel(1).removalListener(listener));
+6:-     Segment<Object, Object> segment = map.segments[0];
+8:-     Object key = new Object();
+9:-     int hash = map.hash(key);
+10:-     AtomicReferenceArray<ReferenceEntry<Object, Object>> table = segment.table;
+11:-     int index = hash & (table.length() - 1);
+13:-     DummyEntry<Object, Object> entry = DummyEntry.create(key, hash, null);
+14:-     LoadingValueReference<Object, Object> valueRef = new LoadingValueReference<>();
+19:-     assertTrue(listener.isEmpty());
+20:-     assertEquals(0, segment.count);
+22:-     assertTrue(segment.storeLoadedValue(key, hash, valueRef, value));
+24:-     assertEquals(1, segment.count);
+25:-     assertTrue(listener.isEmpty());
+29:-     assertFalse(segment.storeLoadedValue(key, hash, valueRef, value2));
+30:-     assertEquals(1, segment.count);
+32:-     RemovalNotification<Object, Object> notification = listener.remove();
+33:-     assertEquals(immutableEntry(key, value2), notification);
+34:-     assertEquals(RemovalCause.REPLACED, notification.getCause());
+35:-     assertTrue(listener.isEmpty());
+39:-     map.clear();
+40:-     listener.clear();
+41:-     assertEquals(0, segment.count);
+43:-     assertTrue(segment.storeLoadedValue(key, hash, valueRef, value3));
+45:-     assertEquals(1, segment.count);
+46:-     assertTrue(listener.isEmpty());
+50:-     DummyValueReference<Object, Object> value3Ref = DummyValueReference.create(value3);
+51:-     valueRef = new LoadingValueReference<>(value3Ref);
+55:-     assertEquals(1, segment.count);
+56:-     assertTrue(segment.storeLoadedValue(key, hash, valueRef, value4));
+58:-     assertEquals(1, segment.count);
+59:-     notification = listener.remove();
+60:-     assertEquals(immutableEntry(key, value3), notification);
+61:-     assertEquals(RemovalCause.REPLACED, notification.getCause());
+62:-     assertTrue(listener.isEmpty());
+68:-     assertEquals(1, segment.count);
+69:-     value3Ref.clear();
+70:-     assertTrue(segment.storeLoadedValue(key, hash, valueRef, value4));
+72:-     assertEquals(1, segment.count);
+73:-     notification = listener.remove();
+74:-     assertEquals(immutableEntry(key, null), notification);
+75:-     assertEquals(RemovalCause.COLLECTED, notification.getCause());
+76:-     assertTrue(listener.isEmpty());
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 26
+Testing time : 2023-12-07 19:59:02
+gecs recommendation result of method assertInvariants [2, 84]: 
+Recommending extracting code lines: 3, 5, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 25, 26, 27, 29, 30, 33, 34, 35, 36, 38, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 55, 56, 59, 60, 61, 62, 65, 66, 67, 69, 70, 72, 77, 78, 79, 80, 83
+3:-   Set<K> keySet = map.keySet();
+5:-   Set<Entry<K, V>> entrySet = map.entrySet();
+7:-   assertEquals(map.size() == 0, map.isEmpty());
+8:-   assertEquals(map.size(), keySet.size());
+9:-   assertEquals(keySet.size() == 0, keySet.isEmpty());
+10:-   assertEquals(!keySet.isEmpty(), keySet.iterator().hasNext());
+12:-   int expectedKeySetHash = 0;
+13:-   for (K key : keySet) {
+14:-     V value = map.get(key);
+15:-     expectedKeySetHash += key != null ? key.hashCode() : 0;
+16:-     assertTrue(map.containsKey(key));
+17:-     assertTrue(map.containsValue(value));
+18:-     assertTrue(valueCollection.contains(value));
+19:-     assertTrue(valueCollection.containsAll(Collections.singleton(value)));
+20:-     assertTrue(entrySet.contains(mapEntry(key, value)));
+21:-     assertTrue(allowsNullKeys || (key != null));
+22:-   }
+25:-   assertEquals(map.size(), valueCollection.size());
+26:-   assertEquals(valueCollection.size() == 0, valueCollection.isEmpty());
+27:-   assertEquals(!valueCollection.isEmpty(), valueCollection.iterator().hasNext());
+29:-     assertTrue(map.containsValue(value));
+30:-     assertTrue(allowsNullValues || (value != null));
+33:-   assertEquals(map.size(), entrySet.size());
+34:-   assertEquals(entrySet.size() == 0, entrySet.isEmpty());
+35:-   assertEquals(!entrySet.isEmpty(), entrySet.iterator().hasNext());
+36:-   assertEntrySetNotContainsString(entrySet);
+38:-   boolean supportsValuesHashCode = supportsValuesHashCode(map);
+40:-     int expectedEntrySetHash = 0;
+41:-     for (Entry<K, V> entry : entrySet) {
+42:-       assertTrue(map.containsKey(entry.getKey()));
+43:-       assertTrue(map.containsValue(entry.getValue()));
+44:-       int expectedHash =
+45:-           (entry.getKey() == null ? 0 : entry.getKey().hashCode())
+46:-               ^ (entry.getValue() == null ? 0 : entry.getValue().hashCode());
+47:-       assertEquals(expectedHash, entry.hashCode());
+48:-       expectedEntrySetHash += expectedHash;
+49:-     }
+50:-     assertEquals(expectedEntrySetHash, entrySet.hashCode());
+51:-     assertTrue(entrySet.containsAll(new HashSet<Entry<K, V>>(entrySet)));
+52:-     assertTrue(entrySet.equals(new HashSet<Entry<K, V>>(entrySet)));
+55:-   Object[] entrySetToArray1 = entrySet.toArray();
+56:-   assertEquals(map.size(), entrySetToArray1.length);
+59:-   Entry<?, ?>[] entrySetToArray2 = new Entry<?, ?>[map.size() + 2];
+60:-   entrySetToArray2[map.size()] = mapEntry("foo", 1);
+61:-   assertSame(entrySetToArray2, entrySet.toArray(entrySetToArray2));
+62:-   assertNull(entrySetToArray2[map.size()]);
+65:-   Object[] valuesToArray1 = valueCollection.toArray();
+66:-   assertEquals(map.size(), valuesToArray1.length);
+67:-   assertTrue(Arrays.asList(valuesToArray1).containsAll(valueCollection));
+69:-   Object[] valuesToArray2 = new Object[map.size() + 2];
+70:-   valuesToArray2[map.size()] = "foo";
+72:-   assertNull(valuesToArray2[map.size()]);
+77:-     for (Entry<K, V> entry : entrySet) {
+78:-       expectedHash += entry.hashCode();
+79:-     }
+80:-     assertEquals(expectedHash, map.hashCode());
+83:-   assertMoreInvariants(map);
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 27
+Testing time : 2023-12-07 19:59:15
+gecs recommendation result of method assertInvariants [2, 84]: 
+Recommending extracting code lines: 3, 5, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 25, 26, 27, 29, 30, 33, 34, 35, 36, 38, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 55, 56, 59, 60, 61, 62, 65, 66, 67, 69, 70, 72, 77, 78, 79, 80, 83
+3:-   Set<K> keySet = map.keySet();
+5:-   Set<Entry<K, V>> entrySet = map.entrySet();
+7:-   assertEquals(map.size() == 0, map.isEmpty());
+8:-   assertEquals(map.size(), keySet.size());
+9:-   assertEquals(keySet.size() == 0, keySet.isEmpty());
+10:-   assertEquals(!keySet.isEmpty(), keySet.iterator().hasNext());
+12:-   int expectedKeySetHash = 0;
+13:-   for (K key : keySet) {
+14:-     V value = map.get(key);
+15:-     expectedKeySetHash += key != null ? key.hashCode() : 0;
+16:-     assertTrue(map.containsKey(key));
+17:-     assertTrue(map.containsValue(value));
+18:-     assertTrue(valueCollection.contains(value));
+19:-     assertTrue(valueCollection.containsAll(Collections.singleton(value)));
+20:-     assertTrue(entrySet.contains(mapEntry(key, value)));
+21:-     assertTrue(allowsNullKeys || (key != null));
+22:-   }
+25:-   assertEquals(map.size(), valueCollection.size());
+26:-   assertEquals(valueCollection.size() == 0, valueCollection.isEmpty());
+27:-   assertEquals(!valueCollection.isEmpty(), valueCollection.iterator().hasNext());
+29:-     assertTrue(map.containsValue(value));
+30:-     assertTrue(allowsNullValues || (value != null));
+33:-   assertEquals(map.size(), entrySet.size());
+34:-   assertEquals(entrySet.size() == 0, entrySet.isEmpty());
+35:-   assertEquals(!entrySet.isEmpty(), entrySet.iterator().hasNext());
+36:-   assertEntrySetNotContainsString(entrySet);
+38:-   boolean supportsValuesHashCode = supportsValuesHashCode(map);
+40:-     int expectedEntrySetHash = 0;
+41:-     for (Entry<K, V> entry : entrySet) {
+42:-       assertTrue(map.containsKey(entry.getKey()));
+43:-       assertTrue(map.containsValue(entry.getValue()));
+44:-       int expectedHash =
+45:-           (entry.getKey() == null ? 0 : entry.getKey().hashCode())
+46:-               ^ (entry.getValue() == null ? 0 : entry.getValue().hashCode());
+47:-       assertEquals(expectedHash, entry.hashCode());
+48:-       expectedEntrySetHash += expectedHash;
+49:-     }
+50:-     assertEquals(expectedEntrySetHash, entrySet.hashCode());
+51:-     assertTrue(entrySet.containsAll(new HashSet<Entry<K, V>>(entrySet)));
+52:-     assertTrue(entrySet.equals(new HashSet<Entry<K, V>>(entrySet)));
+55:-   Object[] entrySetToArray1 = entrySet.toArray();
+56:-   assertEquals(map.size(), entrySetToArray1.length);
+59:-   Entry<?, ?>[] entrySetToArray2 = new Entry<?, ?>[map.size() + 2];
+60:-   entrySetToArray2[map.size()] = mapEntry("foo", 1);
+61:-   assertSame(entrySetToArray2, entrySet.toArray(entrySetToArray2));
+62:-   assertNull(entrySetToArray2[map.size()]);
+65:-   Object[] valuesToArray1 = valueCollection.toArray();
+66:-   assertEquals(map.size(), valuesToArray1.length);
+67:-   assertTrue(Arrays.asList(valuesToArray1).containsAll(valueCollection));
+69:-   Object[] valuesToArray2 = new Object[map.size() + 2];
+70:-   valuesToArray2[map.size()] = "foo";
+72:-   assertNull(valuesToArray2[map.size()]);
+77:-     for (Entry<K, V> entry : entrySet) {
+78:-       expectedHash += entry.hashCode();
+79:-     }
+80:-     assertEquals(expectedHash, map.hashCode());
+83:-   assertMoreInvariants(map);
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 28
+Testing time : 2023-12-07 19:59:29
+gecs recommendation result of method testGetIfPresent [2, 76]: 
+Recommending extracting code lines: 3, 5, 6, 7, 8, 11, 13, 15, 16, 17, 18, 19, 20, 21, 23, 25, 26, 27, 28, 29, 30, 31, 35, 37, 38, 39, 40, 42, 43, 45, 47, 48, 49, 50, 51, 52, 53, 57, 59, 60, 61, 62, 64, 65, 67, 69, 70, 71, 72, 73, 74, 75
+3:-   Cache<Object, Object> cache = CacheBuilder.newBuilder().recordStats().build();
+5:-   assertEquals(0, stats.missCount());
+6:-   assertEquals(0, stats.loadSuccessCount());
+7:-   assertEquals(0, stats.loadExceptionCount());
+8:-   assertEquals(0, stats.hitCount());
+11:-   Object two = new Object();
+13:-   assertNull(cache.getIfPresent(one));
+15:-   assertEquals(1, stats.missCount());
+16:-   assertEquals(0, stats.loadSuccessCount());
+17:-   assertEquals(0, stats.loadExceptionCount());
+18:-   assertEquals(0, stats.hitCount());
+19:-   assertNull(cache.asMap().get(one));
+20:-   assertFalse(cache.asMap().containsKey(one));
+21:-   assertFalse(cache.asMap().containsValue(two));
+23:-   assertNull(cache.getIfPresent(two));
+25:-   assertEquals(2, stats.missCount());
+26:-   assertEquals(0, stats.loadSuccessCount());
+27:-   assertEquals(0, stats.loadExceptionCount());
+28:-   assertEquals(0, stats.hitCount());
+29:-   assertNull(cache.asMap().get(two));
+30:-   assertFalse(cache.asMap().containsKey(two));
+31:-   assertFalse(cache.asMap().containsValue(one));
+35:-   assertSame(two, cache.getIfPresent(one));
+37:-   assertEquals(2, stats.missCount());
+38:-   assertEquals(0, stats.loadSuccessCount());
+39:-   assertEquals(0, stats.loadExceptionCount());
+40:-   assertEquals(1, stats.hitCount());
+42:-   assertTrue(cache.asMap().containsKey(one));
+43:-   assertTrue(cache.asMap().containsValue(two));
+45:-   assertNull(cache.getIfPresent(two));
+47:-   assertEquals(3, stats.missCount());
+48:-   assertEquals(0, stats.loadSuccessCount());
+49:-   assertEquals(0, stats.loadExceptionCount());
+50:-   assertEquals(1, stats.hitCount());
+51:-   assertNull(cache.asMap().get(two));
+52:-   assertFalse(cache.asMap().containsKey(two));
+53:-   assertFalse(cache.asMap().containsValue(one));
+57:-   assertSame(two, cache.getIfPresent(one));
+59:-   assertEquals(3, stats.missCount());
+60:-   assertEquals(0, stats.loadSuccessCount());
+61:-   assertEquals(0, stats.loadExceptionCount());
+62:-   assertEquals(2, stats.hitCount());
+64:-   assertTrue(cache.asMap().containsKey(one));
+65:-   assertTrue(cache.asMap().containsValue(two));
+67:-   assertSame(one, cache.getIfPresent(two));
+69:-   assertEquals(3, stats.missCount());
+70:-   assertEquals(0, stats.loadSuccessCount());
+71:-   assertEquals(0, stats.loadExceptionCount());
+72:-   assertEquals(3, stats.hitCount());
+73:-   assertSame(one, cache.asMap().get(two));
+74:-   assertTrue(cache.asMap().containsKey(two));
+75:-   assertTrue(cache.asMap().containsValue(one));
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 29
+Testing time : 2023-12-07 19:59:45
+gecs recommendation result of method assertMultimapIsUnmodifiable [2, 140]: 
+Recommending extracting code lines: 4, 5, 7, 9, 13, 14, 15, 16, 17, 18, 21, 22, 26, 27, 28, 29, 30, 31, 34, 35, 38, 39, 40, 41, 44, 45, 48, 49, 52, 53, 54, 55, 56, 61, 62, 63, 64, 69, 70, 71, 72, 75, 78, 79, 80, 81, 82, 86, 87, 88, 89, 90, 94, 95, 96, 97, 98, 103, 104, 105, 106, 110, 111, 112, 113, 114, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 138, 139
+4:-   List<Entry<K, V>> originalEntries =
+5:-       Collections.unmodifiableList(Lists.newArrayList(multimap.entries()));
+7:-   assertMultimapRemainsUnmodified(multimap, originalEntries);
+9:-   Collection<V> sampleValueAsCollection = Collections.singleton(sampleValue);
+13:-     multimap.clear();
+14:-     fail("clear succeeded on unmodifiable multimap");
+15:-   } catch (UnsupportedOperationException expected) {
+16:-   }
+17:- 
+18:-   assertMultimapRemainsUnmodified(multimap, originalEntries);
+21:-   assertSetIsUnmodifiable(
+22:-       multimap.asMap().entrySet(), Maps.immutableEntry(sampleKey, sampleValueAsCollection));
+26:-   assertMultimapRemainsUnmodified(multimap, originalEntries);
+27:-   if (!multimap.isEmpty()) {
+28:-     Collection<V> values = multimap.asMap().entrySet().iterator().next().getValue();
+29:- 
+30:-     assertCollectionIsUnmodifiable(values, sampleValue);
+31:-   }
+34:-   assertCollectionIsUnmodifiable(multimap.entries(), Maps.immutableEntry(sampleKey, sampleValue));
+35:-   assertMultimapRemainsUnmodified(multimap, originalEntries);
+38:-   for (Entry<K, V> entry : multimap.entries()) {
+39:-     assertMapEntryIsUnmodifiable(entry);
+40:-   }
+41:-   assertMultimapRemainsUnmodified(multimap, originalEntries);
+44:-   assertMultisetIsUnmodifiable(multimap.keys(), sampleKey);
+45:-   assertMultimapRemainsUnmodified(multimap, originalEntries);
+48:-   assertSetIsUnmodifiable(multimap.keySet(), sampleKey);
+49:-   assertMultimapRemainsUnmodified(multimap, originalEntries);
+52:-   if (!multimap.isEmpty()) {
+53:-     K key = multimap.keySet().iterator().next();
+54:-     assertCollectionIsUnmodifiable(multimap.get(key), sampleValue);
+55:-     assertMultimapRemainsUnmodified(multimap, originalEntries);
+56:-   }
+61:-     fail("put succeeded on unmodifiable multimap");
+62:-   } catch (UnsupportedOperationException expected) {
+63:-   }
+64:-   assertMultimapRemainsUnmodified(multimap, originalEntries);
+69:-     fail("putAll(K, Iterable) succeeded on unmodifiable multimap");
+70:-   } catch (UnsupportedOperationException expected) {
+71:-   }
+72:-   assertMultimapRemainsUnmodified(multimap, originalEntries);
+75:-   Multimap<K, V> multimap2 = ArrayListMultimap.create();
+78:-     multimap.putAll(multimap2);
+79:-     fail("putAll(Multimap<K, V>) succeeded on unmodifiable multimap");
+80:-   } catch (UnsupportedOperationException expected) {
+81:-   }
+82:-   assertMultimapRemainsUnmodified(multimap, originalEntries);
+86:-     multimap.remove(sampleKey, sampleValue);
+87:-     fail("remove succeeded on unmodifiable multimap");
+88:-   } catch (UnsupportedOperationException expected) {
+89:-   }
+90:-   assertMultimapRemainsUnmodified(multimap, originalEntries);
+94:-     multimap.removeAll(sampleKey);
+95:-     fail("removeAll succeeded on unmodifiable multimap");
+96:-   } catch (UnsupportedOperationException expected) {
+97:-   }
+98:-   assertMultimapRemainsUnmodified(multimap, originalEntries);
+103:-     fail("replaceValues succeeded on unmodifiable multimap");
+104:-   } catch (UnsupportedOperationException expected) {
+105:-   }
+106:-   assertMultimapRemainsUnmodified(multimap, originalEntries);
+110:-     multimap.asMap().remove(sampleKey);
+111:-     fail("asMap().remove() succeeded on unmodifiable multimap");
+112:-   } catch (UnsupportedOperationException expected) {
+113:-   }
+114:-   assertMultimapRemainsUnmodified(multimap, originalEntries);
+116:-   if (!multimap.isEmpty()) {
+117:-     K presentKey = multimap.keySet().iterator().next();
+118:-     try {
+119:-       multimap.asMap().get(presentKey).remove(sampleValue);
+120:-       fail("asMap().get().remove() succeeded on unmodifiable multimap");
+121:-     } catch (UnsupportedOperationException expected) {
+122:-     }
+123:-     assertMultimapRemainsUnmodified(multimap, originalEntries);
+124:- 
+125:-     try {
+126:-       multimap.asMap().values().iterator().next().remove(sampleValue);
+127:-       fail("asMap().values().iterator().next().remove() succeeded on unmodifiable multimap");
+128:-     } catch (UnsupportedOperationException expected) {
+129:-     }
+130:- 
+131:-     try {
+132:-       ((Collection<?>) multimap.asMap().values().toArray()[0]).clear();
+133:-       fail("asMap().values().toArray()[0].clear() succeeded on unmodifiable multimap");
+134:-     } catch (UnsupportedOperationException expected) {
+135:-     }
+136:-   }
+138:-   assertCollectionIsUnmodifiable(multimap.values(), sampleValue);
+139:-   assertMultimapRemainsUnmodified(multimap, originalEntries);
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 30
+Testing time : 2023-12-07 20:00:08
+gecs recommendation result of method testUnmodifiableNavigableMap [2, 109]: 
+Recommending extracting code lines: 3, 4, 5, 8, 11, 12, 13, 15, 17, 18, 21, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 45, 46, 47, 48, 49, 50, 52, 54, 55, 56, 57, 58, 61, 62, 63, 64, 65, 69, 70, 71, 72, 75, 76, 77, 78, 81, 82, 83, 84, 87, 88, 89, 90, 93, 94, 95, 96, 99, 100, 101, 102, 103, 105, 106, 107, 108, 109
+3:-   TreeMap<Integer, String> mod = Maps.newTreeMap();
+4:-   mod.put(1, "one");
+5:-   mod.put(2, "two");
+8:-   NavigableMap<Integer, String> unmod = unmodifiableNavigableMap(mod);
+11:-   mod.put(4, "four");
+12:-   assertEquals("four", unmod.get(4));
+13:-   assertEquals("four", unmod.descendingMap().get(4));
+15:-   ensureNotDirectlyModifiable(unmod);
+17:-   ensureNotDirectlyModifiable(unmod.headMap(2, true));
+18:-   ensureNotDirectlyModifiable(unmod.subMap(1, true, 3, true));
+21:-   Collection<String> values = unmod.values();
+23:-     values.add("4");
+24:-     fail("UnsupportedOperationException expected");
+25:-   } catch (UnsupportedOperationException expected) {
+26:-   }
+27:-   try {
+28:-     values.remove("four");
+29:-     fail("UnsupportedOperationException expected");
+30:-   } catch (UnsupportedOperationException expected) {
+31:-   }
+32:-   try {
+33:-     values.removeAll(Collections.singleton("four"));
+34:-     fail("UnsupportedOperationException expected");
+35:-   } catch (UnsupportedOperationException expected) {
+36:-   }
+37:-   try {
+38:-     values.retainAll(Collections.singleton("four"));
+39:-     fail("UnsupportedOperationException expected");
+40:-   } catch (UnsupportedOperationException expected) {
+41:-   }
+42:-   try {
+43:-     Iterator<String> iterator = values.iterator();
+45:-     iterator.remove();
+46:-     fail("UnsupportedOperationException expected");
+47:-   } catch (UnsupportedOperationException expected) {
+48:-   }
+49:- 
+50:-   Set<Entry<Integer, String>> entries = unmod.entrySet();
+52:-     Iterator<Entry<Integer, String>> iterator = entries.iterator();
+54:-     iterator.remove();
+55:-     fail("UnsupportedOperationException expected");
+56:-   } catch (UnsupportedOperationException expected) {
+57:-   }
+58:-   Entry<Integer, String> entry = entries.iterator().next();
+61:-     fail("UnsupportedOperationException expected");
+62:-   } catch (UnsupportedOperationException expected) {
+63:-   }
+64:-   entry = unmod.lowerEntry(1);
+65:-   assertNull(entry);
+69:-     fail("UnsupportedOperationException expected");
+70:-   } catch (UnsupportedOperationException expected) {
+71:-   }
+72:-   entry = unmod.ceilingEntry(2);
+75:-     fail("UnsupportedOperationException expected");
+76:-   } catch (UnsupportedOperationException expected) {
+77:-   }
+78:-   entry = unmod.lowerEntry(2);
+81:-     fail("UnsupportedOperationException expected");
+82:-   } catch (UnsupportedOperationException expected) {
+83:-   }
+84:-   entry = unmod.higherEntry(2);
+87:-     fail("UnsupportedOperationException expected");
+88:-   } catch (UnsupportedOperationException expected) {
+89:-   }
+90:-   entry = unmod.firstEntry();
+93:-     fail("UnsupportedOperationException expected");
+94:-   } catch (UnsupportedOperationException expected) {
+95:-   }
+96:-   entry = unmod.lastEntry();
+99:-     fail("UnsupportedOperationException expected");
+100:-   } catch (UnsupportedOperationException expected) {
+101:-   }
+102:-   @SuppressWarnings("unchecked")
+103:-   Entry<Integer, String> entry2 = (Entry<Integer, String>) entries.toArray()[0];
+105:-     entry2.setValue("four");
+106:-     fail("UnsupportedOperationException expected");
+107:-   } catch (UnsupportedOperationException expected) {
+108:-   }
+109:- }
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 31
+Testing time : 2023-12-07 20:00:26
+gecs recommendation result of method retryUpdate [2, 73]: 
+Recommending extracting code lines: 3, 5, 6, 7, 8, 9, 10, 11, 13, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71
+3:-   int h;
+5:-     threadHashCode.set(hc = new int[1]); // Initialize randomly
+6:-     int r = rng.nextInt(); // Avoid zero to allow xorShift rehash
+7:-     h = hc[0] = (r == 0) ? 1 : r;
+8:-   } else h = hc[0];
+9:-   boolean collide = false; // True if last slot nonempty
+10:-   for (; ; ) {
+11:-     Cell[] as;
+13:-     int n;
+15:-     if ((as = cells) != null && (n = as.length) > 0) {
+16:-       if ((a = as[(n - 1) & h]) == null) {
+17:-         if (busy == 0) { // Try to attach new Cell
+18:-           Cell r = new Cell(x); // Optimistically create
+19:-           if (busy == 0 && casBusy()) {
+20:-             boolean created = false;
+21:-             try { // Recheck under lock
+22:-               Cell[] rs;
+23:-               int m, j;
+24:-               if ((rs = cells) != null && (m = rs.length) > 0 && rs[j = (m - 1) & h] == null) {
+25:-                 rs[j] = r;
+26:-                 created = true;
+27:-               }
+28:-             } finally {
+29:-               busy = 0;
+30:-             }
+31:-             if (created) break;
+32:-             continue; // Slot is now non-empty
+33:-           }
+34:-         }
+35:-         collide = false;
+36:-       } else if (!wasUncontended) // CAS already known to fail
+37:-       wasUncontended = true; // Continue after rehash
+38:-       else if (a.cas(v = a.value, fn(v, x))) break;
+39:-       else if (n >= NCPU || cells != as) collide = false; // At max size or stale
+40:-       else if (!collide) collide = true;
+41:-       else if (busy == 0 && casBusy()) {
+42:-         try {
+43:-           if (cells == as) { // Expand table unless stale
+44:-             Cell[] rs = new Cell[n << 1];
+45:-             for (int i = 0; i < n; ++i) rs[i] = as[i];
+46:-             cells = rs;
+47:-           }
+48:-         } finally {
+49:-           busy = 0;
+50:-         }
+51:-         collide = false;
+52:-         continue; // Retry with expanded table
+53:-       }
+54:-       h ^= h << 13; // Rehash
+55:-       h ^= h >>> 17;
+56:-       h ^= h << 5;
+57:-       hc[0] = h; // Record index for next time
+58:-     } else if (busy == 0 && cells == as && casBusy()) {
+59:-       boolean init = false;
+60:-       try { // Initialize table
+61:-         if (cells == as) {
+62:-           Cell[] rs = new Cell[2];
+63:-           rs[h & 1] = new Cell(x);
+64:-           cells = rs;
+65:-           init = true;
+66:-         }
+67:-       } finally {
+68:-         busy = 0;
+69:-       }
+70:-       if (init) break;
+71:-     } else if (casBase(v = base, fn(v, x))) break; // Fall back on using base
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 32
+Testing time : 2023-12-07 20:00:45
+gecs recommendation result of method retryUpdate [2, 73]: 
+Recommending extracting code lines: 3, 5, 6, 7, 8, 9, 10, 11, 13, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71
+3:-   int h;
+5:-     threadHashCode.set(hc = new int[1]); // Initialize randomly
+6:-     int r = rng.nextInt(); // Avoid zero to allow xorShift rehash
+7:-     h = hc[0] = (r == 0) ? 1 : r;
+8:-   } else h = hc[0];
+9:-   boolean collide = false; // True if last slot nonempty
+10:-   for (; ; ) {
+11:-     Cell[] as;
+13:-     int n;
+15:-     if ((as = cells) != null && (n = as.length) > 0) {
+16:-       if ((a = as[(n - 1) & h]) == null) {
+17:-         if (busy == 0) { // Try to attach new Cell
+18:-           Cell r = new Cell(x); // Optimistically create
+19:-           if (busy == 0 && casBusy()) {
+20:-             boolean created = false;
+21:-             try { // Recheck under lock
+22:-               Cell[] rs;
+23:-               int m, j;
+24:-               if ((rs = cells) != null && (m = rs.length) > 0 && rs[j = (m - 1) & h] == null) {
+25:-                 rs[j] = r;
+26:-                 created = true;
+27:-               }
+28:-             } finally {
+29:-               busy = 0;
+30:-             }
+31:-             if (created) break;
+32:-             continue; // Slot is now non-empty
+33:-           }
+34:-         }
+35:-         collide = false;
+36:-       } else if (!wasUncontended) // CAS already known to fail
+37:-       wasUncontended = true; // Continue after rehash
+38:-       else if (a.cas(v = a.value, fn(v, x))) break;
+39:-       else if (n >= NCPU || cells != as) collide = false; // At max size or stale
+40:-       else if (!collide) collide = true;
+41:-       else if (busy == 0 && casBusy()) {
+42:-         try {
+43:-           if (cells == as) { // Expand table unless stale
+44:-             Cell[] rs = new Cell[n << 1];
+45:-             for (int i = 0; i < n; ++i) rs[i] = as[i];
+46:-             cells = rs;
+47:-           }
+48:-         } finally {
+49:-           busy = 0;
+50:-         }
+51:-         collide = false;
+52:-         continue; // Retry with expanded table
+53:-       }
+54:-       h ^= h << 13; // Rehash
+55:-       h ^= h >>> 17;
+56:-       h ^= h << 5;
+57:-       hc[0] = h; // Record index for next time
+58:-     } else if (busy == 0 && cells == as && casBusy()) {
+59:-       boolean init = false;
+60:-       try { // Initialize table
+61:-         if (cells == as) {
+62:-           Cell[] rs = new Cell[2];
+63:-           rs[h & 1] = new Cell(x);
+64:-           cells = rs;
+65:-           init = true;
+66:-         }
+67:-       } finally {
+68:-         busy = 0;
+69:-       }
+70:-       if (init) break;
+71:-     } else if (casBase(v = base, fn(v, x))) break; // Fall back on using base
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+Testing data : 33
+Testing time : 2023-12-07 20:01:09
+gecs recommendation result of method testSetFutureCancelBash [2, 136]: 
+Recommending extracting code lines: 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 46, 48, 49, 50, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 95, 96, 97, 98, 99, 102, 103, 104, 105, 106, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 133, 135
+6:-   final int size = 50;
+7:-   final CyclicBarrier barrier =
+8:-       new CyclicBarrier(
+9:-           2 // for the setter threads
+10:-               + size // for the listeners
+11:-               + size // for the get threads,
+12:-               + 1); // for the main thread
+13:-   final ExecutorService executor = Executors.newFixedThreadPool(barrier.getParties());
+14:-   final AtomicReference<AbstractFuture<String>> currentFuture = Atomics.newReference();
+15:-   final AtomicReference<AbstractFuture<String>> setFutureFuture = Atomics.newReference();
+19:-   Runnable cancelRunnable =
+20:-       new Runnable() {
+21:-         @Override
+22:-         public void run() {
+23:-           cancellationSuccess.set(currentFuture.get().cancel(true));
+24:-           awaitUnchecked(barrier);
+28:-       new Runnable() {
+29:-         @Override
+30:-         public void run() {
+31:-           AbstractFuture<String> future = setFutureFuture.get();
+32:-           setFutureSetSuccess.set(currentFuture.get().setFuture(future));
+33:-           setFutureCompletionSuccess.set(future.set("hello-async-world"));
+34:-           awaitUnchecked(barrier);
+35:-         }
+36:-       };
+37:-   final Set<Object> finalResults = Collections.synchronizedSet(Sets.newIdentityHashSet());
+38:-   Runnable collectResultsRunnable =
+39:-       new Runnable() {
+40:-         @Override
+41:-         public void run() {
+42:-           try {
+43:-             String result = Uninterruptibles.getUninterruptibly(currentFuture.get());
+44:-             finalResults.add(result);
+46:-             finalResults.add(e.getCause());
+48:-             finalResults.add(CancellationException.class);
+49:-           } finally {
+50:-             awaitUnchecked(barrier);
+55:-       new Runnable() {
+56:-         @Override
+57:-         public void run() {
+58:-           Future<String> future = currentFuture.get();
+59:-           while (true) {
+60:-             try {
+61:-               String result = Uninterruptibles.getUninterruptibly(future, 0, TimeUnit.SECONDS);
+62:-               finalResults.add(result);
+63:-               break;
+64:-             } catch (ExecutionException e) {
+65:-               finalResults.add(e.getCause());
+66:-               break;
+67:-             } catch (CancellationException e) {
+68:-               finalResults.add(CancellationException.class);
+69:-               break;
+70:-             } catch (TimeoutException e) {
+71:-               // loop
+72:-             }
+73:-           }
+74:-           awaitUnchecked(barrier);
+75:-         }
+76:-       };
+77:-   List<Runnable> allTasks = new ArrayList<>();
+78:-   allTasks.add(cancelRunnable);
+79:-   allTasks.add(setFutureCompleteSuccessfullyRunnable);
+84:-     final Runnable listener =
+85:-         k % 2 == 0 ? collectResultsRunnable : collectResultsTimedGetRunnable;
+86:-     allTasks.add(listener);
+87:-     allTasks.add(
+88:-         new Runnable() {
+89:-           @Override
+90:-           public void run() {
+91:-             currentFuture.get().addListener(listener, executor);
+92:-           }
+93:-         });
+95:-   assertEquals(allTasks.size() + 1, barrier.getParties()); // sanity check
+96:-   for (int i = 0; i < 1000; i++) {
+97:-     Collections.shuffle(allTasks);
+98:-     final AbstractFuture<String> future = new AbstractFuture<String>() {};
+99:-     final AbstractFuture<String> setFuture = new AbstractFuture<String>() {};
+102:-     for (Runnable task : allTasks) {
+103:-       executor.execute(task);
+104:-     }
+105:-     awaitUnchecked(barrier);
+106:-     assertThat(future.isDone()).isTrue();
+109:-     Object result = Iterables.getOnlyElement(finalResults);
+110:-     if (result == CancellationException.class) {
+111:-       assertTrue(future.isCancelled());
+112:-       assertTrue(cancellationSuccess.get());
+113:-       // cancellation can interleave in 3 ways
+114:-       // 1. prior to setFuture
+115:-       // 2. after setFuture before set() on the future assigned
+116:-       // 3. after setFuture and set() are called but before the listener completes.
+117:-       if (!setFutureSetSuccess.get() || !setFutureCompletionSuccess.get()) {
+118:-         // If setFuture fails or set on the future fails then it must be because that future was
+119:-         // cancelled
+120:-         assertTrue(setFuture.isCancelled());
+121:-         assertTrue(setFuture.wasInterrupted()); // we only call cancel(true)
+122:-       }
+123:-     } else {
+124:-       // set on the future completed
+125:-       assertFalse(cancellationSuccess.get());
+126:-       assertTrue(setFutureSetSuccess.get());
+127:-       assertTrue(setFutureCompletionSuccess.get());
+128:-     }
+133:-     finalResults.clear();
+135:-   executor.shutdown();
+-----------------------------------------------------------------------------------------------
