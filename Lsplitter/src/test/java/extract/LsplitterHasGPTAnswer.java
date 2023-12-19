@@ -18,7 +18,7 @@ public class LsplitterHasGPTAnswer {
             extractMethod extract = new extractMethod(original, apiKey, apiUrl, gpt);
             extract.getExtractedMethod();
             System.out.println(i + " finished!");
-            String resFile = "pathToSaveLspliiterResult" + i + ".java";
+            String resFile = "pathToSaveLsplitterResult" + i + ".java";
             Utils.writeToFile(extract.resMethod, new File(resFile));
         }
     }

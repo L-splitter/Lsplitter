@@ -16,7 +16,7 @@ public class Lsplitter {
             extract.getExtractedMethod();
             System.out.println(i + " finished!");
             String gptFile = "pathToSaveGPTResult" + i + ".java";
-            String resFile = "pathToSaveLspliiterResult" + i + ".java";
+            String resFile = "pathToSaveLsplitterResult" + i + ".java";
             Utils.writeToFile(extract.gptMethod, new File(gptFile));
             Utils.writeToFile(extract.resMethod, new File(resFile));
         }

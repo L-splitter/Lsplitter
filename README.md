@@ -44,4 +44,4 @@ This is the replication package for ISSTA submission, containing both tool and d
        - `gptFile` to the path where the ChatGPT's results are located/saved.
        - `resFile` to the path where the result files should be saved.
        
-       
+       ![Example picture](https://cdn.sa.net/2023/12/19/9MBWZk82w4nLo5f.png)
