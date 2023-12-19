@@ -11,7 +11,7 @@ This is the replication package for ISSTA submission, containing both tool and d
 
   # Contents of the Replication Package
 
-  /Dataset: Benchmark Datasets
+  /data: Benchmark Datasets
 
   /Lsplitter: The implementation of Lsplitter
 
